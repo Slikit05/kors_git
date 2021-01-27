@@ -1,0 +1,378 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Крос
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/mob-menu.pug
+      include includes/header-nav.pug
+      .breadcrumbs
+        .container
+          .breadcrumbs__wrapper
+            ul.breadcrumbs__list
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="#") Главная
+                svg.breadcrumbs__svg
+                  use(xlink:href="img/sprite.svg#sm-arrow-right")
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="#") Купить авто
+                svg.breadcrumbs__svg
+                  use(xlink:href="img/sprite.svg#sm-arrow-right")
+              li.breadcrumbs__item
+                span.breadcrumbs__link.breadcrumbs__link--active Авто с пробегом
+      
+    main
+      .vac-up
+        .container
+          .vac-up__wrapper(style="background-image: url(img/vac-up-bg.jpg)")
+            .vac-up__block
+              h2.title Вакансии
+              span.vac-up__value 69 открытых вакансий
+              span.vac-up__text Более подробную информацию Вы можете получить по телефону
+              a.vac-up__tel(href="tel:+74872337187") +7 (4872) 33-71-87
+              button.vac-up__btn.show_popup(rel="popup2") Заполнить анкету
+              
+      .vac-section
+        .container
+          .page-two-columns
+            .one-column
+              .filter-btn Подобрать по параметрам
+              .filter
+                form.filter__form
+                  .filter__wrapper
+                    .filter__block
+                      .filter__wrap
+                        span.filter__name Марка
+                        .filter__select-wrap
+                          select.filter__select
+                            option Nissan
+                            option Nissan
+                            option Nissan
+                            option Nissan
+                    .filter__block
+                      .filter__wrap
+                        span.filter__name Модель
+                        .filter__select-wrap
+                          select.filter__select
+                            option Все модели
+                            option Все модели
+                            option Все модели
+                            option Все модели
+                    .filter__block
+                      .filter__wrap
+                        span.filter__name Город
+                        .filter__select-wrap
+                          select.filter__select
+                            option Санкт-Петербург
+                            option Санкт-Петербург
+                            option Санкт-Петербург
+                            option Санкт-Петербург
+                    .filter__block
+                      .filter__wrap
+                        span.filter__name Тип кузова
+                        .filter__select-wrap
+                          select.filter__select
+                            option Седан
+                            option Седан
+                            option Седан
+                            option Седан
+                  .filter__down
+                    .filter__left
+                      .filter__close
+                        span Сбросить
+                        .filter__close-icon
+                    .filter__right
+                      button.filter__btn Подобрать
+            
+              .vac
+                .container
+                  .vac__wrapper
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Менеджер по продажам автомобилей
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link от 25 000 руб.
+                          
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Руководитель отдела продаж дилерского центра
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link Подробнее
+                        
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Руководитель дилерского центра
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link от 25 000 руб.
+                          
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Автослесарь
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link Подробнее
+                          
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Диагност-механик
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link от 25 000 руб.
+                          
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Старший менеджер отдела продаж ДЦ LADA
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link Подробнее
+                          
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Автослесарь
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link Подробнее
+                          
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Диагност-механик
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link от 25 000 руб.
+                          
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Старший менеджер отдела продаж ДЦ LADA
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link Подробнее
+                          
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Автослесарь
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link Подробнее
+                          
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Диагност-механик
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link от 25 000 руб.
+                          
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Старший менеджер отдела продаж ДЦ LADA
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link Подробнее
+                          
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Автослесарь
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link Подробнее
+                          
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Диагност-механик
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link от 25 000 руб.
+                          
+                    a.vac-post(href="#")
+                      .vac-post__wrapper
+                        .vac-post__wrap
+                          h4.vac-post__caption Старший менеджер отдела продаж ДЦ LADA
+                          .vac-post__row
+                            svg.vac-post__svg
+                              use(xlink:href="img/sprite.svg#location")
+                            span.vac-post__text Коломна  —  Mitsubishi Коломна
+                        .vac-post__row-link
+                          svg.vac-post__arrow
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.vac-post__link Подробнее
+                          
+              
+              section.row-arrow
+                .row-arrow__container
+                  .container
+                    .row-arrow__wrapper
+                      .row-arrow__block
+                        span.row-arrow__text Загрузить еще
+                        a.arrow-to-scroll.arrow-to-scroll--black(href="")
+                          svg.arrow-to-scroll__arrow
+                            use(xlink:href="img/sprite.svg#arrow-scroll")
+                          .arrow-to-scroll__wrap
+                            svg.arrow-to-scroll__line
+                              use(xlink:href="img/sprite.svg#line")
+                    
+
+              .pagination
+                .pagination__wrapper
+                  .pagination__block
+                    .pagination__wrap-svg
+                      svg.pagination__svg
+                        use(xlink:href="img/sprite.svg#sm-arrow-right")
+                    span.pagination__text Предыдущая
+                  ul.pagination__list
+                    li.pagination__item
+                      a.pagination__link(href="#") 1
+                    li.pagination__item
+                      a.pagination__link.pagination__link--active(href="#") 2
+                    li.pagination__item
+                      a.pagination__link(href="#") 3
+                    li.pagination__item
+                      a.pagination__link(href="#") 4
+                    li.pagination__item
+                      a.pagination__link(href="#") 5
+                    li.pagination__item
+                      a.pagination__link(href="#") 6
+                    li.pagination__item
+                      a.pagination__link(href="#") 7
+                    li.pagination__item
+                      a.pagination__link(href="#") 8
+                    li.pagination__item
+                      a.pagination__link(href="#") 9
+                    li.pagination__item
+                      span.pagination__link.pagination__link--dots ...
+                    li.pagination__item
+                      a.pagination__link(href="#") 17
+                  .pagination__block
+                    span.pagination__text Следующая
+                    .pagination__wrap-svg
+                      svg.pagination__svg
+                        use(xlink:href="img/sprite.svg#sm-arrow-right")
+                        
+              .banner.banner--two
+                .banner__wrapper(style="background-image: url(img/banner-big.jpg)")
+                  .banner__block
+                    h3.banner__title Не нашли подходящей вакансии?
+                    span.banner__text Заполните анкету или отправьте письмо. Мы обязательно рассмотрим и при актуальности свяжемcя с вами.
+                    a.block-btn.block-btn--white(href="#")
+                      .block-btn__line.block-btn__line--top
+                      .block-btn__line.block-btn__line--right
+                      .block-btn__line.block-btn__line--bottom
+                      .block-btn__line.block-btn__line--left
+                      button.block-btn__btn Заполнить анкету
+                
+                  
+                        
+            .two-column
+              .sidebar
+                .stik
+                  .link-consultation
+                    .link-consultation__svg
+                      svg.link-consultation__svg
+                        use(xlink:href="img/sprite.svg#tell")  
+                    .link-consultation__block
+                      a.link-consultation__tel(href="tel:88007771747") 8-800-777-17-47
+                      span.link-consultation__text Связь с менеджером
+                    a.link-consultation__link(href="#")
+                      svg.link-consultation__arrow
+                        use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span Получить консультацию
+          
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

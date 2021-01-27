@@ -1,0 +1,466 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Корс
+    
+    include includes/link.pug
+    
+  body.bg-gray
+    header
+      .header-bg(style="background-image: url(img/history-bg.jpg)")
+        include includes/mob-menu.pug
+        include includes/header-nav.pug
+        .breadcrumbs.breadcrumbs--white
+          .container
+            .breadcrumbs__wrapper
+              ul.breadcrumbs__list.breadcrumbs__list--center
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                  svg.breadcrumbs__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") О компании
+                  svg.breadcrumbs__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active История
+        h2.header-bg__row-title
+          .container
+            h2.header-bg__title.header-bg__title--center История автохолдинга Корс Групп
+      
+    main.main-change
+      .history
+        .container
+          .platform
+          
+            .history__container
+            
+              .prizes-advantages
+              
+                .prizes-advantages__block
+                  .prizes-advantages__wrap
+                    span.prizes-advantages__number 11
+                    span.prizes-advantages__text лет на автомобильном рынке
+                    
+                .prizes-advantages__block
+                  .prizes-advantages__wrap
+                    span.prizes-advantages__number 28
+                    span.prizes-advantages__text автосалонов в 4 городах
+                    
+                    
+                    
+              .history__wrap-text
+                p Плазменное образование заряжено. Суспензия сингулярно заряжает атом. Неоднородность стохастично ускоряет гравитационный лазер. Взрыв, как можно показать с помощью не совсем тривиальных вычислений, эллиптично отталкивает солитон, хотя этот факт нуждается в дальнейшей тщательной экспериментальной проверке. Кварк инвариантен относительно сдвига. Атом, в отличие от классического случая, вертикально сжимает лазер даже в случае сильных локальных возмущений среды
+                
+          .calendar
+            .calendar__container
+              .calendar__side-bar
+                ul.calendar__list(id="menu")
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#2018" data-pos="") 2018
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#2017" data-pos="") 2017
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#2016" data-pos="") 2016
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#2014" data-pos="") 2014
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#2013" data-pos="") 2013
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#2012" data-pos="") 2012
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#2011" data-pos="") 2011
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#2006" data-pos="") 2006
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#2005" data-pos="") 2005
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#2004" data-pos="") 2004
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#2000" data-pos="") 2000
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#1999" data-pos="") 1999
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#1995" data-pos="") 1995
+                  li.calendar__item
+                    a.calendar__link-anchor.calendar-anchor(href="#1990" data-pos="") 1990
+                    
+              .calendar__content
+                .calendar__wrapper.calendar-content
+                
+                  .calendar__wrap.calendar-block(id="2018")
+                    span.calendar__date 2018 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p 1 сентября 2018 года Группа компаний "Автошина" объявила о ребрендинге и сменила коммерческое наименование на Автомобильный холдинг "КорсГрупп". Решение обосновано необходимостью более четкого позиционирования на автомобильном рынке и ухода от узкоспециализированного наименования, имеющего ассоциацию с шинным бизнесом.
+                        p Также, переименованы все дилерские центры, входящие в холдинг "КорсГрупп".
+                        svg.logo
+                          use(xlink:href="img/sprite.svg#logo")
+                      .calendar__up
+                        h4.calendar__caption Январь
+                      .calendar__wrap-text
+                        p Сеть дилерских центров Mitsubishi, Nissan, Volkswagen, Datsun, KIA и Hyundai в Коломне, входящих ранее в холдинг «Аванта», перешла под управление группы компаний «Автошина»
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(data-fancybox="gallery1" href="img/calendar-img.jpg")
+                              img.calendar-gallery__img(src="img/calendar-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery1" href="img/calendar-img.jpg")
+                              img.calendar-gallery__img(src="img/calendar-img.jpg")
+                              
+                  .calendar__wrap.calendar-block(id="2017")
+                    span.calendar__date 2017 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p Открытие дилерского центра Ravon
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")  
+                            .calendar-gallery__block.calendar-gallery__block--more
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                              span.calendar-gallery__text Еще <span class="calendar-gallery__number">6</span> фото
+                              
+                              
+                  .calendar__wrap.calendar-block(id="2016")
+                    span.calendar__date 2016 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p 1 сентября 2018 года Группа компаний "Автошина" объявила о ребрендинге и сменила коммерческое наименование на Автомобильный холдинг "КорсГрупп". Решение обосновано необходимостью более четкого позиционирования на автомобильном рынке и ухода от узкоспециализированного наименования, имеющего ассоциацию с шинным бизнесом.
+                        p Также, переименованы все дилерские центры, входящие в холдинг "КорсГрупп".
+                        svg.logo
+                          use(xlink:href="img/sprite.svg#logo")
+                      .calendar__up
+                        h4.calendar__caption Январь
+                      .calendar__wrap-text
+                        p Сеть дилерских центров Mitsubishi, Nissan, Volkswagen, Datsun, KIA и Hyundai в Коломне, входящих ранее в холдинг «Аванта», перешла под управление группы компаний «Автошина»
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(href="#")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(href="#")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                              
+                  .calendar__wrap.calendar-block(id="2014")
+                    span.calendar__date 2014 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p Открытие дилерского центра Ravon
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")  
+                            .calendar-gallery__block.calendar-gallery__block--more
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                              span.calendar-gallery__text Еще <span class="calendar-gallery__number">6</span> фото
+                              
+                  .calendar__wrap.calendar-block(id="2013")
+                    span.calendar__date 2013 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p 1 сентября 2018 года Группа компаний "Автошина" объявила о ребрендинге и сменила коммерческое наименование на Автомобильный холдинг "КорсГрупп". Решение обосновано необходимостью более четкого позиционирования на автомобильном рынке и ухода от узкоспециализированного наименования, имеющего ассоциацию с шинным бизнесом.
+                        p Также, переименованы все дилерские центры, входящие в холдинг "КорсГрупп".
+                        svg.logo
+                          use(xlink:href="img/sprite.svg#logo")
+                      .calendar__up
+                        h4.calendar__caption Январь
+                      .calendar__wrap-text
+                        p Сеть дилерских центров Mitsubishi, Nissan, Volkswagen, Datsun, KIA и Hyundai в Коломне, входящих ранее в холдинг «Аванта», перешла под управление группы компаний «Автошина»
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(href="#")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(href="#")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                              
+                  .calendar__wrap.calendar-block(id="2012")
+                    span.calendar__date 2012 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p Открытие дилерского центра Ravon
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")  
+                            .calendar-gallery__block.calendar-gallery__block--more
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                              span.calendar-gallery__text Еще <span class="calendar-gallery__number">6</span> фото
+                              
+                  .calendar__wrap.calendar-block(id="2011")
+                    span.calendar__date 2011 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p 1 сентября 2018 года Группа компаний "Автошина" объявила о ребрендинге и сменила коммерческое наименование на Автомобильный холдинг "КорсГрупп". Решение обосновано необходимостью более четкого позиционирования на автомобильном рынке и ухода от узкоспециализированного наименования, имеющего ассоциацию с шинным бизнесом.
+                        p Также, переименованы все дилерские центры, входящие в холдинг "КорсГрупп".
+                        svg.logo
+                          use(xlink:href="img/sprite.svg#logo")
+                      .calendar__up
+                        h4.calendar__caption Январь
+                      .calendar__wrap-text
+                        p Сеть дилерских центров Mitsubishi, Nissan, Volkswagen, Datsun, KIA и Hyundai в Коломне, входящих ранее в холдинг «Аванта», перешла под управление группы компаний «Автошина»
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(href="#")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(href="#")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                              
+                  .calendar__wrap.calendar-block(id="2006")
+                    span.calendar__date 2006 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p Открытие дилерского центра Ravon
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")  
+                            .calendar-gallery__block.calendar-gallery__block--more
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                              span.calendar-gallery__text Еще <span class="calendar-gallery__number">6</span> фото
+                              
+                  .calendar__wrap.calendar-block(id="2005")
+                    span.calendar__date 2005 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p 1 сентября 2018 года Группа компаний "Автошина" объявила о ребрендинге и сменила коммерческое наименование на Автомобильный холдинг "КорсГрупп". Решение обосновано необходимостью более четкого позиционирования на автомобильном рынке и ухода от узкоспециализированного наименования, имеющего ассоциацию с шинным бизнесом.
+                        p Также, переименованы все дилерские центры, входящие в холдинг "КорсГрупп".
+                        svg.logo
+                          use(xlink:href="img/sprite.svg#logo")
+                      .calendar__up
+                        h4.calendar__caption Январь
+                      .calendar__wrap-text
+                        p Сеть дилерских центров Mitsubishi, Nissan, Volkswagen, Datsun, KIA и Hyundai в Коломне, входящих ранее в холдинг «Аванта», перешла под управление группы компаний «Автошина»
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(href="#")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(href="#")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                              
+                  .calendar__wrap.calendar-block(id="2004")
+                    span.calendar__date 2004 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p Открытие дилерского центра Ravon
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")  
+                            .calendar-gallery__block.calendar-gallery__block--more
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                              span.calendar-gallery__text Еще <span class="calendar-gallery__number">6</span> фото
+                              
+                  .calendar__wrap.calendar-block(id="2000")
+                    span.calendar__date 2000 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p 1 сентября 2018 года Группа компаний "Автошина" объявила о ребрендинге и сменила коммерческое наименование на Автомобильный холдинг "КорсГрупп". Решение обосновано необходимостью более четкого позиционирования на автомобильном рынке и ухода от узкоспециализированного наименования, имеющего ассоциацию с шинным бизнесом.
+                        p Также, переименованы все дилерские центры, входящие в холдинг "КорсГрупп".
+                        svg.logo
+                          use(xlink:href="img/sprite.svg#logo")
+                      .calendar__up
+                        h4.calendar__caption Январь
+                      .calendar__wrap-text
+                        p Сеть дилерских центров Mitsubishi, Nissan, Volkswagen, Datsun, KIA и Hyundai в Коломне, входящих ранее в холдинг «Аванта», перешла под управление группы компаний «Автошина»
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(href="#")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(href="#")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                              
+                  .calendar__wrap.calendar-block(id="1999")
+                    span.calendar__date 1999 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p Открытие дилерского центра Ravon
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")  
+                            .calendar-gallery__block.calendar-gallery__block--more
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                              span.calendar-gallery__text Еще <span class="calendar-gallery__number">6</span> фото
+                              
+                  .calendar__wrap.calendar-block(id="1995")
+                    span.calendar__date 1995 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p 1 сентября 2018 года Группа компаний "Автошина" объявила о ребрендинге и сменила коммерческое наименование на Автомобильный холдинг "КорсГрупп". Решение обосновано необходимостью более четкого позиционирования на автомобильном рынке и ухода от узкоспециализированного наименования, имеющего ассоциацию с шинным бизнесом.
+                        p Также, переименованы все дилерские центры, входящие в холдинг "КорсГрупп".
+                        svg.logo
+                          use(xlink:href="img/sprite.svg#logo")
+                      .calendar__up
+                        h4.calendar__caption Январь
+                      .calendar__wrap-text
+                        p Сеть дилерских центров Mitsubishi, Nissan, Volkswagen, Datsun, KIA и Hyundai в Коломне, входящих ранее в холдинг «Аванта», перешла под управление группы компаний «Автошина»
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(href="#")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(href="#")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                              
+                  .calendar__wrap.calendar-block(id="1990")
+                    span.calendar__date 1990 год
+                    .calendar__block
+                      .calendar__up
+                        h4.calendar__caption 1 сентября
+                      .calendar__wrap-text
+                        p Открытие дилерского центра Ravon
+                        .calendar-gallery
+                          .calendar-gallery__wrapper
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                            a.calendar-gallery__block.calendar-gallery__block--none(data-fancybox="gallery2" href="img/news-img.jpg")
+                              img.calendar-gallery__img(src="img/news-img.jpg")  
+                            .calendar-gallery__block.calendar-gallery__block--more
+                              img.calendar-gallery__img(src="img/news-img.jpg")
+                              span.calendar-gallery__text Еще <span class="calendar-gallery__number">6</span> фото
+                              
+                              
+                .calendar__more ...                
+                  
+                      
+                        
+      section.developments.black-bg.padding-top.padding-bottom
+        .container
+          .developments__container
+            .row-title
+              h2.title Актуальные предложения
+            include includes/developments.pug                
+      
+      section.connect(style="background-image: url(img/connect-bg2.jpg)")
+        .container
+          .connect__container
+            .connect__block
+              .row-title
+                h2.title.title--white Подпишитесь на спецпредложения и будьте в курсе всех акций
+              a.block-btn.block-btn--white(href="#")
+                .block-btn__line.block-btn__line--top
+                .block-btn__line.block-btn__line--right
+                .block-btn__line.block-btn__line--bottom
+                .block-btn__line.block-btn__line--left
+                button.block-btn__btn Подписаться
+
+         
+            
+
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

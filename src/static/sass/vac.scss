@@ -1,0 +1,167 @@
+.vac-section {
+  padding-bottom: 39px;
+}
+
+.vac-up {
+  margin-top: 20px;
+  margin-bottom: 12px;
+
+  &__wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 48px 0;
+  }
+
+  &__block {
+    background-color: #fff;
+    max-width: 416px;
+    padding: 48px 32px 55px 0;
+
+    .title {
+      padding: 36px 0;
+
+      &::before,
+      &::after {
+        max-width: inherit;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__value {
+    font-size: 20px;
+    line-height: 24px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+  }
+
+  &__tel {
+    font-size: 12px;
+    line-height: 16px;
+    color: #0B3FC7;
+
+    &:hover {
+      color: #0B3FC7;
+    }
+
+    &:focus {
+      color: #0B3FC7;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    background-color: #112145;
+    color: #fff;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 15px 0 14px;
+    cursor: pointer;
+    margin-top: 19px;
+  }
+}
+
+.vac {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 44px;
+    column-gap: 32px;
+    padding-top: 39px;
+    border-bottom: 1px solid rgba(22, 21, 21, 0.2);
+    padding-bottom: 43px;
+    margin-bottom: 30px;
+  }
+}
+
+.vac-post {
+  display: block;
+  border-top: 1px solid rgba(22, 21, 21, 0.2);
+  padding: 25px 0 0;
+
+  &:hover {
+    .vac-post__caption {
+      color: #8E0F28;
+    }
+
+    .vac-post__link {
+      color: #8E0F28;
+    }
+
+    .vac-post__arrow {
+      stroke: #8E0F28;
+    }
+  }
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+  &__caption {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__svg {
+    fill: #112145;
+    stroke: #112145;
+    width: 12px;
+    height: 16px;
+    margin-right: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 15px;
+    color: #112145;
+    opacity: 0.5;
+    word-spacing: 3px;
+  }
+
+  &__row-link {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  &__arrow {
+    width: 6px;
+    height: 10px;
+    fill: transparent;
+    stroke: #000000;
+    margin-right: 10px;
+  }
+
+  &__link {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    transition: all 0.3s ease-in-out;
+  }
+}

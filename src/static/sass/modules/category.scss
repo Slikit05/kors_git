@@ -1,0 +1,19 @@
+.category {
+  &__container {
+    border-bottom: 1px solid rgba(41, 52, 67, 0.1);
+    margin-bottom: 28px;
+  }
+  &__wrapper {
+    padding-top: 40px;
+  }
+  &__posts {
+    padding-bottom: 15px;
+    margin-top: 48px;
+    &:first-child {
+      margin: 0;
+    }
+    &:last-child {
+      padding: 0;
+    }
+  }
+}

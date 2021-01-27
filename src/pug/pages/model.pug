@@ -1,0 +1,196 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Крос
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/mob-menu.pug
+      include includes/header-nav.pug
+      .breadcrumbs
+        .container
+          .breadcrumbs__wrapper
+            ul.breadcrumbs__list
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="#") Главная
+                svg.breadcrumbs__svg
+                  use(xlink:href="img/sprite.svg#sm-arrow-right")
+              li.breadcrumbs__item
+                span.breadcrumbs__link.breadcrumbs__link--active Акции
+      
+    main
+      .inner-up-row        
+        .container          
+          h2.inner-up-row__title Audi A3
+      .container
+        .goods.goods--change
+          .goods__wrapper
+          
+              include includes/car-posts.pug
+              include includes/car-posts.pug
+              include includes/car-posts.pug
+              include includes/car-posts.pug
+
+//            .car-posts
+//              .car-posts__up
+//                h4.car-posts__name A3
+//                span.car-posts__availability В наличии 4
+//              .car-posts__middle
+//                .car-posts__row
+//                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT
+//                img.car-posts__img(src="img/car-posts-img.png")
+//                .car-posts__flex
+//                  span.car-posts__price от 899 000 руб.
+//                  .car-posts__wrap
+//                    .favorites
+//                      svg.favorites__svg
+//                        use(xlink:href="img/sprite.svg#favorites")
+//                    .comparisons
+//                      svg.comparisons__svg
+//                          use(xlink:href="img/sprite.svg#comparisons")
+//              .car-posts__down
+//                a.block-btn.block-btn--black(href="#")
+//                  .block-btn__line.block-btn__line--top
+//                  .block-btn__line.block-btn__line--right
+//                  .block-btn__line.block-btn__line--bottom
+//                  .block-btn__line.block-btn__line--left
+//                  button.block-btn__btn в кредит от 8 590 руб./мес
+//
+//            .car-posts
+//              .car-posts__up
+//                h4.car-posts__name A3
+//                span.car-posts__availability В наличии 4
+//              .car-posts__middle
+//                .car-posts__row
+//                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT
+//                img.car-posts__img(src="img/car-posts-img.png")
+//                .car-posts__flex
+//                  span.car-posts__price от 1 150 000 руб.
+//                  .car-posts__wrap
+//                    .favorites
+//                      svg.favorites__svg
+//                        use(xlink:href="img/sprite.svg#favorites")
+//                    .comparisons
+//                      svg.comparisons__svg
+//                          use(xlink:href="img/sprite.svg#comparisons")
+//              .car-posts__down
+//                a.block-btn.block-btn--black(href="#")
+//                  .block-btn__line.block-btn__line--top
+//                  .block-btn__line.block-btn__line--right
+//                  .block-btn__line.block-btn__line--bottom
+//                  .block-btn__line.block-btn__line--left
+//                  button.block-btn__btn в кредит от 8 590 руб./мес
+//
+//            .car-posts
+//              .car-posts__up
+//                h4.car-posts__name A3
+//                span.car-posts__availability В наличии 4
+//              .car-posts__middle
+//                .car-posts__row
+//                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT
+//                img.car-posts__img(src="img/car-posts-img.png")
+//                .car-posts__flex
+//                  span.car-posts__price от 899 000 руб.
+//                  .car-posts__wrap
+//                    .favorites
+//                      svg.favorites__svg
+//                        use(xlink:href="img/sprite.svg#favorites")
+//                    .comparisons
+//                      svg.comparisons__svg
+//                          use(xlink:href="img/sprite.svg#comparisons")
+//              .car-posts__down
+//                a.block-btn.block-btn--black(href="#")
+//                  .block-btn__line.block-btn__line--top
+//                  .block-btn__line.block-btn__line--right
+//                  .block-btn__line.block-btn__line--bottom
+//                  .block-btn__line.block-btn__line--left
+//                  button.block-btn__btn в кредит от 8 590 руб./мес
+//
+//            .car-posts
+//              .car-posts__up
+//                h4.car-posts__name A3
+//                span.car-posts__availability В наличии 4
+//              .car-posts__middle
+//                .car-posts__row
+//                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT
+//                img.car-posts__img(src="img/car-posts-img.png")
+//                .car-posts__flex
+//                  span.car-posts__price от 899 000 руб.
+//                  .car-posts__wrap
+//                    .favorites
+//                      svg.favorites__svg
+//                        use(xlink:href="img/sprite.svg#favorites")
+//                    .comparisons
+//                      svg.comparisons__svg
+//                          use(xlink:href="img/sprite.svg#comparisons")
+//              .car-posts__down
+//                a.block-btn.block-btn--black(href="#")
+//                  .block-btn__line.block-btn__line--top
+//                  .block-btn__line.block-btn__line--right
+//                  .block-btn__line.block-btn__line--bottom
+//                  .block-btn__line.block-btn__line--left
+//                  button.block-btn__btn в кредит от 8 590 руб./мес
+//
+//            .car-posts
+//              .car-posts__up
+//                h4.car-posts__name A3
+//                span.car-posts__availability В наличии 4
+//              .car-posts__middle
+//                .car-posts__row
+//                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT
+//                img.car-posts__img(src="img/car-posts-img.png")
+//                .car-posts__flex
+//                  span.car-posts__price от 899 000 руб.
+//                  .car-posts__wrap
+//                    .favorites
+//                      svg.favorites__svg
+//                        use(xlink:href="img/sprite.svg#favorites")
+//                    .comparisons
+//                      svg.comparisons__svg
+//                          use(xlink:href="img/sprite.svg#comparisons")
+//              .car-posts__down
+//                a.block-btn.block-btn--black(href="#")
+//                  .block-btn__line.block-btn__line--top
+//                  .block-btn__line.block-btn__line--right
+//                  .block-btn__line.block-btn__line--bottom
+//                  .block-btn__line.block-btn__line--left
+//                  button.block-btn__btn в кредит от 8 590 руб./мес
+//
+//            .car-posts
+//              .car-posts__up
+//                h4.car-posts__name A3
+//                span.car-posts__availability В наличии 4
+//              .car-posts__middle
+//                .car-posts__row
+//                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT
+//                img.car-posts__img(src="img/car-posts-img.png")
+//                .car-posts__flex
+//                  span.car-posts__price от 899 000 руб.
+//                  .car-posts__wrap
+//                    .favorites
+//                      svg.favorites__svg
+//                        use(xlink:href="img/sprite.svg#favorites")
+//                    .comparisons
+//                      svg.comparisons__svg
+//                          use(xlink:href="img/sprite.svg#comparisons")
+//              .car-posts__down
+//                a.block-btn.block-btn--black(href="#")
+//                  .block-btn__line.block-btn__line--top
+//                  .block-btn__line.block-btn__line--right
+//                  .block-btn__line.block-btn__line--bottom
+//                  .block-btn__line.block-btn__line--left
+//                  button.block-btn__btn в кредит от 8 590 руб./мес
+          
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

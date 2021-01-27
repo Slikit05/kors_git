@@ -1,0 +1,120 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Крос
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header-nav.pug
+      .breadcrumbs
+        .container
+          .breadcrumbs__wrapper
+            ul.breadcrumbs__list
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="#") Главная
+                svg.breadcrumbs__svg
+                  use(xlink:href="img/sprite.svg#sm-arrow-right") 
+              li.breadcrumbs__item
+                span.breadcrumbs__link.breadcrumbs__link--active Сравнение
+      
+    main
+      .inner-up-row        
+        .container          
+          h2.inner-up-row__title Сравнение
+      .comparison
+        .container
+          table.comparison__table
+            tr.comparison__table-row
+              td.comparison__table-date
+                .comparison__wrap-img
+                  .comparison__flex
+                    .comparison__wrap-benefits
+                      svg.car-posts__svg-benefit
+                        use(xlink:href="img/sprite.svg#benefit")
+                      .car-posts__wrap-text
+                        span.car-posts__text-benefit выгода
+                        span.car-posts__sm-price 300 000 руб.
+                    span.comparison__close убрать
+                  img.comparison__img(src="img/comparison-car.png")
+                .comparison__row
+                  .comparison__wrap
+                    span.comparison__name Audi Q7
+                    span.comparison__old-price от 1 199 000 руб.
+                    span.comparison__price 2 610 000 руб.
+                  span.comparison__sm-price от 15 300 руб./мес.
+              td.comparison__table-date
+                .comparison__wrap-img
+                  .comparison__flex
+                    .comparison__wrap-benefits
+                      svg.car-posts__svg-benefit
+                        use(xlink:href="img/sprite.svg#benefit")
+                      .car-posts__wrap-text
+                        span.car-posts__text-benefit выгода
+                        span.car-posts__sm-price 300 000 руб.
+                    span.comparison__close убрать
+                  img.comparison__img(src="img/comparison-car.png")
+                .comparison__row
+                  .comparison__wrap
+                    span.comparison__name Audi Q7
+                    span.comparison__old-price от 1 199 000 руб.
+                    span.comparison__price 2 610 000 руб.
+                  span.comparison__sm-price от 15 300 руб./мес.
+            tr.comparison__table-row
+              td.comparison__table-date
+                span.comparison__caption Год выпуска
+                span.comparison__text 2016
+              td.comparison__table-date
+                span.comparison__text 2016
+            tr.comparison__table-row
+              td.comparison__table-date
+                span.comparison__caption Привод
+                span.comparison__text Задний
+              td.comparison__table-date
+                span.comparison__text Задний
+            tr.comparison__table-row
+              td.comparison__table-date
+                span.comparison__caption Тип КПП
+                span.comparison__text Автомат 6 ступеней
+              td.comparison__table-date
+                span.comparison__text Автомат 6 ступеней
+            tr.comparison__table-row
+              td.comparison__table-date
+                span.comparison__caption Год выпуска
+                span.comparison__text 2016
+              td.comparison__table-date
+                span.comparison__text 2016
+            tr.comparison__table-row
+              td.comparison__table-date
+                span.comparison__caption Привод
+                span.comparison__text Задний
+              td.comparison__table-date
+                span.comparison__text Задний
+            tr.comparison__table-row
+              td.comparison__table-date
+                span.comparison__caption Тип КПП
+                span.comparison__text Автомат 6 ступеней
+                a.link-sect__link(href="#") 
+                  svg.link-sect__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                  span Получить предложение
+              td.comparison__table-date
+                span.comparison__text Автомат 6 ступеней
+                a.link-sect__link(href="#") 
+                  svg.link-sect__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                  span Получить предложение
+            
+
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

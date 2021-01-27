@@ -1,0 +1,568 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Крос
+
+		include includes/link.pug
+
+	body
+		header
+			include includes/mob-menu.pug
+			include includes/header-nav.pug
+			.breadcrumbs
+				.container
+					.breadcrumbs__wrapper
+						ul.breadcrumbs__list
+							li.breadcrumbs__item
+								a.breadcrumbs__link(href="#") Главная
+								svg.breadcrumbs__svg
+									use(xlink:href="img/sprite.svg#sm-arrow-right")
+							li.breadcrumbs__item
+								a.breadcrumbs__link(href="#") Купить авто
+								svg.breadcrumbs__svg
+									use(xlink:href="img/sprite.svg#sm-arrow-right")
+							li.breadcrumbs__item
+								a.breadcrumbs__link(href="#") Авто с пробегом
+								svg.breadcrumbs__svg
+									use(xlink:href="img/sprite.svg#sm-arrow-right")    
+							li.breadcrumbs__item
+								span.breadcrumbs__link.breadcrumbs__link--active BMW X6 2018
+
+		main
+
+			section.photo-slider.swiper-container
+				.photo-slider__wrapper.swiper-wrapper
+					.photo-slider__slide.swiper-slide
+						img.photo-slider__img(src="img/photo-slider1.jpg")
+					.photo-slider__slide.swiper-slide
+						img.photo-slider__img(src="img/photo-slider2.jpg")
+					.photo-slider__slide.swiper-slide
+						img.photo-slider__img(src="img/photo-slider1.jpg")
+					.photo-slider__slide.swiper-slide
+						img.photo-slider__img(src="img/photo-slider2.jpg")
+				.photo-slider__navigation
+					.photo-slider__arrow.photo-slider__arrow--prev
+						svg.photo-slider__svg
+							use(xlink:href="img/sprite.svg#arrow")
+					.photo-slider__arrow.photo-slider__arrow--next
+						svg.photo-slider__svg
+							use(xlink:href="img/sprite.svg#arrow")
+
+			section.gray-sect
+				.container
+					.platform
+						.page-two-columns
+							.one-column
+								.model-title
+									h2.model-title__title Кроссовер BMW X6 2018
+									.model-title__block
+										span.model-title__text VIN проверен
+										.model-title__wrap
+											.model-title__wrap-svg
+												svg.model-title__svg
+													use(xlink:href="img/sprite.svg#location")
+											span.model-title__city Москва
+								.model-price-row
+									.model-price-row__wrap-price
+										span.model-price-row__old-price от 1 199 000 руб.
+										span.model-price-row__price 2 450 000 руб.
+									.model-price-row__wrap
+										.blue-btn.show_popup(rel="popup3")
+											button.blue-btn__btn В кредит от 15 000 руб/мес.
+										.block-btn.block-btn--black(href="#")
+											.block-btn__line.block-btn__line--top
+											.block-btn__line.block-btn__line--right
+											.block-btn__line.block-btn__line--bottom
+											.block-btn__line.block-btn__line--left
+											button.block-btn__btn в trade-in
+									//- .model-price-row__row
+									.model-price-row__flex-row
+										ul.model-price-row__list
+											li.model-price-row__item
+												.model-price-row__arrow
+													svg.model-price-row__svg
+														use(xlink:href="img/sprite.svg#sm-arrow-right")
+												span.model-price-row__text В Избранное
+											li.model-price-row__item
+												.model-price-row__arrow
+													svg.model-price-row__svg
+														use(xlink:href="img/sprite.svg#sm-arrow-right")
+												span.model-price-row__text Сравнить
+
+										.pay-block
+											span.pay-block__text Принимаем к оплате карты
+											.pay-block__wrapper
+												.pay-block__wrap
+													img(src="img/sim.svg" alt="")
+												.pay-block__wrap
+													img(src="img/visa.svg" alt="")
+												.pay-block__wrap
+													img(src="img/mastercard.svg" alt="")
+												.pay-block__wrap
+													img(src="img/jcb.svg" alt="")
+
+								.accordion
+
+									.accordion__row
+										h3.accordion__title Описание
+										.accordion__info
+											.accordion__wrap
+												ul.accordion__list
+													li.accordion__item
+														span.accordion__gray Марка
+														span.accordion__text BMW
+													li.accordion__item
+														span.accordion__gray Модель
+														span.accordion__text X6
+													li.accordion__item
+														span.accordion__gray Поколение
+														span.accordion__text II (F16)
+													li.accordion__item
+														span.accordion__gray Модификация
+														span.accordion__text 30d 3.0d AT (249 л.с.) 4WD
+													li.accordion__item
+														span.accordion__gray Год
+														span.accordion__text 2015
+													li.accordion__item
+														span.accordion__gray Пробег
+														span.accordion__text 27814 км
+													li.accordion__item
+														span.accordion__gray Тип кузова
+														span.accordion__text Внедорожник
+													li.accordion__item
+														span.accordion__gray Цвет
+														span.accordion__text Черный металлик
+													li.accordion__item
+														span.accordion__gray Тип двигателя
+														span.accordion__text Дизель
+													li.accordion__item
+														span.accordion__gray Объем двигателя
+														span.accordion__text 2 993 см3
+													li.accordion__item
+														span.accordion__gray КПП
+														span.accordion__text Автомат
+													li.accordion__item
+														span.accordion__gray Руль
+														span.accordion__text Левый
+													li.accordion__item
+														span.accordion__gray Привод
+														span.accordion__text Полный привод
+													li.accordion__item
+														span.accordion__gray Мощность двигателя
+														span.accordion__text 249 л.с.
+										.accordion__click
+
+									.accordion__row
+										h3.accordion__title Комфорт
+										.accordion__info
+											.accordion__wrap
+												ul.accordion__list
+													li.accordion__item
+														span.accordion__gray Марка
+														span.accordion__text BMW
+													li.accordion__item
+														span.accordion__gray Модель
+														span.accordion__text X6
+													li.accordion__item
+														span.accordion__gray Поколение
+														span.accordion__text II (F16)
+													li.accordion__item
+														span.accordion__gray Модификация
+														span.accordion__text 30d 3.0d AT (249 л.с.) 4WD
+													li.accordion__item
+														span.accordion__gray Год
+														span.accordion__text 2015
+													li.accordion__item
+														span.accordion__gray Пробег
+														span.accordion__text 27814 км
+													li.accordion__item
+														span.accordion__gray Тип кузова
+														span.accordion__text Внедорожник
+													li.accordion__item
+														span.accordion__gray Цвет
+														span.accordion__text Черный металлик
+													li.accordion__item
+														span.accordion__gray Тип двигателя
+														span.accordion__text Дизель
+													li.accordion__item
+														span.accordion__gray Объем двигателя
+														span.accordion__text 2 993 см3
+													li.accordion__item
+														span.accordion__gray КПП
+														span.accordion__text Автомат
+													li.accordion__item
+														span.accordion__gray Руль
+														span.accordion__text Левый
+													li.accordion__item
+														span.accordion__gray Привод
+														span.accordion__text Полный привод
+													li.accordion__item
+														span.accordion__gray Мощность двигателя
+														span.accordion__text 249 л.с.
+										.accordion__click
+									.accordion__row
+										h3.accordion__title Безопасность
+										.accordion__info
+											.accordion__wrap
+												ul.accordion__list
+													li.accordion__item
+														span.accordion__gray Марка
+														span.accordion__text BMW
+													li.accordion__item
+														span.accordion__gray Модель
+														span.accordion__text X6
+													li.accordion__item
+														span.accordion__gray Поколение
+														span.accordion__text II (F16)
+													li.accordion__item
+														span.accordion__gray Модификация
+														span.accordion__text 30d 3.0d AT (249 л.с.) 4WD
+													li.accordion__item
+														span.accordion__gray Год
+														span.accordion__text 2015
+													li.accordion__item
+														span.accordion__gray Пробег
+														span.accordion__text 27814 км
+													li.accordion__item
+														span.accordion__gray Тип кузова
+														span.accordion__text Внедорожник
+													li.accordion__item
+														span.accordion__gray Цвет
+														span.accordion__text Черный металлик
+													li.accordion__item
+														span.accordion__gray Тип двигателя
+														span.accordion__text Дизель
+													li.accordion__item
+														span.accordion__gray Объем двигателя
+														span.accordion__text 2 993 см3
+													li.accordion__item
+														span.accordion__gray КПП
+														span.accordion__text Автомат
+													li.accordion__item
+														span.accordion__gray Руль
+														span.accordion__text Левый
+													li.accordion__item
+														span.accordion__gray Привод
+														span.accordion__text Полный привод
+													li.accordion__item
+														span.accordion__gray Мощность двигателя
+														span.accordion__text 249 л.с.
+										.accordion__click
+
+									.accordion__row
+										h3.accordion__title Мультимедиа
+										.accordion__info
+											.accordion__wrap
+												ul.accordion__list
+													li.accordion__item
+														span.accordion__gray Марка
+														span.accordion__text BMW
+													li.accordion__item
+														span.accordion__gray Модель
+														span.accordion__text X6
+													li.accordion__item
+														span.accordion__gray Поколение
+														span.accordion__text II (F16)
+													li.accordion__item
+														span.accordion__gray Модификация
+														span.accordion__text 30d 3.0d AT (249 л.с.) 4WD
+													li.accordion__item
+														span.accordion__gray Год
+														span.accordion__text 2015
+													li.accordion__item
+														span.accordion__gray Пробег
+														span.accordion__text 27814 км
+													li.accordion__item
+														span.accordion__gray Тип кузова
+														span.accordion__text Внедорожник
+													li.accordion__item
+														span.accordion__gray Цвет
+														span.accordion__text Черный металлик
+													li.accordion__item
+														span.accordion__gray Тип двигателя
+														span.accordion__text Дизель
+													li.accordion__item
+														span.accordion__gray Объем двигателя
+														span.accordion__text 2 993 см3
+													li.accordion__item
+														span.accordion__gray КПП
+														span.accordion__text Автомат
+													li.accordion__item
+														span.accordion__gray Руль
+														span.accordion__text Левый
+													li.accordion__item
+														span.accordion__gray Привод
+														span.accordion__text Полный привод
+													li.accordion__item
+														span.accordion__gray Мощность двигателя
+														span.accordion__text 249 л.с.
+										.accordion__click
+
+									.accordion__row
+										h3.accordion__title Охранные системы
+										.accordion__info
+											.accordion__wrap
+												ul.accordion__list
+													li.accordion__item
+														span.accordion__gray Марка
+														span.accordion__text BMW
+													li.accordion__item
+														span.accordion__gray Модель
+														span.accordion__text X6
+													li.accordion__item
+														span.accordion__gray Поколение
+														span.accordion__text II (F16)
+													li.accordion__item
+														span.accordion__gray Модификация
+														span.accordion__text 30d 3.0d AT (249 л.с.) 4WD
+													li.accordion__item
+														span.accordion__gray Год
+														span.accordion__text 2015
+													li.accordion__item
+														span.accordion__gray Пробег
+														span.accordion__text 27814 км
+													li.accordion__item
+														span.accordion__gray Тип кузова
+														span.accordion__text Внедорожник
+													li.accordion__item
+														span.accordion__gray Цвет
+														span.accordion__text Черный металлик
+													li.accordion__item
+														span.accordion__gray Тип двигателя
+														span.accordion__text Дизель
+													li.accordion__item
+														span.accordion__gray Объем двигателя
+														span.accordion__text 2 993 см3
+													li.accordion__item
+														span.accordion__gray КПП
+														span.accordion__text Автомат
+													li.accordion__item
+														span.accordion__gray Руль
+														span.accordion__text Левый
+													li.accordion__item
+														span.accordion__gray Привод
+														span.accordion__text Полный привод
+													li.accordion__item
+														span.accordion__gray Мощность двигателя
+														span.accordion__text 249 л.с.
+										.accordion__click
+
+									.accordion__row
+										h3.accordion__title Дополнительное оборудование
+										.accordion__info
+											.accordion__wrap
+												ul.accordion__list
+													li.accordion__item
+														span.accordion__gray Марка
+														span.accordion__text BMW
+													li.accordion__item
+														span.accordion__gray Модель
+														span.accordion__text X6
+													li.accordion__item
+														span.accordion__gray Поколение
+														span.accordion__text II (F16)
+													li.accordion__item
+														span.accordion__gray Модификация
+														span.accordion__text 30d 3.0d AT (249 л.с.) 4WD
+													li.accordion__item
+														span.accordion__gray Год
+														span.accordion__text 2015
+													li.accordion__item
+														span.accordion__gray Пробег
+														span.accordion__text 27814 км
+													li.accordion__item
+														span.accordion__gray Тип кузова
+														span.accordion__text Внедорожник
+													li.accordion__item
+														span.accordion__gray Цвет
+														span.accordion__text Черный металлик
+													li.accordion__item
+														span.accordion__gray Тип двигателя
+														span.accordion__text Дизель
+													li.accordion__item
+														span.accordion__gray Объем двигателя
+														span.accordion__text 2 993 см3
+													li.accordion__item
+														span.accordion__gray КПП
+														span.accordion__text Автомат
+													li.accordion__item
+														span.accordion__gray Руль
+														span.accordion__text Левый
+													li.accordion__item
+														span.accordion__gray Привод
+														span.accordion__text Полный привод
+													li.accordion__item
+														span.accordion__gray Мощность двигателя
+														span.accordion__text 249 л.с.
+										.accordion__click
+
+
+							.two-column
+								.sidebar
+									.stik
+										.link-consultation
+											.link-consultation__svg
+												svg.link-consultation__svg
+													use(xlink:href="img/sprite.svg#tell")
+											.link-consultation__block
+												a.link-consultation__tel(href="tel:88007771747") 8-800-777-17-47
+												span.link-consultation__text Связь с менеджером
+											a.link-consultation__link(href="#")
+												svg.link-consultation__arrow
+													use(xlink:href="img/sprite.svg#sm-arrow-right")
+												span Получить консультацию
+
+										.quick-application
+											h3.quick-application__title Быстрая заявка
+											form.quick-application__form
+												label.quick-application__wrap
+													span.quick-application__description Ваш телефон
+													input.quick-application__field(type="tel")
+												label.checked
+													input.checked__check(type="checkbox")
+													.checked__square
+													span.checked__text Согласен (на) на обработку персональных данных
+												.blue-btn
+													button.blue-btn__btn Получить предложение
+
+			section.recommend
+				.container
+					.recommend__container
+						.row-title
+							h2.title Рекомендуем
+						.recommend__wrapper
+							a.auto-post(href="#")
+								img.auto-post__img(src="img/recommend1.jpg")
+								.auto-post__block-text
+									h3.auto-post__title Hyundai Solaris, 2016
+									span.auto-post__text 1.6 л, бензин, передний, автомат, 70 000 км.
+									.auto-post__row
+										span.auto-post__price 610 000 руб.
+										span.auto-post__payments от 15 300 руб./мес.
+							a.auto-post(href="#")
+								img.auto-post__img(src="img/recommend2.jpg")
+								.auto-post__block-text
+									h3.auto-post__title Hyundai Solaris, 2016
+									span.auto-post__text 1.6 л, бензин, передний, автомат, 70 000 км.
+									.auto-post__row
+										span.auto-post__price 610 000 руб.
+										span.auto-post__payments от 15 300 руб./мес.
+							a.auto-post(href="#")
+								img.auto-post__img(src="img/recommend3.jpg")
+								.auto-post__block-text
+									h3.auto-post__title Hyundai Solaris, 2016
+									span.auto-post__text 1.6 л, бензин, передний, автомат, 70 000 км.
+									.auto-post__row
+										span.auto-post__price 610 000 руб.
+										span.auto-post__payments от 15 300 руб./мес.
+							a.auto-post(href="#")
+								img.auto-post__img(src="img/recommend4.jpg")
+								.auto-post__block-text
+									h3.auto-post__title Hyundai Solaris, 2016
+									span.auto-post__text 1.6 л, бензин, передний, автомат, 70 000 км.
+									.auto-post__row
+										span.auto-post__price 610 000 руб.
+										span.auto-post__payments от 15 300 руб./мес.
+
+
+
+
+			section.gray-bg
+				.container
+					.gray-bg__wrapper
+						.centers
+							.row-title
+								h2.title Дилерские центры Audi
+							.centers__wrapper
+								.centers-row
+									.centers-row__left-block
+										.centers-row__row
+											img.centers-row__img(src="img/centers-img.png")
+											.centers-row__wrap
+												h3.centers-row__title Авторизованный дилерский центр Audi Тула
+												a.centers-row__link(href="mailto:")
+													.centers-row__arrow
+														svg.centers-row__svg
+															use(xlink:href="img/sprite.svg#sm-arrow-right")
+													span.centers-row__link-text www.audi-tula.ru
+									.centers-row__center-block                    
+										.centers-row__block-text
+											.centers-row__wrap-svg
+												svg.centers-row__location
+													use(xlink:href="img/sprite.svg#location")
+											span.centers-row__text 300012, г. Тула, ул. Рязанская, д. 7
+											span.centers-row__text Ежедневно с 08:00 до 21:00 без перерыва и выходных
+										a.centers-row__link(href="#")
+											.centers-row__arrow
+												svg.centers-row__svg
+													use(xlink:href="img/sprite.svg#sm-arrow-right")
+											span.centers-row__link-text Показать на карте
+									.centers-row__right-block                    
+										.centers-row__block-text
+											.centers-row__wrap-svg
+												svg.centers-row__tell
+													use(xlink:href="img/sprite.svg#tell")
+											a.centers-row__tel(href="tel:") 8-800-777-17-47
+											span.centers-row__sm-text Связь с менеджером
+										a.centers-row__link(href="#")
+											.centers-row__arrow
+												svg.centers-row__svg
+													use(xlink:href="img/sprite.svg#sm-arrow-right")
+											span.centers-row__link-text Обратный звонок
+
+								.centers-row
+									.centers-row__left-block
+										.centers-row__row
+											img.centers-row__img(src="img/centers-img.png")
+											.centers-row__wrap
+												h3.centers-row__title Авторизованный дилерский центр Audi Тула
+												a.centers-row__link(href="mailto:")
+													.centers-row__arrow
+														svg.centers-row__svg
+															use(xlink:href="img/sprite.svg#sm-arrow-right")
+													span.centers-row__link-text www.audi-tula.ru
+									.centers-row__center-block
+										.centers-row__block-text
+											.centers-row__wrap-svg
+												svg.centers-row__location
+													use(xlink:href="img/sprite.svg#location")
+											span.centers-row__text 300012, г. Тула, ул. Рязанская, д. 7
+											span.centers-row__text Ежедневно с 08:00 до 21:00 без перерыва и выходных
+										a.centers-row__link(href="#")
+											.centers-row__arrow
+												svg.centers-row__svg
+													use(xlink:href="img/sprite.svg#sm-arrow-right")
+											span.centers-row__link-text Показать на карте
+									.centers-row__right-block
+										.centers-row__block-text
+											.centers-row__wrap-svg
+												svg.centers-row__tell
+													use(xlink:href="img/sprite.svg#tell")
+											a.centers-row__tel(href="tel:") 8-800-777-17-47
+											span.centers-row__sm-text Связь с менеджером
+										a.centers-row__link(href="#")
+											.centers-row__arrow
+												svg.centers-row__svg
+													use(xlink:href="img/sprite.svg#sm-arrow-right")
+											span.centers-row__link-text Обратный звонок      
+
+
+			section.white-bg        
+				.container
+					include includes/link-sect.pug
+
+
+		footer
+			include includes/footer.pug
+
+
+
+
+		include includes/script.pug
+		script(src="js/smooth-scrollbar.js")
+		script.
+			var Scrollbar = window.Scrollbar;
+
+			Scrollbar.init(document.querySelector('.accordion-modal__area--scroll'));

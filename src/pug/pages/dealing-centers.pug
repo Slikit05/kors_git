@@ -1,0 +1,258 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Крос
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/mob-menu.pug
+      include includes/header-nav.pug
+      .breadcrumbs
+        .container
+          .breadcrumbs__wrapper
+            ul.breadcrumbs__list
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="#") Главная
+                svg.breadcrumbs__svg
+                  use(xlink:href="img/sprite.svg#sm-arrow-right")
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="#") Сервис
+                svg.breadcrumbs__svg
+                  use(xlink:href="img/sprite.svg#sm-arrow-right")
+              li.breadcrumbs__item
+                span.breadcrumbs__link.breadcrumbs__link--active Запись на сервис
+      
+    main
+      .inner-container
+        .container
+          .map.map--two
+            .map__row#map
+            .map-filter
+              h2.title Запись на сервис
+              .map-filter__wrapper
+                //.map-filter__wrap
+                  span.map-filter__description Марка
+                  .map-filter__mark-dropdown
+                    .map-filter__row
+                      span.map-filter__check
+                      .map-filter__arrow
+                        svg.map-filter__svg
+                          use(xlink:href="img/sprite.svg#sm-arrow-right")
+                .map-filter__wrap
+                  span.map-filter__description Марка
+                  select.map-filter__select#mark
+                    option(value="1") Audi
+                    option(value="2") Bmv
+                .map-filter__wrap
+                  span.map-filter__description Город
+                  select.map-filter__select#city
+                    option(value="1") Краснодар
+                    option(value="2") Москва
+                    option(value="3") Санкт-Петербург
+              .blue-btn#filterBtn
+                button.blue-btn__btn Найти сервисный центр
+          .gray-bg__wrapper
+            .centers.centers--change.centers--change-margin
+              .centers__wrapper
+
+                .centers-row.centers-row--change
+                  .centers-row__left-block
+                    .centers-row__row
+                      img.centers-row__img(src="img/centers-img.png")
+                      .centers-row__wrap
+                        a(href="#")
+                          h3.centers-row__title.centers-row__title--change Авторизованный дилерский центр Audi Тула
+                        a.block-btn.block-btn--black(href="#")
+                          .block-btn__line.block-btn__line--top
+                          .block-btn__line.block-btn__line--right
+                          .block-btn__line.block-btn__line--bottom
+                          .block-btn__line.block-btn__line--left
+                          button.block-btn__btn Записаться
+                      img.centers-row__img-centers(src="img/img-centers.jpg")    
+                  .centers-row__center-block                    
+                    .centers-row__block-text
+                      .centers-row__wrap-svg
+                        svg.centers-row__location
+                          use(xlink:href="img/sprite.svg#location")
+                      span.centers-row__text 300012, г. Тула, ул. Рязанская, д. 7
+                      span.centers-row__text Ежедневно с 08:00 до 21:00 без перерыва и выходных
+                    .centers-row__flex
+                      a.centers-row__link(href="#")
+                        .centers-row__arrow
+                          svg.centers-row__svg
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                        span.centers-row__link-text Показать на карте
+                      a.centers-row__link(href="mailto:www.audi-tula.ru")
+                          .centers-row__arrow
+                            svg.centers-row__svg
+                              use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.centers-row__link-text www.audi-tula.ru  
+                  .centers-row__right-block                    
+                    .centers-row__block-text
+                      .centers-row__wrap-svg
+                        svg.centers-row__tell
+                          use(xlink:href="img/sprite.svg#tell")
+                      a.centers-row__tel(href="tel:") 8-800-777-17-47
+                      span.centers-row__sm-text Связь с менеджером
+                    a.centers-row__link(href="#")
+                      .centers-row__arrow
+                        svg.centers-row__svg
+                          use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span.centers-row__link-text Обратный звонок
+
+                .centers-row.centers-row--change
+                  .centers-row__left-block
+                    .centers-row__row
+                      img.centers-row__img(src="img/centers-img.png")
+                      .centers-row__wrap
+                        a(href="#")
+                          h3.centers-row__title.centers-row__title--change Авторизованный дилерский центр
+                        a.block-btn.block-btn--black(href="#")
+                          .block-btn__line.block-btn__line--top
+                          .block-btn__line.block-btn__line--right
+                          .block-btn__line.block-btn__line--bottom
+                          .block-btn__line.block-btn__line--left
+                          button.block-btn__btn Записаться
+                      img.centers-row__img-centers(src="img/img-centers.jpg")    
+                  .centers-row__center-block
+                    .centers-row__block-text
+                      .centers-row__wrap-svg
+                        svg.centers-row__location
+                          use(xlink:href="img/sprite.svg#location")
+                      span.centers-row__text 300012, г. Тула, ул. Рязанская, д. 7
+                      span.centers-row__text Ежедневно с 08:00 до 21:00 без перерыва и выходных
+                    .centers-row__flex
+                      a.centers-row__link(href="#")
+                        .centers-row__arrow
+                          svg.centers-row__svg
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                        span.centers-row__link-text Показать на карте
+                      a.centers-row__link(href="mailto:www.audi-tula.ru")
+                          .centers-row__arrow
+                            svg.centers-row__svg
+                              use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.centers-row__link-text www.audi-tula.ru  
+                  .centers-row__right-block
+                    .centers-row__block-text
+                      .centers-row__wrap-svg
+                        svg.centers-row__tell
+                          use(xlink:href="img/sprite.svg#tell")
+                      a.centers-row__tel(href="tel:") 8-800-777-17-47
+                      span.centers-row__sm-text Связь с менеджером
+                    a.centers-row__link(href="#")
+                      .centers-row__arrow
+                        svg.centers-row__svg
+                          use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span.centers-row__link-text Обратный звонок
+
+                .centers-row.centers-row--change
+                  .centers-row__left-block
+                    .centers-row__row
+                      img.centers-row__img(src="img/centers-img.png")
+                      .centers-row__wrap
+                        a(href="#")
+                          h3.centers-row__title.centers-row__title--change Авторизованный дилерский центр Audi Тула
+                        a.block-btn.block-btn--black(href="#")
+                          .block-btn__line.block-btn__line--top
+                          .block-btn__line.block-btn__line--right
+                          .block-btn__line.block-btn__line--bottom
+                          .block-btn__line.block-btn__line--left
+                          button.block-btn__btn Записаться
+                      img.centers-row__img-centers(src="img/img-centers.jpg")    
+                  .centers-row__center-block
+                    .centers-row__block-text
+                      .centers-row__wrap-svg
+                        svg.centers-row__location
+                          use(xlink:href="img/sprite.svg#location")
+                      span.centers-row__text 300012, г. Тула, ул. Рязанская, д. 7
+                      span.centers-row__text Ежедневно с 08:00 до 21:00 без перерыва и выходных
+                    .centers-row__flex
+                      a.centers-row__link(href="#")
+                        .centers-row__arrow
+                          svg.centers-row__svg
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                        span.centers-row__link-text Показать на карте
+                      a.centers-row__link(href="mailto:www.audi-tula.ru")
+                          .centers-row__arrow
+                            svg.centers-row__svg
+                              use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.centers-row__link-text www.audi-tula.ru  
+                  .centers-row__right-block
+                    .centers-row__block-text
+                      .centers-row__wrap-svg
+                        svg.centers-row__tell
+                          use(xlink:href="img/sprite.svg#tell")
+                      a.centers-row__tel(href="tel:") 8-800-777-17-47
+                      span.centers-row__sm-text Связь с менеджером
+                    a.centers-row__link(href="#")
+                      .centers-row__arrow
+                        svg.centers-row__svg
+                          use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span.centers-row__link-text Обратный звонок
+
+                .centers-row.centers-row--change
+                  .centers-row__left-block
+                    .centers-row__row
+                      img.centers-row__img(src="img/centers-img.png")
+                      .centers-row__wrap
+                        a(href="#")
+                          h3.centers-row__title.centers-row__title--change Авторизованный дилерский 
+                        a.block-btn.block-btn--black(href="#")
+                          .block-btn__line.block-btn__line--top
+                          .block-btn__line.block-btn__line--right
+                          .block-btn__line.block-btn__line--bottom
+                          .block-btn__line.block-btn__line--left
+                          button.block-btn__btn Записаться
+                      img.centers-row__img-centers(src="img/img-centers.jpg")    
+                  .centers-row__center-block
+                    .centers-row__block-text
+                      .centers-row__wrap-svg
+                        svg.centers-row__location
+                          use(xlink:href="img/sprite.svg#location")
+                      span.centers-row__text 300012, г. Тула, ул. Рязанская, д. 7
+                      span.centers-row__text Ежедневно с 08:00 до 21:00 без перерыва и выходных
+                    .centers-row__flex
+                      a.centers-row__link(href="#")
+                        .centers-row__arrow
+                          svg.centers-row__svg
+                            use(xlink:href="img/sprite.svg#sm-arrow-right")
+                        span.centers-row__link-text Показать на карте
+                      a.centers-row__link(href="mailto:www.audi-tula.ru")
+                          .centers-row__arrow
+                            svg.centers-row__svg
+                              use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.centers-row__link-text www.audi-tula.ru  
+                  .centers-row__right-block
+                    .centers-row__block-text
+                      .centers-row__wrap-svg
+                        svg.centers-row__tell
+                          use(xlink:href="img/sprite.svg#tell")
+                      a.centers-row__tel(href="tel:") 8-800-777-17-47
+                      span.centers-row__sm-text Связь с менеджером
+                    a.centers-row__link(href="#")
+                      .centers-row__arrow
+                        svg.centers-row__svg
+                          use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span.centers-row__link-text Обратный звонок
+
+
+            .banner
+              .banner__wrapper(style="background-image: url(img/banner2.jpg)")
+                .banner__block
+                  h3.banner__title Выгодный Trade-In
+                  span.banner__text Авто доступнее, чем прежде!
+          
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug
+    script(src="js/dealer-centres.js")

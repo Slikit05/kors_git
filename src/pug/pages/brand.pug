@@ -1,0 +1,360 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Крос
+    
+    include includes/link.pug
+    
+  body
+    header
+      .header-bg(style="background-image: url(img/brand-bg.jpg)")
+        include includes/header-nav.pug
+        .breadcrumbs.breadcrumbs--white
+          .container
+            .breadcrumbs__wrapper
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                  svg.breadcrumbs__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Купить авто
+                  svg.breadcrumbs__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Авто с пробегом
+                  svg.breadcrumbs__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active BMW X6 2018
+        h2.header-bg__row-title
+          .container
+            h2.header-bg__title Audi. Добро пожаловать в восьмое измерение 
+      
+    main.main-change
+      .container
+        .platform
+          .link-sect
+            .link-sect__wrapper
+              .link-sect__block
+                .link-sect__wrap
+                  .link-sect__wrap-svg
+                    svg.link-sect__svg-icon
+                      use(xlink:href="img/sprite.svg#car")
+                  h4.link-sect__caption 56 автомобилей в наличии и под заказ
+
+              .link-sect__block
+                .link-sect__wrap
+                  .link-sect__wrap-svg
+                    svg.link-sect__svg-icon
+                      use(xlink:href="img/sprite.svg#rudder")
+                  h4.link-sect__caption Тест-драйв в удобное для вас время
+                a.link-sect__link(href="#") 
+                  svg.link-sect__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                  span Записаться на тест-драйв
+
+              .link-sect__block
+                .link-sect__wrap
+                  .link-sect__wrap-svg
+                    svg.link-sect__svg-icon
+                      use(xlink:href="img/sprite.svg#wallet")
+                  h4.link-sect__caption Выгодный Trade-In и кредит от<br> 12%
+                a.link-sect__link(href="#") 
+                  svg.link-sect__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                  span Подробнее
+
+              .link-sect__block
+                .link-sect__wrap
+                  .link-sect__wrap-svg
+                    svg.link-sect__svg-icon
+                      use(xlink:href="img/sprite.svg#pistons")
+                  h4.link-sect__caption 4 года сервисного обслуживания&nbsp;в дилерских центрах
+
+        .goods
+          .goods__wrapper
+            
+            include includes/car-posts.pug
+            include includes/car-posts.pug
+            include includes/car-posts.pug
+            
+            include includes/car-posts.pug            
+            include includes/car-posts.pug
+            include includes/car-posts.pug
+
+//            .car-posts
+//              .car-posts__up
+//                h4.car-posts__name A3
+//                span.car-posts__availability В наличии 4
+//              .car-posts__middle
+//                .car-posts__row
+//                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT
+//                img.car-posts__img(src="img/car-posts-img.png")
+//                .car-posts__flex
+//                  span.car-posts__price от 899 000 руб.
+//                  .car-posts__wrap
+//                    .favorites
+//                      svg.favorites__svg
+//                        use(xlink:href="img/sprite.svg#favorites")
+//                    .comparisons
+//                      svg.comparisons__svg
+//                          use(xlink:href="img/sprite.svg#comparisons")
+//              .car-posts__down
+//                a.block-btn.block-btn--black(href="#")
+//                  .block-btn__line.block-btn__line--top
+//                  .block-btn__line.block-btn__line--right
+//                  .block-btn__line.block-btn__line--bottom
+//                  .block-btn__line.block-btn__line--left
+//                  button.block-btn__btn в кредит от 8 590 руб./мес
+//
+//            .car-posts
+//              .car-posts__up
+//                h4.car-posts__name A3
+//                span.car-posts__availability В наличии 4
+//              .car-posts__middle
+//                .car-posts__row
+//                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT
+//                img.car-posts__img(src="img/car-posts-img.png")
+//                .car-posts__flex
+//                  span.car-posts__price от 1 150 000 руб.
+//                  .car-posts__wrap
+//                    .favorites
+//                      svg.favorites__svg
+//                        use(xlink:href="img/sprite.svg#favorites")
+//                    .comparisons
+//                      svg.comparisons__svg
+//                          use(xlink:href="img/sprite.svg#comparisons")
+//              .car-posts__down
+//                a.block-btn.block-btn--black(href="#")
+//                  .block-btn__line.block-btn__line--top
+//                  .block-btn__line.block-btn__line--right
+//                  .block-btn__line.block-btn__line--bottom
+//                  .block-btn__line.block-btn__line--left
+//                  button.block-btn__btn в кредит от 8 590 руб./мес
+//
+//            .car-posts
+//              .car-posts__up
+//                h4.car-posts__name A3
+//                span.car-posts__availability В наличии 4
+//              .car-posts__middle
+//                .car-posts__row
+//                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT
+//                img.car-posts__img(src="img/car-posts-img.png")
+//                .car-posts__flex
+//                  span.car-posts__price от 899 000 руб.
+//                  .car-posts__wrap
+//                    .favorites
+//                      svg.favorites__svg
+//                        use(xlink:href="img/sprite.svg#favorites")
+//                    .comparisons
+//                      svg.comparisons__svg
+//                          use(xlink:href="img/sprite.svg#comparisons")
+//              .car-posts__down
+//                a.block-btn.block-btn--black(href="#")
+//                  .block-btn__line.block-btn__line--top
+//                  .block-btn__line.block-btn__line--right
+//                  .block-btn__line.block-btn__line--bottom
+//                  .block-btn__line.block-btn__line--left
+//                  button.block-btn__btn в кредит от 8 590 руб./мес
+//
+//            .car-posts
+//              .car-posts__up
+//                h4.car-posts__name A3
+//                span.car-posts__availability В наличии 4
+//              .car-posts__middle
+//                .car-posts__row
+//                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT
+//                img.car-posts__img(src="img/car-posts-img.png")
+//                .car-posts__flex
+//                  span.car-posts__price от 899 000 руб.
+//                  .car-posts__wrap
+//                    .favorites
+//                      svg.favorites__svg
+//                        use(xlink:href="img/sprite.svg#favorites")
+//                    .comparisons
+//                      svg.comparisons__svg
+//                          use(xlink:href="img/sprite.svg#comparisons")
+//              .car-posts__down
+//                a.block-btn.block-btn--black(href="#")
+//                  .block-btn__line.block-btn__line--top
+//                  .block-btn__line.block-btn__line--right
+//                  .block-btn__line.block-btn__line--bottom
+//                  .block-btn__line.block-btn__line--left
+//                  button.block-btn__btn в кредит от 8 590 руб./мес
+//
+//            .car-posts
+//              .car-posts__up
+//                h4.car-posts__name A3
+//                span.car-posts__availability В наличии 4
+//              .car-posts__middle
+//                .car-posts__row
+//                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT
+//                img.car-posts__img(src="img/car-posts-img.png")
+//                .car-posts__flex
+//                  span.car-posts__price от 899 000 руб.
+//                  .car-posts__wrap
+//                    .favorites
+//                      svg.favorites__svg
+//                        use(xlink:href="img/sprite.svg#favorites")
+//                    .comparisons
+//                      svg.comparisons__svg
+//                          use(xlink:href="img/sprite.svg#comparisons")
+//              .car-posts__down
+//                a.block-btn.block-btn--black(href="#")
+//                  .block-btn__line.block-btn__line--top
+//                  .block-btn__line.block-btn__line--right
+//                  .block-btn__line.block-btn__line--bottom
+//                  .block-btn__line.block-btn__line--left
+//                  button.block-btn__btn в кредит от 8 590 руб./мес
+//
+//            .car-posts
+//              .car-posts__up
+//                h4.car-posts__name A3
+//                span.car-posts__availability В наличии 4
+//              .car-posts__middle
+//                .car-posts__row
+//                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT
+//                img.car-posts__img(src="img/car-posts-img.png")
+//                .car-posts__flex
+//                  span.car-posts__price от 899 000 руб.
+//                  .car-posts__wrap
+//                    .favorites
+//                      svg.favorites__svg
+//                        use(xlink:href="img/sprite.svg#favorites")
+//                    .comparisons
+//                      svg.comparisons__svg
+//                          use(xlink:href="img/sprite.svg#comparisons")
+//              .car-posts__down
+//                a.block-btn.block-btn--black(href="#")
+//                  .block-btn__line.block-btn__line--top
+//                  .block-btn__line.block-btn__line--right
+//                  .block-btn__line.block-btn__line--bottom
+//                  .block-btn__line.block-btn__line--left
+//                  button.block-btn__btn в кредит от 8 590 руб./мес
+                    
+      section.row-arrow
+        .row-arrow__container
+          .container
+            .row-arrow__wrapper
+              .row-arrow__block
+                span.row-arrow__text Смотреть все
+                a.arrow-to-scroll.arrow-to-scroll--black(href="")
+                  svg.arrow-to-scroll__arrow
+                    use(xlink:href="img/sprite.svg#arrow-scroll")
+                  .arrow-to-scroll__wrap
+                    svg.arrow-to-scroll__line
+                      use(xlink:href="img/sprite.svg#line")
+                    
+      section.developments.black-bg.padding-top.padding-bottom
+        .container
+          .developments__container
+            .row-title
+              h2.title Актуальные предложения от Audi
+            include includes/developments.pug
+      
+      section.connect(style="background-image: url(img/connect-bg2.jpg)")
+        .container
+          .connect__container
+            .connect__block
+              .row-title
+                h2.title.title--white Подпишитесь на спецпредложения и будьте в курсе всех акций
+              a.block-btn.block-btn--white(href="#")
+                .block-btn__line.block-btn__line--top
+                .block-btn__line.block-btn__line--right
+                .block-btn__line.block-btn__line--bottom
+                .block-btn__line.block-btn__line--left
+                button.block-btn__btn Подписаться
+
+      section.gray-bg
+        .container
+          .gray-bg__wrapper
+            .centers
+              .row-title
+                h2.title Дилерские центры Audi
+              .centers__wrapper
+              
+                .centers-row
+                  .centers-row__left-block
+                    .centers-row__row
+                      img.centers-row__img(src="img/centers-img.png")
+                      .centers-row__wrap
+                        h3.centers-row__title Авторизованный дилерский центр Audi Тула
+                        a.centers-row__link(href="mailto:")
+                          .centers-row__arrow
+                            svg.centers-row__svg
+                              use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.centers-row__link-text www.audi-tula.ru
+                  .centers-row__center-block                    
+                    .centers-row__block-text
+                      .centers-row__wrap-svg
+                        svg.centers-row__location
+                          use(xlink:href="img/sprite.svg#location")
+                      span.centers-row__text 300012, г. Тула, ул. Рязанская, д. 7
+                      span.centers-row__text Ежедневно с 08:00 до 21:00 без перерыва и выходных
+                    a.centers-row__link(href="#")
+                      .centers-row__arrow
+                        svg.centers-row__svg
+                          use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span.centers-row__link-text Показать на карте
+                  .centers-row__right-block                    
+                    .centers-row__block-text
+                      .centers-row__wrap-svg
+                        svg.centers-row__tell
+                          use(xlink:href="img/sprite.svg#tell")
+                      a.centers-row__tel(href="tel:") 8-800-777-17-47
+                      span.centers-row__sm-text Связь с менеджером
+                    a.centers-row__link(href="#")
+                      .centers-row__arrow
+                        svg.centers-row__svg
+                          use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span.centers-row__link-text Обратный звонок
+                      
+                .centers-row
+                  .centers-row__left-block
+                    .centers-row__row
+                      img.centers-row__img(src="img/centers-img.png")
+                      .centers-row__wrap
+                        h3.centers-row__title Авторизованный дилерский центр Audi Тула
+                        a.centers-row__link(href="mailto:")
+                          .centers-row__arrow
+                            svg.centers-row__svg
+                              use(xlink:href="img/sprite.svg#sm-arrow-right")
+                          span.centers-row__link-text www.audi-tula.ru
+                  .centers-row__center-block
+                    .centers-row__block-text
+                      .centers-row__wrap-svg
+                        svg.centers-row__location
+                          use(xlink:href="img/sprite.svg#location")
+                      span.centers-row__text 300012, г. Тула, ул. Рязанская, д. 7
+                      span.centers-row__text Ежедневно с 08:00 до 21:00 без перерыва и выходных
+                    a.centers-row__link(href="#")
+                      .centers-row__arrow
+                        svg.centers-row__svg
+                          use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span.centers-row__link-text Показать на карте
+                  .centers-row__right-block
+                    .centers-row__block-text
+                      .centers-row__wrap-svg
+                        svg.centers-row__tell
+                          use(xlink:href="img/sprite.svg#tell")
+                      a.centers-row__tel(href="tel:") 8-800-777-17-47
+                      span.centers-row__sm-text Связь с менеджером
+                    a.centers-row__link(href="#")
+                      .centers-row__arrow
+                        svg.centers-row__svg
+                          use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span.centers-row__link-text Обратный звонок    
+            
+
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

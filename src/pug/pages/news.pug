@@ -1,0 +1,152 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Крос
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/mob-menu.pug
+      include includes/header-nav.pug
+      .breadcrumbs
+        .container
+          .breadcrumbs__wrapper
+            ul.breadcrumbs__list
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="#") Главная
+                svg.breadcrumbs__svg
+                  use(xlink:href="img/sprite.svg#sm-arrow-right")
+              li.breadcrumbs__item
+                span.breadcrumbs__link.breadcrumbs__link--active События
+      
+    main
+      .inner-up-row        
+        .container          
+          h2.inner-up-row__title События
+      .category
+        .container
+          .page-two-columns
+            .one-column
+              .news-up              
+                .developments__block.developments__block--big
+                  .developments__wrap-img
+                    img.developments__img(src="img/developments-one.jpg")
+                  .developments__wrap
+                    .developments__block-text
+                      span.developments__text Выгода до 250 000 руб.
+                      h3.developments__caption Новый Audi Q8. Добро пожаловать в&nbsp;восьмое измерение
+                    .developments__wrap-btn
+                      a.block-btn.block-btn--white(href="#")
+                        .block-btn__line.block-btn__line--top
+                        .block-btn__line.block-btn__line--right
+                        .block-btn__line.block-btn__line--bottom
+                        .block-btn__line.block-btn__line--left
+                        button.block-btn__btn Подробнее
+                        
+                .developments__block.developments__block--big
+                  .developments__wrap-img
+                    img.developments__img(src="img/developments-three.jpg")
+                  .developments__wrap
+                    .developments__block-text
+                      h3.developments__caption Автомобиль с тест-драйва в максимальной комплектации по выгодной цене
+                    .developments__wrap-btn
+                      a.block-btn.block-btn--white(href="#")
+                        .block-btn__line.block-btn__line--top
+                        .block-btn__line.block-btn__line--right
+                        .block-btn__line.block-btn__line--bottom
+                        .block-btn__line.block-btn__line--left
+                        button.block-btn__btn Подробнее
+                        
+              .news-content
+                .news-content__wrapper
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                  include includes/news-post.pug
+                    
+
+              .pagination
+                .pagination__wrapper
+                  .pagination__block
+                    .pagination__wrap-svg
+                      svg.pagination__svg
+                        use(xlink:href="img/sprite.svg#sm-arrow-right")
+                    span.pagination__text Предыдущая
+                  ul.pagination__list
+                    li.pagination__item
+                      a.pagination__link(href="#") 1
+                    li.pagination__item
+                      a.pagination__link.pagination__link--active(href="#") 2
+                    li.pagination__item
+                      a.pagination__link(href="#") 3
+                    li.pagination__item
+                      a.pagination__link(href="#") 4
+                    li.pagination__item
+                      a.pagination__link(href="#") 5
+                    li.pagination__item
+                      a.pagination__link(href="#") 6
+                    li.pagination__item
+                      a.pagination__link(href="#") 7
+                    li.pagination__item
+                      a.pagination__link(href="#") 8
+                    li.pagination__item
+                      a.pagination__link(href="#") 9
+                    li.pagination__item
+                      span.pagination__link.pagination__link--dots ...
+                    li.pagination__item
+                      a.pagination__link(href="#") 17
+                  .pagination__block
+                    span.pagination__text Следующая
+                    .pagination__wrap-svg
+                      svg.pagination__svg
+                        use(xlink:href="img/sprite.svg#sm-arrow-right")
+                
+                  
+                        
+            .two-column
+              .sidebar
+                .stik
+                  .link-consultation
+                    .link-consultation__svg
+                      svg.link-consultation__svg
+                        use(xlink:href="img/sprite.svg#tell")  
+                    .link-consultation__block
+                      a.link-consultation__tel(href="tel:88007771747") 8-800-777-17-47
+                      span.link-consultation__text Связь с менеджером
+                    a.link-consultation__link(href="#")
+                      svg.link-consultation__arrow
+                        use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span Получить консультацию
+              
+      section.gray-bg
+        .container
+          .gray-bg__wrapper
+            include includes/link-sect.pug
+            .row-text
+              h5 Заголовок SEO-текста для продвижения и поисковых роботов
+              p Гидродинамический удар выталкивает торсионный пульсар в полном соответствии с законом сохранения энергии. Очевидно, что химическое соединение возбуждает тахионный объект, при этом дефект массы не образуется. Тело трансформирует плоскополяризованный взрыв только в отсутствие тепло- и массообмена с окружающей средой. Лептон отклоняет фотон. Экситон переворачивает разрыв. Химическое соединение зеркально отталкивает квант. Бозе-конденсат, как следует из совокупности экспериментальных наблюдений, конфокально возбуждает плоскополяризованный солитон. Волна возбуждает экситон. Пульсар притягивает элементарный фонон. Течение среды переворачивает квазар. 
+              p Экситон, как того требуют законы термодинамики, растягивает тахионный фонон, однозначно свидетельствуя о неустойчивости процесса в целом. Электрон конфокально индуцирует расширяющийся кварк одинаково по всем направлениям. Если предварительно подвергнуть объекты длительному вакуумированию, то зеркало искажает объект, и это неудивительно, если вспомнить квантовый характер явления.я
+          
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

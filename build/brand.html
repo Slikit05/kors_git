@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Крос</title>
+    <link rel="stylesheet" type="text/css" href="css/normalise.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-bg" style="background-image: url(img/brand-bg.jpg)">
+        <section class="wrap-up-row wrap-up-row--inner">
+          <section class="up-row up-row--inner">
+            <div class="up-row__container">
+              <div class="container">
+                <div class="up-row__wrapper">
+                  <div class="up-row__left-block">
+                    <div class="city-change show_popup" rel="city-modal">
+                      <div class="city-change__wrap-svg">
+                        <svg class="city-change__svg">
+                          <use xlink:href="img/sprite.svg#location"></use>
+                        </svg>
+                      </div><span class="city-change__text">Коломна</span>
+                    </div><a class="up-row__tel" href="tel:88007771747">8 800-777-17-47</a>
+                  </div>
+                  <div class="up-row__right-block">
+                    <ul class="up-row__list">
+                      <li class="up-row__item"><a class="up-row__link" href="#">Дилерские центры</a></li>
+                      <li class="up-row__item"><a class="up-row__link" href="#">Новости</a></li>
+                      <li class="up-row__item"><a class="up-row__link" href="#">Корпоративным клиентам</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-middle">
+              <div class="container">
+                <div class="header-middle__wrapper">
+                  <div class="header-middle__left-block"><a href="index.html">
+                      <svg class="logo">
+                        <use xlink:href="img/sprite.svg#logo"></use>
+                      </svg>
+                      <svg class="logo logo--none">
+                        <use xlink:href="img/sprite.svg#logo-mob"> </use>
+                      </svg></a></div>
+                  <div class="header-middle__center-block">
+                    <div class="nav">
+                      <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Купить авто</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Продать авто</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Сервис</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Услуги</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Акции</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">О компании</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Мобильное приложение</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="header-middle__right-block">
+                    <div class="favorites">
+                      <div class="circle-number">12</div>
+                      <svg class="favorites__svg">
+                        <use xlink:href="img/sprite.svg#favorites"></use>
+                      </svg>
+                    </div>
+                    <div class="comparisons">
+                      <div class="circle-number">12</div>
+                      <svg class="comparisons__svg">
+                        <use xlink:href="img/sprite.svg#comparisons"></use>
+                      </svg>
+                    </div>
+                    <div class="burger">
+                      <div class="burger__line burger__line--one"></div>
+                      <div class="burger__line burger__line--two"></div>
+                      <div class="burger__line burger__line--three"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <div class="breadcrumbs breadcrumbs--white">
+          <div class="container">
+            <div class="breadcrumbs__wrapper">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a>
+                  <svg class="breadcrumbs__svg">
+                    <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                  </svg>
+                </li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Купить авто</a>
+                  <svg class="breadcrumbs__svg">
+                    <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                  </svg>
+                </li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Авто с пробегом</a>
+                  <svg class="breadcrumbs__svg">
+                    <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                  </svg>
+                </li>
+                <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link--active">BMW X6 2018</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <h2 class="header-bg__row-title">
+          <div class="container">
+            <h2 class="header-bg__title">Audi. Добро пожаловать в восьмое измерение </h2>
+          </div>
+        </h2>
+      </div>
+    </header>
+    <main class="main-change">
+      <div class="container">
+        <div class="platform">
+          <div class="link-sect">
+            <div class="link-sect__wrapper">
+              <div class="link-sect__block">
+                <div class="link-sect__wrap">
+                  <div class="link-sect__wrap-svg">
+                    <svg class="link-sect__svg-icon">
+                      <use xlink:href="img/sprite.svg#car"></use>
+                    </svg>
+                  </div>
+                  <h4 class="link-sect__caption">56 автомобилей в наличии и под заказ</h4>
+                </div>
+              </div>
+              <div class="link-sect__block">
+                <div class="link-sect__wrap">
+                  <div class="link-sect__wrap-svg">
+                    <svg class="link-sect__svg-icon">
+                      <use xlink:href="img/sprite.svg#rudder"></use>
+                    </svg>
+                  </div>
+                  <h4 class="link-sect__caption">Тест-драйв в удобное для вас время</h4>
+                </div><a class="link-sect__link" href="#"> 
+                  <svg class="link-sect__svg">
+                    <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                  </svg><span>Записаться на тест-драйв</span></a>
+              </div>
+              <div class="link-sect__block">
+                <div class="link-sect__wrap">
+                  <div class="link-sect__wrap-svg">
+                    <svg class="link-sect__svg-icon">
+                      <use xlink:href="img/sprite.svg#wallet"></use>
+                    </svg>
+                  </div>
+                  <h4 class="link-sect__caption">Выгодный Trade-In и кредит от<br> 12%</h4>
+                </div><a class="link-sect__link" href="#"> 
+                  <svg class="link-sect__svg">
+                    <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                  </svg><span>Подробнее</span></a>
+              </div>
+              <div class="link-sect__block">
+                <div class="link-sect__wrap">
+                  <div class="link-sect__wrap-svg">
+                    <svg class="link-sect__svg-icon">
+                      <use xlink:href="img/sprite.svg#pistons"></use>
+                    </svg>
+                  </div>
+                  <h4 class="link-sect__caption">4 года сервисного обслуживания&nbsp;в дилерских центрах</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="goods">
+          <div class="goods__wrapper">
+            <div class="car-posts">
+              <div class="car-posts__up">
+                <h4 class="car-posts__name">A3</h4><span class="car-posts__availability">В наличии 4</span>
+              </div>
+              <div class="car-posts__middle">
+                <div class="car-posts__row"><span class="car-posts__text">АИ / 1,8  / 160 л.с / FWD / CVT</span>
+                  <div class="car-posts__wrap">
+                    <div class="favorites">
+                      <svg class="favorites__svg">
+                        <use xlink:href="img/sprite.svg#favorites"></use>
+                      </svg>
+                    </div>
+                    <div class="comparisons">
+                      <svg class="comparisons__svg">
+                        <use xlink:href="img/sprite.svg#comparisons"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div><img class="car-posts__img" src="img/car-posts-img.png">
+                <div class="car-posts__flex">
+                  <div class="car-posts__wrap-price"><span class="car-posts__old-price">от 1 199 000 руб.</span><span class="car-posts__price">от 899 000 руб.</span></div>
+                  <div class="car-posts__benefit-block">
+                    <svg class="car-posts__svg-benefit">
+                      <use xlink:href="img/sprite.svg#benefit"></use>
+                    </svg>
+                    <div class="car-posts__wrap-text"><span class="car-posts__text-benefit">выгода</span><span class="car-posts__sm-price">300 000 руб.</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="car-posts__down"><a class="block-btn block-btn--black" href="#">
+                  <div class="block-btn__line block-btn__line--top"></div>
+                  <div class="block-btn__line block-btn__line--right"></div>
+                  <div class="block-btn__line block-btn__line--bottom"></div>
+                  <div class="block-btn__line block-btn__line--left"></div>
+                  <button class="block-btn__btn">в кредит от 8 590 руб./мес</button></a></div>
+            </div>
+            <div class="car-posts">
+              <div class="car-posts__up">
+                <h4 class="car-posts__name">A3</h4><span class="car-posts__availability">В наличии 4</span>
+              </div>
+              <div class="car-posts__middle">
+                <div class="car-posts__row"><span class="car-posts__text">АИ / 1,8  / 160 л.с / FWD / CVT</span>
+                  <div class="car-posts__wrap">
+                    <div class="favorites">
+                      <svg class="favorites__svg">
+                        <use xlink:href="img/sprite.svg#favorites"></use>
+                      </svg>
+                    </div>
+                    <div class="comparisons">
+                      <svg class="comparisons__svg">
+                        <use xlink:href="img/sprite.svg#comparisons"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div><img class="car-posts__img" src="img/car-posts-img.png">
+                <div class="car-posts__flex">
+                  <div class="car-posts__wrap-price"><span class="car-posts__old-price">от 1 199 000 руб.</span><span class="car-posts__price">от 899 000 руб.</span></div>
+                  <div class="car-posts__benefit-block">
+                    <svg class="car-posts__svg-benefit">
+                      <use xlink:href="img/sprite.svg#benefit"></use>
+                    </svg>
+                    <div class="car-posts__wrap-text"><span class="car-posts__text-benefit">выгода</span><span class="car-posts__sm-price">300 000 руб.</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="car-posts__down"><a class="block-btn block-btn--black" href="#">
+                  <div class="block-btn__line block-btn__line--top"></div>
+                  <div class="block-btn__line block-btn__line--right"></div>
+                  <div class="block-btn__line block-btn__line--bottom"></div>
+                  <div class="block-btn__line block-btn__line--left"></div>
+                  <button class="block-btn__btn">в кредит от 8 590 руб./мес</button></a></div>
+            </div>
+            <div class="car-posts">
+              <div class="car-posts__up">
+                <h4 class="car-posts__name">A3</h4><span class="car-posts__availability">В наличии 4</span>
+              </div>
+              <div class="car-posts__middle">
+                <div class="car-posts__row"><span class="car-posts__text">АИ / 1,8  / 160 л.с / FWD / CVT</span>
+                  <div class="car-posts__wrap">
+                    <div class="favorites">
+                      <svg class="favorites__svg">
+                        <use xlink:href="img/sprite.svg#favorites"></use>
+                      </svg>
+                    </div>
+                    <div class="comparisons">
+                      <svg class="comparisons__svg">
+                        <use xlink:href="img/sprite.svg#comparisons"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div><img class="car-posts__img" src="img/car-posts-img.png">
+                <div class="car-posts__flex">
+                  <div class="car-posts__wrap-price"><span class="car-posts__old-price">от 1 199 000 руб.</span><span class="car-posts__price">от 899 000 руб.</span></div>
+                  <div class="car-posts__benefit-block">
+                    <svg class="car-posts__svg-benefit">
+                      <use xlink:href="img/sprite.svg#benefit"></use>
+                    </svg>
+                    <div class="car-posts__wrap-text"><span class="car-posts__text-benefit">выгода</span><span class="car-posts__sm-price">300 000 руб.</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="car-posts__down"><a class="block-btn block-btn--black" href="#">
+                  <div class="block-btn__line block-btn__line--top"></div>
+                  <div class="block-btn__line block-btn__line--right"></div>
+                  <div class="block-btn__line block-btn__line--bottom"></div>
+                  <div class="block-btn__line block-btn__line--left"></div>
+                  <button class="block-btn__btn">в кредит от 8 590 руб./мес</button></a></div>
+            </div>
+            <div class="car-posts">
+              <div class="car-posts__up">
+                <h4 class="car-posts__name">A3</h4><span class="car-posts__availability">В наличии 4</span>
+              </div>
+              <div class="car-posts__middle">
+                <div class="car-posts__row"><span class="car-posts__text">АИ / 1,8  / 160 л.с / FWD / CVT</span>
+                  <div class="car-posts__wrap">
+                    <div class="favorites">
+                      <svg class="favorites__svg">
+                        <use xlink:href="img/sprite.svg#favorites"></use>
+                      </svg>
+                    </div>
+                    <div class="comparisons">
+                      <svg class="comparisons__svg">
+                        <use xlink:href="img/sprite.svg#comparisons"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div><img class="car-posts__img" src="img/car-posts-img.png">
+                <div class="car-posts__flex">
+                  <div class="car-posts__wrap-price"><span class="car-posts__old-price">от 1 199 000 руб.</span><span class="car-posts__price">от 899 000 руб.</span></div>
+                  <div class="car-posts__benefit-block">
+                    <svg class="car-posts__svg-benefit">
+                      <use xlink:href="img/sprite.svg#benefit"></use>
+                    </svg>
+                    <div class="car-posts__wrap-text"><span class="car-posts__text-benefit">выгода</span><span class="car-posts__sm-price">300 000 руб.</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="car-posts__down"><a class="block-btn block-btn--black" href="#">
+                  <div class="block-btn__line block-btn__line--top"></div>
+                  <div class="block-btn__line block-btn__line--right"></div>
+                  <div class="block-btn__line block-btn__line--bottom"></div>
+                  <div class="block-btn__line block-btn__line--left"></div>
+                  <button class="block-btn__btn">в кредит от 8 590 руб./мес</button></a></div>
+            </div>
+            <div class="car-posts">
+              <div class="car-posts__up">
+                <h4 class="car-posts__name">A3</h4><span class="car-posts__availability">В наличии 4</span>
+              </div>
+              <div class="car-posts__middle">
+                <div class="car-posts__row"><span class="car-posts__text">АИ / 1,8  / 160 л.с / FWD / CVT</span>
+                  <div class="car-posts__wrap">
+                    <div class="favorites">
+                      <svg class="favorites__svg">
+                        <use xlink:href="img/sprite.svg#favorites"></use>
+                      </svg>
+                    </div>
+                    <div class="comparisons">
+                      <svg class="comparisons__svg">
+                        <use xlink:href="img/sprite.svg#comparisons"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div><img class="car-posts__img" src="img/car-posts-img.png">
+                <div class="car-posts__flex">
+                  <div class="car-posts__wrap-price"><span class="car-posts__old-price">от 1 199 000 руб.</span><span class="car-posts__price">от 899 000 руб.</span></div>
+                  <div class="car-posts__benefit-block">
+                    <svg class="car-posts__svg-benefit">
+                      <use xlink:href="img/sprite.svg#benefit"></use>
+                    </svg>
+                    <div class="car-posts__wrap-text"><span class="car-posts__text-benefit">выгода</span><span class="car-posts__sm-price">300 000 руб.</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="car-posts__down"><a class="block-btn block-btn--black" href="#">
+                  <div class="block-btn__line block-btn__line--top"></div>
+                  <div class="block-btn__line block-btn__line--right"></div>
+                  <div class="block-btn__line block-btn__line--bottom"></div>
+                  <div class="block-btn__line block-btn__line--left"></div>
+                  <button class="block-btn__btn">в кредит от 8 590 руб./мес</button></a></div>
+            </div>
+            <div class="car-posts">
+              <div class="car-posts__up">
+                <h4 class="car-posts__name">A3</h4><span class="car-posts__availability">В наличии 4</span>
+              </div>
+              <div class="car-posts__middle">
+                <div class="car-posts__row"><span class="car-posts__text">АИ / 1,8  / 160 л.с / FWD / CVT</span>
+                  <div class="car-posts__wrap">
+                    <div class="favorites">
+                      <svg class="favorites__svg">
+                        <use xlink:href="img/sprite.svg#favorites"></use>
+                      </svg>
+                    </div>
+                    <div class="comparisons">
+                      <svg class="comparisons__svg">
+                        <use xlink:href="img/sprite.svg#comparisons"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div><img class="car-posts__img" src="img/car-posts-img.png">
+                <div class="car-posts__flex">
+                  <div class="car-posts__wrap-price"><span class="car-posts__old-price">от 1 199 000 руб.</span><span class="car-posts__price">от 899 000 руб.</span></div>
+                  <div class="car-posts__benefit-block">
+                    <svg class="car-posts__svg-benefit">
+                      <use xlink:href="img/sprite.svg#benefit"></use>
+                    </svg>
+                    <div class="car-posts__wrap-text"><span class="car-posts__text-benefit">выгода</span><span class="car-posts__sm-price">300 000 руб.</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="car-posts__down"><a class="block-btn block-btn--black" href="#">
+                  <div class="block-btn__line block-btn__line--top"></div>
+                  <div class="block-btn__line block-btn__line--right"></div>
+                  <div class="block-btn__line block-btn__line--bottom"></div>
+                  <div class="block-btn__line block-btn__line--left"></div>
+                  <button class="block-btn__btn">в кредит от 8 590 руб./мес</button></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<!--            .car-posts-->
+<!--              .car-posts__up-->
+<!--                h4.car-posts__name A3-->
+<!--                span.car-posts__availability В наличии 4-->
+<!--              .car-posts__middle-->
+<!--                .car-posts__row-->
+<!--                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT-->
+<!--                img.car-posts__img(src="img/car-posts-img.png")-->
+<!--                .car-posts__flex-->
+<!--                  span.car-posts__price от 899 000 руб.-->
+<!--                  .car-posts__wrap-->
+<!--                    .favorites-->
+<!--                      svg.favorites__svg-->
+<!--                        use(xlink:href="img/sprite.svg#favorites")-->
+<!--                    .comparisons-->
+<!--                      svg.comparisons__svg-->
+<!--                          use(xlink:href="img/sprite.svg#comparisons")-->
+<!--              .car-posts__down-->
+<!--                a.block-btn.block-btn--black(href="#")-->
+<!--                  .block-btn__line.block-btn__line--top-->
+<!--                  .block-btn__line.block-btn__line--right-->
+<!--                  .block-btn__line.block-btn__line--bottom-->
+<!--                  .block-btn__line.block-btn__line--left-->
+<!--                  button.block-btn__btn в кредит от 8 590 руб./мес-->
+<!---->
+<!--            .car-posts-->
+<!--              .car-posts__up-->
+<!--                h4.car-posts__name A3-->
+<!--                span.car-posts__availability В наличии 4-->
+<!--              .car-posts__middle-->
+<!--                .car-posts__row-->
+<!--                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT-->
+<!--                img.car-posts__img(src="img/car-posts-img.png")-->
+<!--                .car-posts__flex-->
+<!--                  span.car-posts__price от 1 150 000 руб.-->
+<!--                  .car-posts__wrap-->
+<!--                    .favorites-->
+<!--                      svg.favorites__svg-->
+<!--                        use(xlink:href="img/sprite.svg#favorites")-->
+<!--                    .comparisons-->
+<!--                      svg.comparisons__svg-->
+<!--                          use(xlink:href="img/sprite.svg#comparisons")-->
+<!--              .car-posts__down-->
+<!--                a.block-btn.block-btn--black(href="#")-->
+<!--                  .block-btn__line.block-btn__line--top-->
+<!--                  .block-btn__line.block-btn__line--right-->
+<!--                  .block-btn__line.block-btn__line--bottom-->
+<!--                  .block-btn__line.block-btn__line--left-->
+<!--                  button.block-btn__btn в кредит от 8 590 руб./мес-->
+<!---->
+<!--            .car-posts-->
+<!--              .car-posts__up-->
+<!--                h4.car-posts__name A3-->
+<!--                span.car-posts__availability В наличии 4-->
+<!--              .car-posts__middle-->
+<!--                .car-posts__row-->
+<!--                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT-->
+<!--                img.car-posts__img(src="img/car-posts-img.png")-->
+<!--                .car-posts__flex-->
+<!--                  span.car-posts__price от 899 000 руб.-->
+<!--                  .car-posts__wrap-->
+<!--                    .favorites-->
+<!--                      svg.favorites__svg-->
+<!--                        use(xlink:href="img/sprite.svg#favorites")-->
+<!--                    .comparisons-->
+<!--                      svg.comparisons__svg-->
+<!--                          use(xlink:href="img/sprite.svg#comparisons")-->
+<!--              .car-posts__down-->
+<!--                a.block-btn.block-btn--black(href="#")-->
+<!--                  .block-btn__line.block-btn__line--top-->
+<!--                  .block-btn__line.block-btn__line--right-->
+<!--                  .block-btn__line.block-btn__line--bottom-->
+<!--                  .block-btn__line.block-btn__line--left-->
+<!--                  button.block-btn__btn в кредит от 8 590 руб./мес-->
+<!---->
+<!--            .car-posts-->
+<!--              .car-posts__up-->
+<!--                h4.car-posts__name A3-->
+<!--                span.car-posts__availability В наличии 4-->
+<!--              .car-posts__middle-->
+<!--                .car-posts__row-->
+<!--                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT-->
+<!--                img.car-posts__img(src="img/car-posts-img.png")-->
+<!--                .car-posts__flex-->
+<!--                  span.car-posts__price от 899 000 руб.-->
+<!--                  .car-posts__wrap-->
+<!--                    .favorites-->
+<!--                      svg.favorites__svg-->
+<!--                        use(xlink:href="img/sprite.svg#favorites")-->
+<!--                    .comparisons-->
+<!--                      svg.comparisons__svg-->
+<!--                          use(xlink:href="img/sprite.svg#comparisons")-->
+<!--              .car-posts__down-->
+<!--                a.block-btn.block-btn--black(href="#")-->
+<!--                  .block-btn__line.block-btn__line--top-->
+<!--                  .block-btn__line.block-btn__line--right-->
+<!--                  .block-btn__line.block-btn__line--bottom-->
+<!--                  .block-btn__line.block-btn__line--left-->
+<!--                  button.block-btn__btn в кредит от 8 590 руб./мес-->
+<!---->
+<!--            .car-posts-->
+<!--              .car-posts__up-->
+<!--                h4.car-posts__name A3-->
+<!--                span.car-posts__availability В наличии 4-->
+<!--              .car-posts__middle-->
+<!--                .car-posts__row-->
+<!--                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT-->
+<!--                img.car-posts__img(src="img/car-posts-img.png")-->
+<!--                .car-posts__flex-->
+<!--                  span.car-posts__price от 899 000 руб.-->
+<!--                  .car-posts__wrap-->
+<!--                    .favorites-->
+<!--                      svg.favorites__svg-->
+<!--                        use(xlink:href="img/sprite.svg#favorites")-->
+<!--                    .comparisons-->
+<!--                      svg.comparisons__svg-->
+<!--                          use(xlink:href="img/sprite.svg#comparisons")-->
+<!--              .car-posts__down-->
+<!--                a.block-btn.block-btn--black(href="#")-->
+<!--                  .block-btn__line.block-btn__line--top-->
+<!--                  .block-btn__line.block-btn__line--right-->
+<!--                  .block-btn__line.block-btn__line--bottom-->
+<!--                  .block-btn__line.block-btn__line--left-->
+<!--                  button.block-btn__btn в кредит от 8 590 руб./мес-->
+<!---->
+<!--            .car-posts-->
+<!--              .car-posts__up-->
+<!--                h4.car-posts__name A3-->
+<!--                span.car-posts__availability В наличии 4-->
+<!--              .car-posts__middle-->
+<!--                .car-posts__row-->
+<!--                  span.car-posts__text АИ / 1,8  / 160 л.с / FWD / CVT-->
+<!--                img.car-posts__img(src="img/car-posts-img.png")-->
+<!--                .car-posts__flex-->
+<!--                  span.car-posts__price от 899 000 руб.-->
+<!--                  .car-posts__wrap-->
+<!--                    .favorites-->
+<!--                      svg.favorites__svg-->
+<!--                        use(xlink:href="img/sprite.svg#favorites")-->
+<!--                    .comparisons-->
+<!--                      svg.comparisons__svg-->
+<!--                          use(xlink:href="img/sprite.svg#comparisons")-->
+<!--              .car-posts__down-->
+<!--                a.block-btn.block-btn--black(href="#")-->
+<!--                  .block-btn__line.block-btn__line--top-->
+<!--                  .block-btn__line.block-btn__line--right-->
+<!--                  .block-btn__line.block-btn__line--bottom-->
+<!--                  .block-btn__line.block-btn__line--left-->
+<!--                  button.block-btn__btn в кредит от 8 590 руб./мес
+  section.row-arrow
+    .row-arrow__container
+      .container
+        .row-arrow__wrapper
+          .row-arrow__block
+            span.row-arrow__text Смотреть все
+            a.arrow-to-scroll.arrow-to-scroll--black(href="")
+              svg.arrow-to-scroll__arrow
+                use(xlink:href="img/sprite.svg#arrow-scroll")
+              .arrow-to-scroll__wrap
+                svg.arrow-to-scroll__line
+                  use(xlink:href="img/sprite.svg#line")
+                
+  section.developments.black-bg.padding-top.padding-bottom
+    .container
+      .developments__container
+        .row-title
+          h2.title Актуальные предложения от Audi
+        include includes/developments.pug
+  
+  section.connect(style="background-image: url(img/connect-bg2.jpg)")
+    .container
+      .connect__container
+        .connect__block
+          .row-title
+            h2.title.title--white Подпишитесь на спецпредложения и будьте в курсе всех акций
+          a.block-btn.block-btn--white(href="#")
+            .block-btn__line.block-btn__line--top
+            .block-btn__line.block-btn__line--right
+            .block-btn__line.block-btn__line--bottom
+            .block-btn__line.block-btn__line--left
+            button.block-btn__btn Подписаться
+
+  section.gray-bg
+    .container
+      .gray-bg__wrapper
+        .centers
+          .row-title
+            h2.title Дилерские центры Audi
+          .centers__wrapper
+          
+            .centers-row
+              .centers-row__left-block
+                .centers-row__row
+                  img.centers-row__img(src="img/centers-img.png")
+                  .centers-row__wrap
+                    h3.centers-row__title Авторизованный дилерский центр Audi Тула
+                    a.centers-row__link(href="mailto:")
+                      .centers-row__arrow
+                        svg.centers-row__svg
+                          use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span.centers-row__link-text www.audi-tula.ru
+              .centers-row__center-block                    
+                .centers-row__block-text
+                  .centers-row__wrap-svg
+                    svg.centers-row__location
+                      use(xlink:href="img/sprite.svg#location")
+                  span.centers-row__text 300012, г. Тула, ул. Рязанская, д. 7
+                  span.centers-row__text Ежедневно с 08:00 до 21:00 без перерыва и выходных
+                a.centers-row__link(href="#")
+                  .centers-row__arrow
+                    svg.centers-row__svg
+                      use(xlink:href="img/sprite.svg#sm-arrow-right")
+                  span.centers-row__link-text Показать на карте
+              .centers-row__right-block                    
+                .centers-row__block-text
+                  .centers-row__wrap-svg
+                    svg.centers-row__tell
+                      use(xlink:href="img/sprite.svg#tell")
+                  a.centers-row__tel(href="tel:") 8-800-777-17-47
+                  span.centers-row__sm-text Связь с менеджером
+                a.centers-row__link(href="#")
+                  .centers-row__arrow
+                    svg.centers-row__svg
+                      use(xlink:href="img/sprite.svg#sm-arrow-right")
+                  span.centers-row__link-text Обратный звонок
+                  
+            .centers-row
+              .centers-row__left-block
+                .centers-row__row
+                  img.centers-row__img(src="img/centers-img.png")
+                  .centers-row__wrap
+                    h3.centers-row__title Авторизованный дилерский центр Audi Тула
+                    a.centers-row__link(href="mailto:")
+                      .centers-row__arrow
+                        svg.centers-row__svg
+                          use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span.centers-row__link-text www.audi-tula.ru
+              .centers-row__center-block
+                .centers-row__block-text
+                  .centers-row__wrap-svg
+                    svg.centers-row__location
+                      use(xlink:href="img/sprite.svg#location")
+                  span.centers-row__text 300012, г. Тула, ул. Рязанская, д. 7
+                  span.centers-row__text Ежедневно с 08:00 до 21:00 без перерыва и выходных
+                a.centers-row__link(href="#")
+                  .centers-row__arrow
+                    svg.centers-row__svg
+                      use(xlink:href="img/sprite.svg#sm-arrow-right")
+                  span.centers-row__link-text Показать на карте
+              .centers-row__right-block
+                .centers-row__block-text
+                  .centers-row__wrap-svg
+                    svg.centers-row__tell
+                      use(xlink:href="img/sprite.svg#tell")
+                  a.centers-row__tel(href="tel:") 8-800-777-17-47
+                  span.centers-row__sm-text Связь с менеджером
+                a.centers-row__link(href="#")
+                  .centers-row__arrow
+                    svg.centers-row__svg
+                      use(xlink:href="img/sprite.svg#sm-arrow-right")
+                  span.centers-row__link-text Обратный звонок    
+        
+
+  
+  
+footer
+  include includes/footer.pug
+
+  
+                 
+               
+include includes/script.pug
+-->

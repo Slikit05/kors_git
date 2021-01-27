@@ -1,0 +1,24 @@
+.grid-two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
+}
+
+.grid-three-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+
+.grid-four-column {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+}
+
+
+.page-two-columns {
+  display: grid;
+  grid-template-columns: 74.4% 23.2%;
+  grid-gap: 32px;
+}

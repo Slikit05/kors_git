@@ -1,0 +1,251 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Крос
+    
+    include includes/link.pug
+    
+  body
+    header
+      .header-bg(style="background-image: url(img/mobile-bg.jpg)")
+        include includes/mob-menu.pug
+        include includes/header-nav.pug
+        .breadcrumbs.breadcrumbs--white
+          .container
+            .breadcrumbs__wrapper
+              ul.breadcrumbs__list.breadcrumbs__list--center
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                  svg.breadcrumbs__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Мобильное приложение
+        h2.header-bg__row-title
+          .container
+            h2.header-bg__title.header-bg__title--center Мобильное приложение Корс Групп
+      
+    main.main-change
+      .container
+        .platform
+          .mobile
+            .mobile__wrap-text
+              p Чем полезно мобильное приложение от КорсГрупп? Вы будете в курсе наших акций, новинок и спецпредложений, сможете записаться на сервис. Также всегда под рукой будет весь склад новых автомобилей и авто с пробегом в наличии у дилеров. А еще много-много полезного для автовладельца:
+            .mobile-info
+              .mobile-info__wrapper
+                .mobile-info__up
+                
+                  .mobile-icon
+                    .mobile-icon__container
+                      .mobile-icon__wrapper(rel="mobile-icon1")
+                        .mobile-icon__circle
+                          svg.mobile-icon__icon
+                            use(xlink:href="img/sprite.svg#like-icon")
+                        span.mobile-icon__text Информация
+                      .mobile-icon__block
+                        .mobile-icon__close
+                        .mobile-icon__flex
+                          svg.mobile-icon__svg
+                            use(xlink:href="img/sprite.svg#like-icon")
+                          span.mobile-icon__text-info Получить полезную информацию о службах помощи на дорогах, расположении ближайших АЗС и ценах на топливо по всей России
+
+                  .mobile-icon
+                    .mobile-icon__container
+                      .mobile-icon__wrapper(rel="mobile-icon2")
+                        .mobile-icon__circle
+                          svg.mobile-icon__icon
+                            use(xlink:href="img/sprite.svg#megaphone")
+                        span.mobile-icon__text Новости
+                      .mobile-icon__block
+                        .mobile-icon__close
+                        .mobile-icon__flex
+                          svg.mobile-icon__svg
+                            use(xlink:href="img/sprite.svg#megaphone")
+                          span.mobile-icon__text-info Весь склад новых автомобилей и авто с пробегом в наличии у дилеров
+
+                .mobile-info__left
+                  .mobile-icon
+                    .mobile-icon__container
+                      .mobile-icon__wrapper(rel="mobile-icon3")
+                        .mobile-icon__circle
+                          svg.mobile-icon__icon
+                            use(xlink:href="img/sprite.svg#chat")
+                        span.mobile-icon__text Онлайн-сервисы
+                      .mobile-icon__block
+                        .mobile-icon__close
+                        .mobile-icon__flex
+                          svg.mobile-icon__svg
+                            use(xlink:href="img/sprite.svg#chat")
+                          span.mobile-icon__text-info Весь склад новых автомобилей и авто с пробегом в наличии у дилеров
+
+                  .mobile-icon
+                    .mobile-icon__container
+                      .mobile-icon__wrapper(rel="mobile-icon4")
+                        .mobile-icon__circle
+                          svg.mobile-icon__icon
+                            use(xlink:href="img/sprite.svg#racing")
+                        span.mobile-icon__text Авто в наличии
+                      .mobile-icon__block
+                        .mobile-icon__close
+                        .mobile-icon__flex
+                          svg.mobile-icon__svg
+                            use(xlink:href="img/sprite.svg#racing")
+                          span.mobile-icon__text-info Весь склад новых автомобилей и авто с пробегом в наличии у дилеров
+
+                  .mobile-icon
+                    .mobile-icon__container
+                      .mobile-icon__wrapper(rel="mobile-icon5")
+                        .mobile-icon__circle
+                          svg.mobile-icon__icon
+                            use(xlink:href="img/sprite.svg#settings")
+                        span.mobile-icon__text Запись на сервис
+                      .mobile-icon__block
+                        .mobile-icon__close
+                        .mobile-icon__flex
+                          svg.mobile-icon__svg
+                            use(xlink:href="img/sprite.svg#settings")
+                          span.mobile-icon__text-info Весь склад новых автомобилей и авто с пробегом в наличии у дилеров
+
+                .mobile-info__center
+                  .mobile-galery
+                    img.mobile-galery__phone(src="img/modile-tel.png")
+                  
+                    .mobile-galery__block(id="mobile-icon1")
+                      img.mobile-galery__img(src="img/azs.png")
+                      
+                    .mobile-galery__block(id="mobile-icon2")
+                      img.mobile-galery__img(src="img/stores.png")
+                      
+                    .mobile-galery__block(id="mobile-icon3")
+                      img.mobile-galery__img(src="img/serv.png")
+                      
+                    .mobile-galery__block.mobile-galery__block--active(id="mobile-icon4")
+                      img.mobile-galery__img(src="img/auto_v_nalichii.png")
+                      
+                    .mobile-galery__block(id="mobile-icon5")
+                      img.mobile-galery__img(src="img/zapis.png")
+                      
+                    .mobile-galery__block(id="mobile-icon6")
+                      img.mobile-galery__img(src="img/centers.png")
+                      
+                    .mobile-galery__block(id="mobile-icon7")
+                      img.mobile-galery__img(src="img/shtraf.png")
+                      
+                    .mobile-galery__block(id="mobile-icon8")
+                      img.mobile-galery__img(src="img/sos.png")  
+
+                .mobile-info__right
+                  .mobile-icon
+                    .mobile-icon__container
+                      .mobile-icon__wrapper(rel="mobile-icon6")
+                        .mobile-icon__circle
+                          svg.mobile-icon__icon
+                            use(xlink:href="img/sprite.svg#placeholder")
+                        span.mobile-icon__text Контакты
+                      .mobile-icon__block
+                        .mobile-icon__close
+                        .mobile-icon__flex
+                          svg.mobile-icon__svg
+                            use(xlink:href="img/sprite.svg#placeholder")
+                          span.mobile-icon__text-info Весь склад новых автомобилей и авто с пробегом в наличии у дилеров
+
+                  .mobile-icon
+                    .mobile-icon__container
+                      .mobile-icon__wrapper(rel="mobile-icon7")
+                        .mobile-icon__circle
+                          svg.mobile-icon__icon
+                            use(xlink:href="img/sprite.svg#wallet-2")
+                        span.mobile-icon__text Штрафы ГИБДД
+                      .mobile-icon__block
+                        .mobile-icon__close
+                        .mobile-icon__flex
+                          svg.mobile-icon__svg
+                            use(xlink:href="img/sprite.svg#wallet-2")
+                          span.mobile-icon__text-info Весь склад новых автомобилей и авто с пробегом в наличии у дилеров
+
+                  .mobile-icon
+                    .mobile-icon__container
+                      .mobile-icon__wrapper(rel="mobile-icon8")
+                        .mobile-icon__circle
+                          svg.mobile-icon__icon
+                            use(xlink:href="img/sprite.svg#call")
+                        span.mobile-icon__text Помощь на дороге
+                      .mobile-icon__block
+                        .mobile-icon__close
+                        .mobile-icon__flex
+                          svg.mobile-icon__svg
+                            use(xlink:href="img/sprite.svg#call")
+                          span.mobile-icon__text-info Весь склад новых автомобилей и авто с пробегом в наличии у дилеров
+
+            .mobile__down
+              .mobile__wrap-text
+                h5 Установка мобильного приложения
+                span Для того, чтобы на Вашем смартфоне появилось мобильное приложение ГК
+                span «АВТОШИНА», воспользуйтесь одним из возможных вариантов его установки:
+                ul
+                  li Переход по прямой ссылке
+                  li Сканирование QR-кода
+                  li Поиск внутри магазина приложений по слову «КорсГрупп»
+              .mobile-download
+                .mobile-download__wrapper
+                  .mobile-download__block
+                    h4.mobile-download__caption Версия для iPhone
+
+                    a.download(href="#")
+                      svg.download__svg
+                        use(xlink:href="img/sprite.svg#app-store")
+                      svg.link-sect__svg
+                        use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span.download__text Скачать в App Store
+                    .qr-code
+                      img.qr-code__img(src="img/qr-code.jpg")
+
+                  .mobile-download__block
+                    h4.mobile-download__caption Версия для Android
+                    a.download(href="#")
+                      svg.download__svg
+                        use(xlink:href="img/sprite.svg#play-store")
+                      svg.link-sect__svg
+                        use(xlink:href="img/sprite.svg#sm-arrow-right")    
+                      span.download__text Скачать в Google Play
+                    .qr-code
+                      img.qr-code__img(src="img/qr-code.jpg")
+                        
+                      
+                    
+                
+                      
+                        
+      section.developments.black-bg.padding-top.padding-bottom
+        .container
+          .developments__container
+            .row-title
+              h2.title Актуальные предложения
+            include includes/developments.pug                
+      
+      section.connect(style="background-image: url(img/connect-bg2.jpg)")
+        .container
+          .connect__container
+            .connect__block
+              .row-title
+                h2.title.title--white Подпишитесь на спецпредложения и будьте в курсе всех акций
+              a.block-btn.block-btn--white(href="#")
+                .block-btn__line.block-btn__line--top
+                .block-btn__line.block-btn__line--right
+                .block-btn__line.block-btn__line--bottom
+                .block-btn__line.block-btn__line--left
+                button.block-btn__btn Подписаться
+
+         
+            
+
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

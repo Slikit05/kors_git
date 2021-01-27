@@ -1,0 +1,567 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Крос
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/mob-menu.pug
+      include includes/header-nav.pug
+      .breadcrumbs
+        .container
+          .breadcrumbs__wrapper
+            ul.breadcrumbs__list
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="#") Главная
+                svg.breadcrumbs__svg
+                  use(xlink:href="img/sprite.svg#sm-arrow-right")
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="#") Купить авто
+                svg.breadcrumbs__svg
+                  use(xlink:href="img/sprite.svg#sm-arrow-right")
+              li.breadcrumbs__item
+                span.breadcrumbs__link.breadcrumbs__link--active Авто с пробегом
+      
+    main
+      .inner-up-row        
+        .container          
+          h2.inner-up-row__title Авто с пробегом
+      .category
+        .container
+          .page-two-columns
+            .one-column
+              .filter-btn Подобрать по параметрам
+              .filter
+                form.filter__form
+                  .filter__wrapper
+                    .filter__block
+                      .filter__wrap
+                        span.filter__name Марка
+                        .filter__select-wrap
+                          select.filter__select
+                            option Nissan
+                            option Nissan
+                            option Nissan
+                            option Nissan
+                    .filter__block
+                      .filter__wrap
+                        span.filter__name Модель
+                        .filter__select-wrap
+                          select.filter__select
+                            option Все модели
+                            option Все модели
+                            option Все модели
+                            option Все модели
+                    .filter__block.filter__block--two-field
+                      label.filter__wrap
+                        span.filter__name Год выпуска
+                        input.filter__field(type="text" placeholder="От")
+                        input.filter__field(type="text" placeholder="До")
+                    .filter__block
+                      .filter__wrap
+                        span.filter__name Город
+                        .filter__select-wrap
+                          select.filter__select
+                            option Санкт-Петербург
+                            option Санкт-Петербург
+                            option Санкт-Петербург
+                            option Санкт-Петербург
+                    .filter__block
+                      .filter__wrap
+                        span.filter__name Тип кузова
+                        .filter__select-wrap
+                          select.filter__select
+                            option Седан
+                            option Седан
+                            option Седан
+                            option Седан
+                    .filter__block
+                      .filter__wrap
+                        span.filter__name Коробка
+                        .filter__select-wrap
+                          select.filter__select
+                            option Автомат (вариатор)
+                            option Автомат (вариатор)
+                            option Автомат (вариатор)
+                            option Автомат (вариатор)
+                    .filter__block
+                      .filter__wrap
+                        span.filter__name Двигатель
+                        .filter__select-wrap
+                          select.filter__select
+                            option Бензин
+                            option Бензин
+                            option Бензин
+                            option Бензин
+                    .filter__block
+                      .filter__wrap
+                        span.filter__name Привод
+                        .filter__select-wrap
+                          select.filter__select
+                            option Передний
+                            option Передний
+                            option Передний
+                            option Передний
+                    .filter__block.filter__block--big.filter__block--two-field
+                      label.filter__wrap
+                        span.filter__name Цена, руб
+                        input.filter__field(type="text" placeholder="От")
+                        input.filter__field(type="text" placeholder="До")
+                    .filter__block.filter__block--two-field
+                      label.filter__wrap
+                        span.filter__name Объем, л
+                        input.filter__field(type="text" placeholder="От")
+                        input.filter__field(type="text" placeholder="До")
+                    .filter__block.filter__block--big.filter__block--two-field
+                      label.filter__wrap
+                        span.filter__name Пробег, км
+                        input.filter__field(type="text" placeholder="От")
+                        input.filter__field(type="text" placeholder="До")
+                  .filter__down
+                    .filter__left
+                      .filter__close
+                        span Сбросить
+                        .filter__close-icon
+                    .filter__right
+                      button.filter__btn Подобрать
+            
+              .mark-list
+                ul.mark-list__list
+                
+                  li.mark-list__item
+                    .mark-list__wrap
+                      a.mark-list__link(href="#") Bentley
+                      span.mark-list__value 2
+
+                  li.mark-list__item
+                    .mark-list__wrap
+                      a.mark-list__link(href="#") KIA
+                      span.mark-list__value 2
+
+                  li.mark-list__item
+                    .mark-list__wrap
+                      a.mark-list__link(href="#") Bentley
+                      span.mark-list__value 2
+
+                  li.mark-list__item
+                    .mark-list__wrap
+                      a.mark-list__link(href="#") Audi
+                      span.mark-list__value 17
+
+                  li.mark-list__item
+                    .mark-list__wrap
+                      a.mark-list__link(href="#") Hyundai
+                      span.mark-list__value 17
+
+                  li.mark-list__item
+                    .mark-list__wrap
+                      a.mark-list__link(href="#") Audi
+                      span.mark-list__value 17
+
+                  li.mark-list__item
+                    .mark-list__wrap
+                      a.mark-list__link(href="#") Mercedes-Benz
+                      span.mark-list__value 4
+
+                  li.mark-list__item
+                    .mark-list__wrap
+                      a.mark-list__link(href="#") Honda
+                      span.mark-list__value 4
+
+                  li.mark-list__item
+                    .mark-list__wrap
+                      a.mark-list__link(href="#") Mercedes-Benz
+                      span.mark-list__value 4
+
+                  li.mark-list__item
+                    .mark-list__wrap
+                      a.mark-list__link(href="#") Volkswagen
+                      span.mark-list__value 216
+
+                  li.mark-list__item
+                    .mark-list__wrap
+                      a.mark-list__link(href="#") Mercedes-Benz
+                      span.mark-list__value 216
+
+                  li.mark-list__item
+                    .mark-list__wrap
+                      a.mark-list__link(href="#") Volkswagen
+                      span.mark-list__value 216
+                  
+              .banner
+                .banner__wrapper(style="background-image: url(img/banner.jpg)")
+                  .banner__block
+                    h3.banner__title Выгодный Trade-In
+                    span.banner__text Авто доступнее, чем прежде!
+                    
+              .category__wrapper
+                .sorting
+                  .sorting__wrapper
+                    span.sorting__text Сортировка:
+                    ul.sorting__list
+                      li.sorting__item
+                        a.sorting__link(href="#") По цене
+                        .sorting__wrap-svg
+                          svg.sorting__svg
+                            use(xlink:href="img/sprite.svg#sorting-arrow")
+                      li.sorting__item.sorting__item--active
+                        a.sorting__link(href="#") По году выпуска
+                        .sorting__wrap-svg
+                          svg.sorting__svg
+                            use(xlink:href="img/sprite.svg#sorting-arrow")
+                      li.sorting__item
+                        a.sorting__link(href="#") По пробегу
+                        .sorting__wrap-svg
+                          svg.sorting__svg
+                            use(xlink:href="img/sprite.svg#sorting-arrow")
+                      li.sorting__item
+                        a.sorting__link(href="#") По дате поступления
+                        .sorting__wrap-svg
+                          svg.sorting__svg
+                            use(xlink:href="img/sprite.svg#sorting-arrow")
+                .category__container
+                
+                  .category__posts
+
+                    a.post-mark(href="#")
+                      .post-mark__wrapper
+                        figure.post-mark__wrap-img
+                          img.post-mark__img(src="img/auto1.jpg")
+                        .post-mark__row-name
+                          h3.post-mark__name Hyundai Solaris, 2016
+                          span.post-mark__subtitle VIN проверен
+                        .post-mark__wrap-city
+                          .post-mark__wrap-svg
+                            svg.post-mark__svg
+                              use(xlink:href="img/sprite.svg#location")
+                          span.post-mark__city Москва
+                        .post-mark__info
+                          ul.post-mark__list
+                            li.post-mark__item 1.6 л
+                            li.post-mark__item бензин
+                            li.post-mark__item передний
+                            li.post-mark__item автомат
+                            li.post-mark__item 70 000 км.
+                        .post-mark__price-wrap
+                          .post-mark__block
+                            span.post-mark__old-price от 1 199 000 руб.
+                            span.post-mark__price 610 000 руб.
+                            span.post-mark__from-price от 15 300 руб./мес.
+
+                    a.post-mark(href="#")
+                      .post-mark__wrapper
+                        figure.post-mark__wrap-img
+                          img.post-mark__img(src="img/auto2.jpg")
+                        .post-mark__row-name
+                          h3.post-mark__name Nissan Leaf
+                        .post-mark__wrap-city
+                          .post-mark__wrap-svg
+                            svg.post-mark__svg
+                              use(xlink:href="img/sprite.svg#location")
+                          span.post-mark__city Коломна
+                        .post-mark__info
+                          ul.post-mark__list
+                            li.post-mark__item 1.6 л
+                            li.post-mark__item бензин
+                            li.post-mark__item передний
+                            li.post-mark__item автомат
+                            li.post-mark__item 70 000 км.
+                        .post-mark__price-wrap
+                          .post-mark__block
+                            span.post-mark__old-price от 1 199 000 руб.
+                            span.post-mark__price 1 205 000 руб.
+                            span.post-mark__from-price от 27 000 руб./мес.
+
+                    a.post-mark(href="#")
+                      .post-mark__wrapper
+                        figure.post-mark__wrap-img
+                          img.post-mark__img(src="img/auto3.jpg")
+                        .post-mark__row-name
+                          h3.post-mark__name Hyundai Solaris, 2016
+                          span.post-mark__subtitle VIN проверен
+                        .post-mark__wrap-city
+                          .post-mark__wrap-svg
+                            svg.post-mark__svg
+                              use(xlink:href="img/sprite.svg#location")
+                          span.post-mark__city Санкт-Петербург
+                        .post-mark__info
+                          ul.post-mark__list
+                            li.post-mark__item 1.6 л
+                            li.post-mark__item бензин
+                            li.post-mark__item передний
+                            li.post-mark__item автомат
+                            li.post-mark__item 70 000 км.
+                        .post-mark__price-wrap
+                          .post-mark__block
+                            span.post-mark__old-price от 1 199 000 руб.
+                            span.post-mark__price 610 000 руб.
+                            span.post-mark__from-price от 15 300 руб./мес.
+
+                    a.post-mark(href="#")
+                      .post-mark__wrapper
+                        figure.post-mark__wrap-img
+                          img.post-mark__img(src="img/auto4.jpg")
+                        .post-mark__row-name
+                          h3.post-mark__name KIA Cee’d, 2018
+                        .post-mark__wrap-city
+                          .post-mark__wrap-svg
+                            svg.post-mark__svg
+                              use(xlink:href="img/sprite.svg#location")
+                          span.post-mark__city Москва
+                        .post-mark__info
+                          ul.post-mark__list
+                            li.post-mark__item 1.6 л
+                            li.post-mark__item бензин
+                            li.post-mark__item передний
+                            li.post-mark__item автомат
+                            li.post-mark__item 70 000 км.
+                        .post-mark__price-wrap
+                          .post-mark__block
+                            span.post-mark__old-price от 1 199 000 руб.
+                            span.post-mark__price 610 000 руб.
+                            span.post-mark__from-price от 15 300 руб./мес.
+
+                    a.post-mark(href="#")
+                      .post-mark__wrapper
+                        figure.post-mark__wrap-img
+                          img.post-mark__img(src="img/auto5.jpg")
+                        .post-mark__row-name
+                          h3.post-mark__name Toyota Camry 2015
+                          span.post-mark__subtitle VIN проверен
+                        .post-mark__wrap-city
+                          .post-mark__wrap-svg
+                            svg.post-mark__svg
+                              use(xlink:href="img/sprite.svg#location")
+                          span.post-mark__city Москва
+                        .post-mark__info
+                          ul.post-mark__list
+                            li.post-mark__item 1.6 л
+                            li.post-mark__item бензин
+                            li.post-mark__item передний
+                            li.post-mark__item автомат
+                            li.post-mark__item 70 000 км.
+                        .post-mark__price-wrap
+                          .post-mark__block
+                            span.post-mark__old-price от 1 199 000 руб.
+                            span.post-mark__price 610 000 руб.
+                            span.post-mark__from-price от 15 300 руб./мес.
+
+                  .banner
+                    .banner__wrapper(style="background-image: url(img/banner2.jpg)")
+                      .banner__block
+                        h3.banner__title Выгодный Trade-In
+                        span.banner__text Авто доступнее, чем прежде!
+
+                  .category__posts
+
+                    a.post-mark(href="#")
+                      .post-mark__wrapper
+                        figure.post-mark__wrap-img
+                          img.post-mark__img(src="img/auto6.jpg")
+                        .post-mark__row-name
+                          h3.post-mark__name Honda Accord 2007
+                          span.post-mark__subtitle VIN проверен
+                        .post-mark__wrap-city
+                          .post-mark__wrap-svg
+                            svg.post-mark__svg
+                              use(xlink:href="img/sprite.svg#location")
+                          span.post-mark__city Коломна
+                        .post-mark__info
+                          ul.post-mark__list
+                            li.post-mark__item 1.6 л
+                            li.post-mark__item бензин
+                            li.post-mark__item передний
+                            li.post-mark__item автомат
+                            li.post-mark__item 70 000 км.
+                        .post-mark__price-wrap
+                          .post-mark__block
+                            span.post-mark__old-price от 1 199 000 руб.
+                            span.post-mark__price 610 000 руб.
+                            span.post-mark__from-price от 15 300 руб./мес.
+
+                    a.post-mark(href="#")
+                      .post-mark__wrapper
+                        figure.post-mark__wrap-img
+                          img.post-mark__img(src="img/auto7.jpg")
+                        .post-mark__row-name
+                          h3.post-mark__name Hyundai Solaris, 2012
+                          span.post-mark__subtitle VIN проверен
+                        .post-mark__wrap-city
+                          .post-mark__wrap-svg
+                            svg.post-mark__svg
+                              use(xlink:href="img/sprite.svg#location")
+                          span.post-mark__city Тула
+                        .post-mark__info
+                          ul.post-mark__list
+                            li.post-mark__item 1.6 л
+                            li.post-mark__item бензин
+                            li.post-mark__item передний
+                            li.post-mark__item автомат
+                            li.post-mark__item 70 000 км.
+                        .post-mark__price-wrap
+                          .post-mark__block
+                            span.post-mark__old-price от 1 199 000 руб.
+                            span.post-mark__price 610 000 руб.
+                            span.post-mark__from-price от 15 300 руб./мес.
+
+                    a.post-mark(href="#")
+                      .post-mark__wrapper
+                        figure.post-mark__wrap-img
+                          img.post-mark__img(src="img/auto8.jpg")
+                        .post-mark__row-name
+                          h3.post-mark__name Mitsubishi Outlander
+                        .post-mark__wrap-city
+                          .post-mark__wrap-svg
+                            svg.post-mark__svg
+                              use(xlink:href="img/sprite.svg#location")
+                          span.post-mark__city Москва
+                        .post-mark__info
+                          ul.post-mark__list
+                            li.post-mark__item 1.6 л
+                            li.post-mark__item бензин
+                            li.post-mark__item передний
+                            li.post-mark__item автомат
+                            li.post-mark__item 70 000 км.
+                        .post-mark__price-wrap
+                          .post-mark__block
+                            span.post-mark__old-price от 1 199 000 руб.
+                            span.post-mark__price 610 000 руб.
+                            span.post-mark__from-price от 15 300 руб./мес.
+
+                    a.post-mark(href="#")
+                      .post-mark__wrapper
+                        figure.post-mark__wrap-img
+                          img.post-mark__img(src="img/auto9.jpg")
+                        .post-mark__row-name
+                          h3.post-mark__name Hyundai Solaris, 2016
+                          span.post-mark__subtitle VIN проверен
+                        .post-mark__wrap-city
+                          .post-mark__wrap-svg
+                            svg.post-mark__svg
+                              use(xlink:href="img/sprite.svg#location")
+                          span.post-mark__city Санкт-Петербург
+                        .post-mark__info
+                          ul.post-mark__list
+                            li.post-mark__item 1.6 л
+                            li.post-mark__item бензин
+                            li.post-mark__item передний
+                            li.post-mark__item автомат
+                            li.post-mark__item 70 000 км.
+                        .post-mark__price-wrap
+                          .post-mark__block
+                            span.post-mark__old-price от 1 199 000 руб.
+                            span.post-mark__price 610 000 руб.
+                            span.post-mark__from-price от 15 300 руб./мес.
+
+                    a.post-mark(href="#")
+                      .post-mark__wrapper
+                        figure.post-mark__wrap-img
+                          img.post-mark__img(src="img/auto10.jpg")
+                        .post-mark__row-name
+                          h3.post-mark__name Nissan Leaf
+                        .post-mark__wrap-city
+                          .post-mark__wrap-svg
+                            svg.post-mark__svg
+                              use(xlink:href="img/sprite.svg#location")
+                          span.post-mark__city Москва
+                        .post-mark__info
+                          ul.post-mark__list
+                            li.post-mark__item 1.6 л
+                            li.post-mark__item бензин
+                            li.post-mark__item передний
+                            li.post-mark__item автомат
+                            li.post-mark__item 70 000 км.
+                        .post-mark__price-wrap
+                          .post-mark__block
+                            span.post-mark__old-price от 1 199 000 руб.
+                            span.post-mark__price 1 205 000 руб.
+                            span.post-mark__from-price от 27 000 руб./мес.
+
+              section.row-arrow
+                .row-arrow__container
+                  .container
+                    .row-arrow__wrapper
+                      .row-arrow__block
+                        span.row-arrow__text Загрузить еще 10 машин
+                        a.arrow-to-scroll.arrow-to-scroll--black(href="")
+                          svg.arrow-to-scroll__arrow
+                            use(xlink:href="img/sprite.svg#arrow-scroll")
+                          .arrow-to-scroll__wrap
+                            svg.arrow-to-scroll__line
+                              use(xlink:href="img/sprite.svg#line")
+
+              .pagination
+                .pagination__wrapper
+                  .pagination__block
+                    .pagination__wrap-svg
+                      svg.pagination__svg
+                        use(xlink:href="img/sprite.svg#sm-arrow-right")
+                    span.pagination__text Предыдущая
+                  ul.pagination__list
+                    li.pagination__item
+                      a.pagination__link(href="#") 1
+                    li.pagination__item
+                      a.pagination__link.pagination__link--active(href="#") 2
+                    li.pagination__item
+                      a.pagination__link(href="#") 3
+                    li.pagination__item
+                      a.pagination__link(href="#") 4
+                    li.pagination__item
+                      a.pagination__link(href="#") 5
+                    li.pagination__item
+                      a.pagination__link(href="#") 6
+                    li.pagination__item
+                      a.pagination__link(href="#") 7
+                    li.pagination__item
+                      a.pagination__link(href="#") 8
+                    li.pagination__item
+                      a.pagination__link(href="#") 9
+                    li.pagination__item
+                      span.pagination__link.pagination__link--dots ...
+                    li.pagination__item
+                      a.pagination__link(href="#") 17
+                  .pagination__block
+                    span.pagination__text Следующая
+                    .pagination__wrap-svg
+                      svg.pagination__svg
+                        use(xlink:href="img/sprite.svg#sm-arrow-right")
+                
+                  
+                        
+            .two-column
+              .sidebar
+                .stik
+                  .link-consultation
+                    .link-consultation__svg
+                      svg.link-consultation__svg
+                        use(xlink:href="img/sprite.svg#tell")  
+                    .link-consultation__block
+                      a.link-consultation__tel(href="tel:88007771747") 8-800-777-17-47
+                      span.link-consultation__text Связь с менеджером
+                    a.link-consultation__link(href="#")
+                      svg.link-consultation__arrow
+                        use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span Получить консультацию
+              
+      section.gray-bg
+        .container
+          .gray-bg__wrapper
+            include includes/link-sect.pug
+            .row-text
+              h5 Заголовок SEO-текста для продвижения и поисковых роботов
+              p Гидродинамический удар выталкивает торсионный пульсар в полном соответствии с законом сохранения энергии. Очевидно, что химическое соединение возбуждает тахионный объект, при этом дефект массы не образуется. Тело трансформирует плоскополяризованный взрыв только в отсутствие тепло- и массообмена с окружающей средой. Лептон отклоняет фотон. Экситон переворачивает разрыв. Химическое соединение зеркально отталкивает квант. Бозе-конденсат, как следует из совокупности экспериментальных наблюдений, конфокально возбуждает плоскополяризованный солитон. Волна возбуждает экситон. Пульсар притягивает элементарный фонон. Течение среды переворачивает квазар. 
+              p Экситон, как того требуют законы термодинамики, растягивает тахионный фонон, однозначно свидетельствуя о неустойчивости процесса в целом. Электрон конфокально индуцирует расширяющийся кварк одинаково по всем направлениям. Если предварительно подвергнуть объекты длительному вакуумированию, то зеркало искажает объект, и это неудивительно, если вспомнить квантовый характер явления.я
+          
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

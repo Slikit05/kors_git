@@ -1,0 +1,315 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Крос
+    
+    include includes/link.pug
+    
+  body
+    header
+      .header-bg(style="background-image: url(img/car-sell-bg.jpg)")
+        include includes/mob-menu.pug
+        include includes/header-nav.pug
+        .breadcrumbs.breadcrumbs--white
+          .container
+            .breadcrumbs__wrapper
+              ul.breadcrumbs__list.breadcrumbs__list--center
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                  svg.breadcrumbs__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") О компании
+                  svg.breadcrumbs__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active История
+        h2.header-bg__row-title
+          .container
+            h2.header-bg__title.header-bg__title--center Наши награды
+      
+    main.main-change
+      .container
+        .platform.platform--news-inner
+          .page-two-columns
+            .one-column
+              .car-sell
+                .car-sell__content
+                  h2.car-sell__title Оценка автомобиля
+                  form.car-sell__form
+                    .car-sell__container
+                      h3.car-sell__caption Основные характеристики
+
+                      .car-sell__wrapper
+
+                        .car-sell__block
+                          .filter__wrap
+                            span.filter__name Марка
+                            .filter__select-wrap
+                              select.filter__select
+                                option Nissan
+                                option Nissan
+                                option Nissan
+                                option Nissan
+
+                        .car-sell__block
+                          .filter__wrap
+                            span.filter__name Модель
+                            .filter__select-wrap
+                              select.filter__select
+                                option Nissan
+                                option Nissan
+                                option Nissan
+                                option Nissan
+
+                        .car-sell__block
+                          label.filter__wrap
+                            span.filter__name Год выпуска
+                            input.filter__field(type="text" placeholder="")
+
+                        .car-sell__block
+                          label.filter__wrap
+                            span.filter__name Пробег, км
+                            input.filter__field(type="text" placeholder="Пробег, км")
+
+                        .car-sell__block
+                          .custom-drop
+                            .custom-select
+                              span.custom-select__caption Кузов
+                              .custom-select__row
+                                span.custom-select__text Выберите кузов
+                                input.custom-select__hidden(type="hidden" readonly placeholder="Выберите кузов")
+                                img.custom-select__arrow(src="img/sm-arrow-right.svg")
+                            .custom-drop-bloc
+                              span.custom-drop-bloc__caption Тип кузова
+                              .body-type
+
+                                label.body-type__block
+                                  //input.body-type__check(type="checkbox" value="1")
+                                  img.body-type__img(src="img/check.svg")
+                                  svg.body-type__icon
+                                    use(xlink:href="img/sprite.svg#sedan")
+                                  span.body-type__name Седан
+
+                                label.body-type__block
+                                  //input.body-type__check(type="checkbox" value="1")
+                                  img.body-type__img(src="img/check.svg")
+                                  svg.body-type__icon
+                                    use(xlink:href="img/sprite.svg#jip")
+                                  span.body-type__name Джип
+
+                                label.body-type__block
+                                  //input.body-type__check(type="checkbox" value="1")
+                                  img.body-type__img(src="img/check.svg")
+                                  svg.body-type__icon
+                                    use(xlink:href="img/sprite.svg#hatchbek")
+                                  span.body-type__name Хэтчбек
+
+                                label.body-type__block
+                                  //input.body-type__check(type="checkbox" value="1")
+                                  img.body-type__img(src="img/check.svg")
+                                  svg.body-type__icon
+                                    use(xlink:href="img/sprite.svg#universal")
+                                  span.body-type__name Универсал
+
+                                label.body-type__block
+                                  //input.body-type__check(type="checkbox" value="1")
+                                  img.body-type__img(src="img/check.svg")
+                                  svg.body-type__icon
+                                    use(xlink:href="img/sprite.svg#miniven")
+                                  span.body-type__name Минивен
+
+                                label.body-type__block
+                                  //input.body-type__check(type="checkbox" value="1")
+                                  img.body-type__img(src="img/check.svg")
+                                  svg.body-type__icon
+                                    use(xlink:href="img/sprite.svg#kype")
+                                  span.body-type__name Купе
+
+                                label.body-type__block
+                                  //input.body-type__check(type="checkbox" value="1")
+                                  img.body-type__img(src="img/check.svg")
+                                  svg.body-type__icon
+                                    use(xlink:href="img/sprite.svg#kabriolet")
+                                  span.body-type__name Кабриолет
+
+                                label.body-type__block
+                                  //input.body-type__check(type="checkbox" value="1")
+                                  img.body-type__img(src="img/check.svg")
+                                  svg.body-type__icon
+                                    use(xlink:href="img/sprite.svg#pikap")
+                                  span.body-type__name Пикап
+
+                    .car-sell__container
+                      h3.car-sell__caption Дополнительные параметры
+
+                      .car-sell__wrapper
+
+                        .car-sell__block.car-sell__block--big
+                          .filter__wrap
+                            span.filter__name Ваш регион
+                            .filter__select-wrap
+                              select.filter__select
+                                option Кабардино-Балкарская Республика
+
+                        .car-sell__block
+                          .filter__wrap
+                            span.filter__name Состояние автомобиля
+                            .filter__select-wrap
+                              select.filter__select
+                                option Не требует ремонта
+
+
+                        .car-sell__block
+                          label.filter__wrap                          
+                            input.filter__field(type="text" placeholder="Хозяев по ПТС")
+
+                        .car-sell__block
+                          .filter__wrap
+                            span.filter__name Ключи
+                            .filter__select-wrap
+                              select.filter__select
+                                option 1
+                                option 2
+                                option 3
+                                option 4
+
+                          label.checked
+                            input.checked__check(type="checkbox")
+                            .checked__square
+                            span.checked__text Есть сервисная книжка
+
+                          label.checked
+                            input.checked__check(type="checkbox")
+                            .checked__square
+                            span.checked__text ПТС оригинал
+
+                    .car-sell__container
+                      h3.car-sell__caption Личные данные
+
+                      .car-sell__wrapper
+
+                        .car-sell__block.car-sell__block--big
+                          label.filter__wrap
+                            span.filter__name Ваше имя
+                            input.filter__field(type="text" placeholder="")
+
+                        .car-sell__block.car-sell__block--big
+                          label.filter__wrap
+                            span.filter__name Ваш e-mail
+                            input.filter__field(type="text" placeholder="")
+                            
+                        .car-sell__block.car-sell__block--big
+                          label.checked
+                            input.checked__check(type="checkbox")
+                            .checked__square
+                            span.checked__text Я принимаю условия<br> <a href="#">Политики конфиденциальности</a>
+                            
+                        .car-sell__block.car-sell__block--big    
+                          .block-btn.block-btn--black
+                            .block-btn__line.block-btn__line--top
+                            .block-btn__line.block-btn__line--right
+                            .block-btn__line.block-btn__line--bottom
+                            .block-btn__line.block-btn__line--left
+                            button.block-btn__btn Узнать стоимость авто в trade-in
+                            
+                        .car-sell__block.car-sell__block--big
+                          p Расчет носит информационный характер и не является публичной офертой, определяемой положениями Статьи 435 ГК РФ
+                          
+                          
+                  .car-sell__content.car-sell__content--gray
+                    h2.car-sell__title Оценка автомобиля
+                    form.car-sell__form
+                      .car-sell__container
+
+                        .car-sell__wrapper
+
+                          .car-sell__block
+                            .filter__wrap
+                              span.filter__name Марка
+                              .filter__select-wrap
+                                select.filter__select
+                                  option Nissan
+                                  option Nissan
+                                  option Nissan
+                                  option Nissan
+
+                          .car-sell__block
+                            .filter__wrap
+                              span.filter__name Модель
+                              .filter__select-wrap
+                                select.filter__select
+                                  option Nissan
+                                  option Nissan
+                                  option Nissan
+                                  option Nissan
+                                  
+                          .car-sell__block
+                            .filter__wrap
+                              span.filter__name Модель
+                              .filter__select-wrap
+                                select.filter__select
+                                  option Nissan
+                                  option Nissan
+                                  option Nissan
+                                  option Nissan
+                                  
+                                  
+                        .car-sell__wrapper          
+
+                          .car-sell__block
+                            label.filter__wrap
+                              span.filter__name Год выпуска
+                              input.filter__field(type="text" placeholder="")
+
+                          .car-sell__block
+                            label.filter__wrap
+                              span.filter__name Пробег, км
+                              input.filter__field(type="text" placeholder="Пробег, км")
+                              
+                          .car-sell__block.car-sell__block--big
+                            label.checked
+                              input.checked__check(type="checkbox")
+                              .checked__square
+                              span.checked__text Я принимаю условия<br> <a href="#">Политики конфиденциальности</a>   
+                              
+                          .car-sell__block.car-sell__block--big    
+                            .block-btn.block-btn--black
+                              .block-btn__line.block-btn__line--top
+                              .block-btn__line.block-btn__line--right
+                              .block-btn__line.block-btn__line--bottom
+                              .block-btn__line.block-btn__line--left
+                              button.block-btn__btn Узнать стоимость авто в trade-in
+     
+                            
+                        
+            .two-column
+              .sidebar
+                .stik
+                  .link-consultation
+                    .link-consultation__svg
+                      svg.link-consultation__svg
+                        use(xlink:href="img/sprite.svg#tell")  
+                    .link-consultation__block
+                      a.link-consultation__tel(href="tel:88007771747") 8-800-777-17-47
+                      span.link-consultation__text Связь с менеджером
+                    a.link-consultation__link(href="#")
+                      svg.link-consultation__arrow
+                        use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span Получить консультацию
+          
+
+         
+            
+
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

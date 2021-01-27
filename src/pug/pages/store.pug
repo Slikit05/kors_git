@@ -1,0 +1,174 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Крос
+    
+    include includes/link.pug
+    
+  body
+    header
+      .header-bg.header-bg--color(style="background-image: url(img/)")
+        include includes/mob-menu.pug
+        include includes/header-nav.pug
+        .breadcrumbs.breadcrumbs--white
+          .container
+            .breadcrumbs__wrapper
+              ul.breadcrumbs__list.breadcrumbs__list--center
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                  svg.breadcrumbs__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Купить авто
+                  svg.breadcrumbs__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Авто с пробегом
+                  svg.breadcrumbs__svg
+                    use(xlink:href="img/sprite.svg#sm-arrow-right")
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active BMW X6 2018
+        h2.header-bg__row-title
+          .container
+            h2.header-bg__title.header-bg__title--center Audi. Добро пожаловать в восьмое измерение 
+      
+    main.main-change
+      .container
+        .platform.platform--news-inner
+          .page-two-columns
+            .one-column
+              .news-inner
+                .news-inner__wrapper
+                  .news-inner__content
+                    .news-inner__block-img
+                      img.news-inner__img(src="img/news-inner-img.jpg")
+                    .news-inner__block-text
+                      p Динамичное развитие «КорсГрупп», в первую очередь, направлено на высокий уровень сервиса и внимательное изучение предпочтений каждого автовладельца. Одной из главных задач нашей компании является сохранение высокой репутации и лидирующих позиций в автомобильной отрасли Центрального региона.
+
+                      p Высокая квалификация и регулярное обучение сотрудников гарантируют качественное обслуживание и постоянную мобильность. «КорсГрупп» позволяет получить клиентам одинаково высокое качество гарантийного обслуживания в любом из дилерских центров. Наличие сети позволяет выбрать тот Центр и тот бренд, который наиболее для Вас предпочтительнее и удобен, в том числе и по географическому положению. Большие сервисные площади автоцентров компании позволяют предоставлять Вам полный спектр услуг по сервисному обслуживанию автомобилей всех брендов, представленных на сайте.
+                    .news-inner__row
+                      span.news-inner__date 19 июня 2019 г.
+                      .news-inner-social
+                        script(src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js")
+                        script(src="https://yastatic.net/share2/share.js")
+                        div(class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir" data-counter="ig")
+                    .news-inner__row-link
+                      a.news-inner__link(href="#")
+                        svg.link-sect__svg
+                          use(xlink:href="img/sprite.svg#sm-arrow-right")
+                        span Смотреть все акции
+                      
+                        
+            .two-column
+              .sidebar
+                .stik
+                  .link-consultation
+                    .link-consultation__svg
+                      svg.link-consultation__svg
+                        use(xlink:href="img/sprite.svg#tell")  
+                    .link-consultation__block
+                      a.link-consultation__tel(href="tel:88007771747") 8-800-777-17-47
+                      span.link-consultation__text Связь с менеджером
+                    a.link-consultation__link(href="#")
+                      svg.link-consultation__arrow
+                        use(xlink:href="img/sprite.svg#sm-arrow-right")
+                      span Получить консультацию
+                      
+                      
+      section.recommend
+        .container
+          .recommend__container.recommend__container--change
+            .row-title
+              h2.title Автомобили по акции
+              
+            .recommend__wrap-slider  
+              .recommend__slider.swiper-container
+                .recommend__wrapper.swiper-wrapper
+
+                  .recommend__slide.swiper-slide
+                    a.auto-post(href="#")
+                      img.auto-post__img(src="img/recommend1.jpg")
+                      .auto-post__block-text
+                        h3.auto-post__title Hyundai Solaris, 2016
+                        span.auto-post__text 1.6 л, бензин, передний, автомат, 70 000 км.
+                        .auto-post__row
+                          span.auto-post__price 610 000 руб.
+                          span.auto-post__payments от 15 300 руб./мес.
+
+                  .recommend__slide.swiper-slide
+                    a.auto-post(href="#")
+                      img.auto-post__img(src="img/recommend2.jpg")
+                      .auto-post__block-text
+                        h3.auto-post__title Hyundai Solaris, 2016
+                        span.auto-post__text 1.6 л, бензин, передний, автомат, 70 000 км.
+                        .auto-post__row
+                          span.auto-post__price 610 000 руб.
+                          span.auto-post__payments от 15 300 руб./мес.
+
+                  .recommend__slide.swiper-slide
+                    a.auto-post(href="#")
+                      img.auto-post__img(src="img/recommend3.jpg")
+                      .auto-post__block-text
+                        h3.auto-post__title Hyundai Solaris, 2016
+                        span.auto-post__text 1.6 л, бензин, передний, автомат, 70 000 км.
+                        .auto-post__row
+                          span.auto-post__price 610 000 руб.
+                          span.auto-post__payments от 15 300 руб./мес.
+
+                  .recommend__slide.swiper-slide
+                    a.auto-post(href="#")
+                      img.auto-post__img(src="img/recommend4.jpg")
+                      .auto-post__block-text
+                        h3.auto-post__title Hyundai Solaris, 2016
+                        span.auto-post__text 1.6 л, бензин, передний, автомат, 70 000 км.
+                        .auto-post__row
+                          span.auto-post__price 610 000 руб.
+                          span.auto-post__payments от 15 300 руб./мес.
+
+                  .recommend__slide.swiper-slide
+                    a.auto-post(href="#")
+                      img.auto-post__img(src="img/recommend3.jpg")
+                      .auto-post__block-text
+                        h3.auto-post__title Hyundai Solaris, 2016
+                        span.auto-post__text 1.6 л, бензин, передний, автомат, 70 000 км.
+                        .auto-post__row
+                          span.auto-post__price 610 000 руб.
+                          span.auto-post__payments от 15 300 руб./мес.        
+
+                .recommend__arrow.recommend__arrow--next.swiper-button-next
+                .recommend__arrow.recommend__arrow--prev.swiper-button-prev
+                    
+      section.developments.black-bg.padding-top.padding-bottom
+        .container
+          .developments__container
+            .row-title
+              h2.title Актуальные предложения от Audi
+            include includes/developments.pug
+      
+      section.connect(style="background-image: url(img/connect-bg2.jpg)")
+        .container
+          .connect__container
+            .connect__block
+              .row-title
+                h2.title.title--white Подпишитесь на спецпредложения и будьте в курсе всех акций
+              a.block-btn.block-btn--white(href="#")
+                .block-btn__line.block-btn__line--top
+                .block-btn__line.block-btn__line--right
+                .block-btn__line.block-btn__line--bottom
+                .block-btn__line.block-btn__line--left
+                button.block-btn__btn Подписаться
+
+         
+            
+
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

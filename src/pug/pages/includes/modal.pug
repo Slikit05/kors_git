@@ -1,0 +1,346 @@
+//- .overlay_popup
+
+//- .my-modal.popup(id="popup1")
+//-   .my-modal__block
+//-     .my-modal__close.close-popup
+//-     .my-modal__wrapper
+//-       h2.my-modal__title Заявка на сервис
+//-       form.my-modal__form
+//-         label.my-modal__wrap
+//-           span.my-modal__description Марка
+//-           select.my-modal__select
+//-             option Mitsubishi
+//-             option Mitsubishi
+//-             option
+//-             option
+//-         label.my-modal__wrap
+//-           span.my-modal__description Модель
+//-           select.my-modal__select
+//-             option Mitsubishi
+//-             option Mitsubishi
+//-             option
+//-             option
+//-         label.my-modal__wrap
+//-           span.my-modal__description Дилерский центр
+//-           select.my-modal__select
+//-             option Mitsubishi
+//-             option Mitsubishi
+//-             option
+//-             option
+//-         label.my-modal__wrap
+//-           span.my-modal__description Ваше имя
+//-           input.my-modal__field(type="text")
+//-         label.my-modal__wrap
+//-           span.my-modal__description Ваш телефон
+//-           input.my-modal__field(type="tel")
+//-         label.checked
+//-           input.checked__check(type="checkbox")
+//-           .checked__square
+//-           span.checked__text Я принимаю условия <a href="#">Политики конфиденциальности</a>
+//-         .block-btn.block-btn--black
+//-           .block-btn__line.block-btn__line--top
+//-           .block-btn__line.block-btn__line--right
+//-           .block-btn__line.block-btn__line--bottom
+//-           .block-btn__line.block-btn__line--left
+//-           button.block-btn__btn Отправить
+
+
+
+//- .my-modal.popup(id="city-modal")
+//-   .my-modal__block
+//-     .my-modal__close.close-popup
+//-     .my-modal__wrapper
+//-       h2.my-modal__title Выберите свой город
+//-       .city-choice
+//-         a.city-choice__text(href="#") Москва
+//-         a.city-choice__text(href="#") Санкт-Петербург
+//-         a.city-choice__text(href="#") Коломна
+//-         a.city-choice__text(href="#") Нижний Новгород
+//-         a.city-choice__text(href="#") Москва
+//-         a.city-choice__text(href="#") Санкт-Петербург
+
+
+//- .my-modal.popup(id="popup2")
+//-   .my-modal__block
+//-     .my-modal__close.close-popup
+//-     .my-modal__wrapper
+//-       h2.my-modal__title Анкета
+//-       form.my-modal__form
+//-         label.my-modal__wrap
+//-           span.my-modal__description Ваше имя
+//-           input.my-modal__field(type="text")
+//-         label.my-modal__wrap
+//-           span.my-modal__description Ваш телефон
+//-           input.my-modal__field(type="tel")
+//-         label.my-modal__wrap
+//-           span.my-modal__description Ваш e-mail
+//-           input.my-modal__field(type="email")  
+//-         label.my-modal__wrap
+//-           span.my-modal__description Комментарий
+//-           textarea.my-modal__field
+//-         div.download-modal
+//-           label.download-modal__wrap
+//-             input.download-modal__file.download-modal__file--one(type="file")
+//-             .block-btn.block-btn--black
+//-               .block-btn__line.block-btn__line--top
+//-               .block-btn__line.block-btn__line--right
+//-               .block-btn__line.block-btn__line--bottom
+//-               .block-btn__line.block-btn__line--left
+//-               .block-btn__btn Загрузить файл
+//-           .filename
+
+//-         label.checked
+//-           input.checked__check(type="checkbox")
+//-           .checked__square
+//-           span.checked__text Я принимаю условия<br> <a href="#">Политики конфиденциальности</a>
+//-         .block-btn.block-btn--black
+//-           .block-btn__line.block-btn__line--top
+//-           .block-btn__line.block-btn__line--right
+//-           .block-btn__line.block-btn__line--bottom
+//-           .block-btn__line.block-btn__line--left
+//-           button.block-btn__btn Отправить
+
+
+//- .my-modal.my-modal--4.popup(id="popup3")
+//-   .my-modal__block
+//-     .my-modal__close.close-popup
+//-     .my-modal__wrapper
+//-       h2.my-modal__title Выберите свой город
+//-       .online-buy
+//-         .online-buy__top
+//-           .online-buy__flex
+//-             .online-buy__wrap-img
+//-               img.online-buy__img(src="img/")
+
+
+.modal-container.overlay_popup(id="popup1")
+
+	.modal-container__container
+		.modal-container__wrapper
+
+			.my-modal
+				.my-modal__block
+					.my-modal__close.close-popup
+					.my-modal__wrapper
+						h2.my-modal__title Заявка на сервис
+						form.my-modal__form
+							label.my-modal__wrap
+								span.my-modal__description Марка
+								select.my-modal__select
+									option Mitsubishi
+									option Mitsubishi
+									option
+									option
+							label.my-modal__wrap
+								span.my-modal__description Модель
+								select.my-modal__select
+									option Mitsubishi
+									option Mitsubishi
+									option
+									option
+							label.my-modal__wrap
+								span.my-modal__description Дилерский центр
+								select.my-modal__select
+									option Mitsubishi
+									option Mitsubishi
+									option
+									option
+							label.my-modal__wrap
+								span.my-modal__description Ваше имя
+								input.my-modal__field(type="text")
+							label.my-modal__wrap
+								span.my-modal__description Ваш телефон
+								input.my-modal__field(type="tel")
+							label.checked
+								input.checked__check(type="checkbox")
+								.checked__square
+								span.checked__text Я принимаю условия <a href="#">Политики конфиденциальности</a>
+							.block-btn.block-btn--black
+								.block-btn__line.block-btn__line--top
+								.block-btn__line.block-btn__line--right
+								.block-btn__line.block-btn__line--bottom
+								.block-btn__line.block-btn__line--left
+								button.block-btn__btn Отправить
+
+
+.modal-container.overlay_popup(id="popup3")
+
+	.modal-container__container
+		.modal-container__wrapper
+
+			.my-modal.my-modal--4
+				.my-modal__block
+					.my-modal__close.close-popup
+					.my-modal__wrapper
+						h2.my-modal__title Забронировать Audi Q8 Advance 45 TDI<br> 2020
+						hr
+						.online-buy
+							.online-buy__top
+								.online-buy__flex
+									.online-buy__wrap-img
+										img.online-buy__img(src="img/gen220wb_367506777.png")
+										h4.online-buy__title Volkswagen Polo Respect 721&nbsp;000&nbsp;₽
+									.online-buy__wrap-img
+										img.online-buy__img(src="img/gen220wb_3675067772.png")
+										span.online-buy__caption VIN номер
+										span.online-buy__number-model XFP9VW-165-WERT
+
+								ul.online-buy__list
+									li.online-buy__item 5 ступеней
+									li.online-buy__item МКПП-5, 5 ступеней
+									li.online-buy__item Передний привод
+									li.online-buy__item Бензин
+									li.online-buy__item 1,6 л
+									li.online-buy__item 110 л.с.
+
+							.accordion-modal
+								.accordion-modal__row
+									h3.accordion-modal__title Описание
+									.accordion-modal__click
+								.accordion-modal__content
+									.accordion-modal__info
+										.accordion-modal__wrap
+											ul.accordion-modal__list
+												li.accordion-modal__item
+													span.accordion-modal__gray Марка
+													span.accordion-modal__text BMW
+												li.accordion-modal__item
+													span.accordion-modal__gray Модель
+													span.accordion-modal__text X6
+												li.accordion-modal__item
+													span.accordion-modal__gray Поколение
+													span.accordion-modal__text II (F16)
+												li.accordion-modal__item
+													span.accordion-modal__gray Модификация
+													span.accordion-modal__text 30d 3.0d AT (249 л.с.) 4WD
+												li.accordion-modal__item
+													span.accordion-modal__gray Год
+													span.accordion-modal__text 2015
+												li.accordion-modal__item
+													span.accordion-modal__gray Пробег
+													span.accordion-modal__text 27814 км
+												li.accordion-modal__item
+													span.accordion-modal__gray Тип кузова
+													span.accordion-modal__text Внедорожник
+												li.accordion-modal__item
+													span.accordion-modal__gray Цвет
+													span.accordion-modal__text Черный металлик
+												li.accordion-modal__item
+													span.accordion-modal__gray Тип двигателя
+													span.accordion-modal__text Дизель
+												li.accordion-modal__item
+													span.accordion-modal__gray Объем двигателя
+													span.accordion-modal__text 2 993 см3
+												li.accordion-modal__item
+													span.accordion-modal__gray КПП
+													span.accordion-modal__text Автомат
+												li.accordion-modal__item
+													span.accordion-modal__gray Руль
+													span.accordion-modal__text Левый
+												li.accordion-modal__item
+													span.accordion-modal__gray Привод
+													span.accordion-modal__text Полный привод
+												li.accordion-modal__item
+													span.accordion-modal__gray Мощность двигателя
+													span.accordion-modal__text 249 л.с.
+
+							.centers-modal
+								img.centers-modal__logo(src="img/centers-img.png")
+								h3.centers-modal__title Дилерский центр Audi Центр<br> Алтуфьево
+								.centers-modal__wrapper
+									.centers-modal__wrap
+										svg.centers-modal__tel-icon
+											use(xlink:href="img/sprite.svg#tell")
+										a.centers-modal__tel(href="tel:88007771747") 8-800-777-17-47
+										a.centers-row__link(href="#")
+											.centers-row__arrow
+												svg.centers-row__svg
+													use(xlink:href="img/sprite.svg#sm-arrow-right")
+											span.centers-row__link-text Обратный звонок
+									.centers-modal__wrap
+										svg.centers-modal__icon
+											use(xlink:href="img/sprite.svg#location")
+										span.centers-modal__text 300012, г. Тула, ул. Рязанская, д. 7
+										span.centers-modal__text Ежедневно с 08:00 до 21:00 без перерыва и выходных
+										a.centers-row__link(href="#")
+											.centers-row__arrow
+												svg.centers-row__svg
+													use(xlink:href="img/sprite.svg#sm-arrow-right")
+											span.centers-row__link-text Показать на карте
+										a.centers-row__link(href="#")
+											.centers-row__arrow
+												svg.centers-row__svg
+													use(xlink:href="img/sprite.svg#sm-arrow-right")
+											span.centers-row__link-text www.audi-tula.ru
+
+							.accordion-modal
+								.accordion-modal__row
+									h3.accordion-modal__title Договор оферты
+									.accordion-modal__click
+								.accordion-modal__content
+									.accordion-modal__area.accordion-modal__area--scroll
+										p Излучение сжимает атом одинаково по всем направлениям. Еще в ранних работах Л.Д.Ландау показано, что сверхпроводник испускает межядерный лазер. Если для простоты пренебречь потерями на теплопроводность, то видно, что вселенная бифокально трансформирует торсионный лазер. Плазменное образование масштабирует короткоживущий вихрь.
+										p Излучение неустойчиво нейтрализует магнит в полном соответствии с законом сохранения энергии. Гамма-квант мономолекулярно тормозит взрыв без обмена зарядами или спинами. Экситон тормозит внутримолекулярный фронт.
+										p Мишень инструментально обнаружима. При погружении в жидкий кислород туманность сжимает внутримолекулярный кристалл только в отсутствие тепло- и массообмена с окружающей средой. Самосогласованная модель предсказывает, что при определенных условиях плазменное образование бифокально тормозит торсионный лазер. Тело изотермично масштабирует векторный объект. Квантовое состояние непрерывно.
+
+							.modal-price-block
+								.modal-price-block__wrapper
+									.modal-price-block__wrap
+										span.modal-price-block__old-price от 1 199 000 руб.
+										span.modal-price-block__price 2 450 000 руб.
+										span.modal-price-block__nds НДС 18 680 руб.
+									.modal-price-block__wrap
+										.sentence-row
+											img.sentence-row__icon(src="img/percent-icon.svg")
+											span.sentence-row__text выгода <b>300 000 руб.</b>
+								.pay-block.pay-block--no-bg
+									span.pay-block__text Принимаем к оплате карты
+									.pay-block__wrapper
+										.pay-block__wrap
+											img(src="img/sim.svg" alt="")
+										.pay-block__wrap
+											img(src="img/visa.svg" alt="")
+										.pay-block__wrap
+											img(src="img/mastercard.svg" alt="")
+										.pay-block__wrap
+											img(src="img/jcb.svg" alt="")
+
+							form.modal-form-auto
+								.modal-form-auto__row
+									label.checked
+										input.checked__check(type="checkbox")
+										.checked__square
+										span.checked__text Предоплата
+									label.checked
+										input.checked__check(type="checkbox")
+										.checked__square
+										span.checked__text Полная оплата
+								
+								.modal-form-auto__wrapper
+									label.my-modal__wrap
+										span.my-modal__description Сумма предоплаты
+										input.my-modal__field(type="text")
+									label.my-modal__wrap
+										span.my-modal__description Срок резерва
+										input.my-modal__field(type="text")
+								hr
+								span.modal-form-auto__caption Личные данные
+								.modal-form-auto__wrapper
+									label.my-modal__wrap
+										span.my-modal__description Ваше имя
+										input.my-modal__field(type="text")
+									label.my-modal__wrap
+										span.my-modal__description Ваш телефон
+										input.my-modal__field(type="tel")
+								label.my-modal__wrap
+									span.my-modal__description Ваш e-mail
+									input.my-modal__field(type="email")
+								label.my-modal__wrap
+									span.my-modal__description Паспортные данные
+									input.my-modal__field(type="text")
+								label.checked
+									input.checked__check(type="checkbox")
+									.checked__square
+									span.checked__text Я принимаю условия <a href="">Политики конфиденциальности</a>
+								.blue-btn
+									button.blue-btn__btn Купить этот авто

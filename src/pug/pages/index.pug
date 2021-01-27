@@ -1,0 +1,141 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Крос
+    
+    include includes/link.pug
+    
+  body
+    header.none-menu
+      include includes/mob-menu.pug
+      include includes/header.pug
+      
+    main
+      section.stamps
+        .container
+          .stamps__container
+            h2.stamps__title Марки авто в наличии
+            .stamps__wrapper
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/audi.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption Audi
+                  span.stamps-block__value 17 авто
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/nisan.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption Nissan
+                  span.stamps-block__value 3 авто
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/kia.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption KIA
+                  span.stamps-block__value 28 авто
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/hyundai.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption Hyundai
+                  span.stamps-block__value 31 авто
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/mitsubishi.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption Mitsubishi
+                  span.stamps-block__value 28 авто
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/ford.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption Ford
+                  span.stamps-block__value 31 авто
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/chevrolet.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption Chevrolet
+                  span.stamps-block__value 17 авто
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/renault.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption Renault
+                  span.stamps-block__value 3 авто
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/datsun.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption Datsun
+                  span.stamps-block__value 28 авто
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/ravon.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption Ravon
+                  span.stamps-block__value 31 авто
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/volkswagen.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption Volkswagen
+                  span.stamps-block__value 28 авто
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/lada.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption Lada
+                  span.stamps-block__value 31 авто
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/citroen.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption Citroen
+                  span.stamps-block__value 17 авто
+              a.stamps-block(href="#")
+                img.stamps-block__img(src="img/with-mileage.png")
+                .stamps-block__wrap
+                  h4.stamps-block__caption С пробегом
+                  span.stamps-block__value 117 авто
+                  
+      section.developments.black-bg
+        .container
+          .developments__container
+            .row-title
+              h2.title События «Корс Групп»            
+            include includes/developments.pug
+      
+      section.row-arrow
+        .row-arrow__container
+          .container
+            .row-arrow__wrapper
+              .row-arrow__block
+                span.row-arrow__text Все новости и акции
+                a.arrow-to-scroll.arrow-to-scroll--black(href="")
+                  svg.arrow-to-scroll__arrow
+                    use(xlink:href="img/sprite.svg#arrow-scroll")
+                  .arrow-to-scroll__wrap
+                    svg.arrow-to-scroll__line
+                      use(xlink:href="img/sprite.svg#line")
+      
+      section.connect.connect--offset-index(style="background-image: url(img/connect-bg.jpg)")
+        .container
+          .connect__container
+            .connect__block
+              .row-title
+                h2.title.title--white У вас есть вопросы или предложения? Напишите нам!
+              a.block-btn.block-btn--white(href="#")
+                .block-btn__line.block-btn__line--top
+                .block-btn__line.block-btn__line--right
+                .block-btn__line.block-btn__line--bottom
+                .block-btn__line.block-btn__line--left
+                button.block-btn__btn Написать нам
+              
+      section.gray-bg
+        .container
+          .gray-bg__wrapper
+            include includes/link-sect.pug
+            .row-text
+              h5 Заголовок SEO-текста для продвижения и поисковых роботов
+              p Гидродинамический удар выталкивает торсионный пульсар в полном соответствии с законом сохранения энергии. Очевидно, что химическое соединение возбуждает тахионный объект, при этом дефект массы не образуется. Тело трансформирует плоскополяризованный взрыв только в отсутствие тепло- и массообмена с окружающей средой. Лептон отклоняет фотон. Экситон переворачивает разрыв. Химическое соединение зеркально отталкивает квант. Бозе-конденсат, как следует из совокупности экспериментальных наблюдений, конфокально возбуждает плоскополяризованный солитон. Волна возбуждает экситон. Пульсар притягивает элементарный фонон. Течение среды переворачивает квазар. <br>Экситон, как того требуют законы термодинамики, растягивает тахионный фонон, однозначно свидетельствуя о неустойчивости процесса в целом. Электрон конфокально индуцирует расширяющийся кварк одинаково по всем направлениям. Если предварительно подвергнуть объекты длительному вакуумированию, то зеркало искажает объект, и это неудивительно, если вспомнить квантовый характер явления.я
+          
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug
