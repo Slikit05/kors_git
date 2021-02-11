@@ -245,7 +245,7 @@
 
   .mark-list {
     &__item {
-      margin: 0;
+      margin-right: 0;
     }
   }
 
@@ -744,7 +744,8 @@
 
   .mark-list {
     &__list {
-      grid-template-columns: repeat(2, 1fr);
+      // grid-template-columns: repeat(2, 1fr);
+      columns: 2;
     }
   }
 
