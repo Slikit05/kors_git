@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Крос</title>
+    <link rel="stylesheet" type="text/css" href="css/normalise.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-bg" style="background-image: url(img/guarantee-bg.jpg)">
+        <div class="mob-menu">
+          <div class="mob-menu__up">
+            <div class="mob-menu__left-block">
+              <div class="favorites">
+                <div class="circle-number">12</div>
+                <svg class="favorites__svg">
+                  <use xlink:href="img/sprite.svg#favorites"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="mob-menu__center-block">
+              <div class="comparisons">
+                <div class="circle-number">12</div>
+                <svg class="comparisons__svg">
+                  <use xlink:href="img/sprite.svg#comparisons"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="mob-menu__right-block">
+              <div class="close">
+                <div class="close__line"></div>
+                <div class="close__line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mob-menu__midlle">
+            <div class="menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="#">Дилерские центры</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Корпоративным клиентам</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Купить авто</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Продать авто</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Сервис</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Акции</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mob-menu__down">
+            <div class="mob-menu__wrap"><a class="mob-menu__tel" href="tel:8-800-000-00-00">8-800-000-00-00</a><span class="mob-menu__text">Заказать звонок</span></div>
+            <div class="social">
+              <ul class="social__list">
+                <li class="social__item"><a class="social__link" href="#">
+                    <svg class="social__svg">
+                      <use xlink:href="img/sprite.svg#facebook"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#">
+                    <svg class="social__svg">
+                      <use xlink:href="img/sprite.svg#instagram"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#">
+                    <svg class="social__svg">
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <section class="wrap-up-row wrap-up-row--inner">
+          <section class="up-row up-row--inner">
+            <div class="up-row__container">
+              <div class="container">
+                <div class="up-row__wrapper">
+                  <div class="up-row__left-block">
+                    <div class="city-change show_popup" rel="city-modal">
+                      <div class="city-change__wrap-svg">
+                        <svg class="city-change__svg">
+                          <use xlink:href="img/sprite.svg#location"></use>
+                        </svg>
+                      </div><span class="city-change__text">Коломна</span>
+                    </div><a class="up-row__tel" href="tel:88007771747">8 800-777-17-47</a>
+                  </div>
+                  <div class="up-row__right-block">
+                    <ul class="up-row__list">
+                      <li class="up-row__item"><a class="up-row__link" href="#">Дилерские центры</a></li>
+                      <li class="up-row__item"><a class="up-row__link" href="#">Новости</a></li>
+                      <li class="up-row__item"><a class="up-row__link" href="#">Корпоративным клиентам</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-middle">
+              <div class="container">
+                <div class="header-middle__wrapper">
+                  <div class="header-middle__left-block"><a href="index.html">
+                      <svg class="logo">
+                        <use xlink:href="img/sprite.svg#logo"></use>
+                      </svg>
+                      <svg class="logo logo--none">
+                        <use xlink:href="img/sprite.svg#logo-mob"> </use>
+                      </svg></a></div>
+                  <div class="header-middle__center-block">
+                    <div class="nav">
+                      <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Купить авто</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Продать авто</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Сервис</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Услуги</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Акции</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">О компании</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Мобильное приложение</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="header-middle__right-block">
+                    <div class="favorites">
+                      <div class="circle-number">12</div>
+                      <svg class="favorites__svg">
+                        <use xlink:href="img/sprite.svg#favorites"></use>
+                      </svg>
+                    </div>
+                    <div class="comparisons">
+                      <div class="circle-number">12</div>
+                      <svg class="comparisons__svg">
+                        <use xlink:href="img/sprite.svg#comparisons"></use>
+                      </svg>
+                    </div>
+                    <div class="burger">
+                      <div class="burger__line burger__line--one"></div>
+                      <div class="burger__line burger__line--two"></div>
+                      <div class="burger__line burger__line--three"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <div class="breadcrumbs breadcrumbs--white">
+          <div class="container">
+            <div class="breadcrumbs__wrapper">
+              <ul class="breadcrumbs__list breadcrumbs__list--center">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a>
+                  <svg class="breadcrumbs__svg">
+                    <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                  </svg>
+                </li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">О компании</a>
+                  <svg class="breadcrumbs__svg">
+                    <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                  </svg>
+                </li>
+                <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link--active">История</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <h2 class="header-bg__row-title">
+          <div class="container">
+            <h2 class="header-bg__title header-bg__title--center">Наши награды</h2>
+          </div>
+        </h2>
+      </div>
+    </header>
+    <main class="main-change">
+      <div class="container">
+        <div class="platform">
+          <div class="prizes">
+            <div class="prizes__container">
+              <div class="link-sect">
+                <div class="link-sect__wrapper">
+                  <div class="link-sect__block">
+                    <h4 class="link-sect__caption">Записаться на сервис</h4><a class="link-sect__link" href="#"> 
+                      <svg class="link-sect__svg">
+                        <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                      </svg><span>Записаться</span></a>
+                  </div>
+                  <div class="link-sect__block">
+                    <h4 class="link-sect__caption">У вас есть вопросы? Задайте их специалисту</h4><a class="link-sect__link" href="#"> 
+                      <svg class="link-sect__svg">
+                        <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                      </svg><span>Получить консультацию</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="text-area">
+                <p>Официальные технические центры автомобильного холдинга «КорсГрупп» осуществляют гарантийный ремонт всех брендов, входящих в состав холдинга.</p>
+                <blockquote>На каждый новый автомобиль, приобретенный в дилерской сети нашего холдинга, распространяется официальная гарантия <br>компании-производителя. Срок гарантии и параметры зависят от бренда автомобиля</blockquote>
+                <p>Мы заботимся о своих клиентах и в случае гарантийного обращения, всегда поможем осуществить ремонт. Наши технические центры используют оригинальные запасные части и расходные материалы, рекомендованные дистрибьютером. </p>
+                <p>Узнать более подробную информацию и записаться на обслуживание вы можете в наших сервисных центрах и по телефону <a href="tel:">8-800-777-17-47</a>  </p>
+              </div>
+              <div class="prizes-advantages">
+                <div class="prizes-advantages__block">
+                  <div class="prizes-advantages__wrap prizes-advantages__wrap--change"><span class="prizes-advantages__number">11</span><span class="prizes-advantages__text">лет на автомобильном рынке</span></div>
+                </div>
+                <div class="prizes-advantages__block">
+                  <div class="prizes-advantages__wrap prizes-advantages__wrap--change"><span class="prizes-advantages__number">50</span><span class="prizes-advantages__text">сервисных центров в 4 городах</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map map--two">
+          <div class="map__row" id="map"></div>
+          <div class="map-filter">
+            <h2 class="title">Запись на сервис</h2>
+            <div class="map-filter__wrapper">
+              <!--.map-filter__wrap
+              span.map-filter__description Марка
+              .map-filter__mark-dropdown
+                .map-filter__row
+                  span.map-filter__check
+                  .map-filter__arrow
+                    svg.map-filter__svg
+                      use(xlink:href="img/sprite.svg#sm-arrow-right")
+              -->
+              <div class="map-filter__wrap"><span class="map-filter__description">Марка</span>
+                <select class="map-filter__select" id="mark">
+                  <option value="1">Audi</option>
+                  <option value="2">Bmv</option>
+                </select>
+              </div>
+              <div class="map-filter__wrap"><span class="map-filter__description">Город</span>
+                <select class="map-filter__select" id="city">
+                  <option value="1">Краснодар</option>
+                  <option value="2">Москва</option>
+                  <option value="3">Санкт-Петербург</option>
+                </select>
+              </div>
+            </div>
+            <div class="blue-btn" id="filterBtn">
+              <button class="blue-btn__btn">Найти сервисный центр</button>
+            </div>
+          </div>
+        </div>
+        <div class="gray-bg__wrapper">
+          <div class="centers centers--change centers--change-margin">
+            <div class="centers__wrapper">
+              <div class="centers-row">
+                <div class="centers-row__left-block">
+                  <div class="centers-row__row"><img class="centers-row__img" src="img/centers-img.png">
+                    <div class="centers-row__wrap">
+                      <h3 class="centers-row__title">Авторизованный дилерский центр Audi Тула</h3><a class="block-btn block-btn--black" href="#">
+                        <div class="block-btn__line block-btn__line--top"></div>
+                        <div class="block-btn__line block-btn__line--right"></div>
+                        <div class="block-btn__line block-btn__line--bottom"></div>
+                        <div class="block-btn__line block-btn__line--left"></div>
+                        <button class="block-btn__btn">Записаться</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="centers-row__center-block">                   
+                  <div class="centers-row__block-text">
+                    <div class="centers-row__wrap-svg">
+                      <svg class="centers-row__location">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div><span class="centers-row__text">300012, г. Тула, ул. Рязанская, д. 7</span><span class="centers-row__text">Ежедневно с 08:00 до 21:00 без перерыва и выходных</span>
+                  </div>
+                  <div class="centers-row__flex"><a class="centers-row__link" href="#">
+                      <div class="centers-row__arrow">
+                        <svg class="centers-row__svg">
+                          <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                        </svg>
+                      </div><span class="centers-row__link-text">Показать на карте</span></a><a class="centers-row__link" href="mailto:www.audi-tula.ru">
+                      <div class="centers-row__arrow">
+                        <svg class="centers-row__svg">
+                          <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                        </svg>
+                      </div><span class="centers-row__link-text">www.audi-tula.ru  </span></a></div>
+                </div>
+                <div class="centers-row__right-block">                   
+                  <div class="centers-row__block-text">
+                    <div class="centers-row__wrap-svg">
+                      <svg class="centers-row__tell">
+                        <use xlink:href="img/sprite.svg#tell"></use>
+                      </svg>
+                    </div><a class="centers-row__tel" href="tel:">8-800-777-17-47</a><span class="centers-row__sm-text">Связь с менеджером</span>
+                  </div><a class="centers-row__link" href="#">
+                    <div class="centers-row__arrow">
+                      <svg class="centers-row__svg">
+                        <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                      </svg>
+                    </div><span class="centers-row__link-text">Обратный звонок</span></a>
+                </div>
+              </div>
+              <div class="centers-row">
+                <div class="centers-row__left-block">
+                  <div class="centers-row__row"><img class="centers-row__img" src="img/centers-img.png">
+                    <div class="centers-row__wrap">
+                      <h3 class="centers-row__title">Авторизованный дилерский центр Audi Тула</h3><a class="block-btn block-btn--black" href="#">
+                        <div class="block-btn__line block-btn__line--top"></div>
+                        <div class="block-btn__line block-btn__line--right"></div>
+                        <div class="block-btn__line block-btn__line--bottom"></div>
+                        <div class="block-btn__line block-btn__line--left"></div>
+                        <button class="block-btn__btn">Записаться</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="centers-row__center-block">
+                  <div class="centers-row__block-text">
+                    <div class="centers-row__wrap-svg">
+                      <svg class="centers-row__location">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div><span class="centers-row__text">300012, г. Тула, ул. Рязанская, д. 7</span><span class="centers-row__text">Ежедневно с 08:00 до 21:00 без перерыва и выходных</span>
+                  </div>
+                  <div class="centers-row__flex"><a class="centers-row__link" href="#">
+                      <div class="centers-row__arrow">
+                        <svg class="centers-row__svg">
+                          <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                        </svg>
+                      </div><span class="centers-row__link-text">Показать на карте</span></a><a class="centers-row__link" href="mailto:www.audi-tula.ru">
+                      <div class="centers-row__arrow">
+                        <svg class="centers-row__svg">
+                          <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                        </svg>
+                      </div><span class="centers-row__link-text">www.audi-tula.ru  </span></a></div>
+                </div>
+                <div class="centers-row__right-block">
+                  <div class="centers-row__block-text">
+                    <div class="centers-row__wrap-svg">
+                      <svg class="centers-row__tell">
+                        <use xlink:href="img/sprite.svg#tell"></use>
+                      </svg>
+                    </div><a class="centers-row__tel" href="tel:">8-800-777-17-47</a><span class="centers-row__sm-text">Связь с менеджером</span>
+                  </div><a class="centers-row__link" href="#">
+                    <div class="centers-row__arrow">
+                      <svg class="centers-row__svg">
+                        <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                      </svg>
+                    </div><span class="centers-row__link-text">Обратный звонок</span></a>
+                </div>
+              </div>
+              <div class="centers-row">
+                <div class="centers-row__left-block">
+                  <div class="centers-row__row"><img class="centers-row__img" src="img/centers-img.png">
+                    <div class="centers-row__wrap">
+                      <h3 class="centers-row__title">Авторизованный дилерский центр Audi Тула</h3><a class="block-btn block-btn--black" href="#">
+                        <div class="block-btn__line block-btn__line--top"></div>
+                        <div class="block-btn__line block-btn__line--right"></div>
+                        <div class="block-btn__line block-btn__line--bottom"></div>
+                        <div class="block-btn__line block-btn__line--left"></div>
+                        <button class="block-btn__btn">Записаться</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="centers-row__center-block">
+                  <div class="centers-row__block-text">
+                    <div class="centers-row__wrap-svg">
+                      <svg class="centers-row__location">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div><span class="centers-row__text">300012, г. Тула, ул. Рязанская, д. 7</span><span class="centers-row__text">Ежедневно с 08:00 до 21:00 без перерыва и выходных</span>
+                  </div>
+                  <div class="centers-row__flex"><a class="centers-row__link" href="#">
+                      <div class="centers-row__arrow">
+                        <svg class="centers-row__svg">
+                          <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                        </svg>
+                      </div><span class="centers-row__link-text">Показать на карте</span></a><a class="centers-row__link" href="mailto:www.audi-tula.ru">
+                      <div class="centers-row__arrow">
+                        <svg class="centers-row__svg">
+                          <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                        </svg>
+                      </div><span class="centers-row__link-text">www.audi-tula.ru  </span></a></div>
+                </div>
+                <div class="centers-row__right-block">
+                  <div class="centers-row__block-text">
+                    <div class="centers-row__wrap-svg">
+                      <svg class="centers-row__tell">
+                        <use xlink:href="img/sprite.svg#tell"></use>
+                      </svg>
+                    </div><a class="centers-row__tel" href="tel:">8-800-777-17-47</a><span class="centers-row__sm-text">Связь с менеджером</span>
+                  </div><a class="centers-row__link" href="#">
+                    <div class="centers-row__arrow">
+                      <svg class="centers-row__svg">
+                        <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                      </svg>
+                    </div><span class="centers-row__link-text">Обратный звонок</span></a>
+                </div>
+              </div>
+              <div class="centers-row">
+                <div class="centers-row__left-block">
+                  <div class="centers-row__row"><img class="centers-row__img" src="img/centers-img.png">
+                    <div class="centers-row__wrap">
+                      <h3 class="centers-row__title">Авторизованный дилерский центр Audi Тула</h3><a class="block-btn block-btn--black" href="#">
+                        <div class="block-btn__line block-btn__line--top"></div>
+                        <div class="block-btn__line block-btn__line--right"></div>
+                        <div class="block-btn__line block-btn__line--bottom"></div>
+                        <div class="block-btn__line block-btn__line--left"></div>
+                        <button class="block-btn__btn">Записаться</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="centers-row__center-block">
+                  <div class="centers-row__block-text">
+                    <div class="centers-row__wrap-svg">
+                      <svg class="centers-row__location">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div><span class="centers-row__text">300012, г. Тула, ул. Рязанская, д. 7</span><span class="centers-row__text">Ежедневно с 08:00 до 21:00 без перерыва и выходных</span>
+                  </div>
+                  <div class="centers-row__flex"><a class="centers-row__link" href="#">
+                      <div class="centers-row__arrow">
+                        <svg class="centers-row__svg">
+                          <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                        </svg>
+                      </div><span class="centers-row__link-text">Показать на карте</span></a><a class="centers-row__link" href="mailto:www.audi-tula.ru">
+                      <div class="centers-row__arrow">
+                        <svg class="centers-row__svg">
+                          <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                        </svg>
+                      </div><span class="centers-row__link-text">www.audi-tula.ru  </span></a></div>
+                </div>
+                <div class="centers-row__right-block">
+                  <div class="centers-row__block-text">
+                    <div class="centers-row__wrap-svg">
+                      <svg class="centers-row__tell">
+                        <use xlink:href="img/sprite.svg#tell"></use>
+                      </svg>
+                    </div><a class="centers-row__tel" href="tel:">8-800-777-17-47</a><span class="centers-row__sm-text">Связь с менеджером</span>
+                  </div><a class="centers-row__link" href="#">
+                    <div class="centers-row__arrow">
+                      <svg class="centers-row__svg">
+                        <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                      </svg>
+                    </div><span class="centers-row__link-text">Обратный звонок</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="banner">
+            <div class="banner__wrapper" style="background-image: url(img/banner2.jpg)">
+              <div class="banner__block">
+                <h3 class="banner__title">Выгодный Trade-In</h3><span class="banner__text">Авто доступнее, чем прежде!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="developments black-bg padding-top padding-bottom">
+        <div class="container">
+          <div class="developments__container">
+            <div class="row-title">
+              <h2 class="title">Актуальные предложения</h2>
+            </div>
+            <div class="developments__wrapper">
+              <div class="developments__block developments__block--big">
+                <div class="developments__wrap-img"><img class="developments__img" src="img/developments-one.jpg"></div>
+                <div class="developments__wrap">
+                  <div class="developments__block-text"><span class="developments__text">Выгода до 250 000 руб.</span>
+                    <h3 class="developments__caption">Новый Audi Q8. Добро пожаловать в&nbsp;восьмое измерение</h3>
+                  </div>
+                  <div class="developments__wrap-btn"><a class="block-btn block-btn--white" href="#">
+                      <div class="block-btn__line block-btn__line--top"></div>
+                      <div class="block-btn__line block-btn__line--right"></div>
+                      <div class="block-btn__line block-btn__line--bottom"></div>
+                      <div class="block-btn__line block-btn__line--left"></div>
+                      <button class="block-btn__btn">Подробнее</button></a></div>
+                </div>
+              </div><a class="developments__block" href="#">
+                <div class="developments__wrap-img"><img class="developments__img" src="img/developments-two.jpg"></div>
+                <div class="developments__wrap">
+                  <div class="developments__block-text">
+                    <h3 class="developments__caption">Чем старше автомобиль, тем выше ваша выгода!</h3>
+                  </div>
+                </div></a>
+              <div class="developments__block developments__block--big">
+                <div class="developments__wrap-img"><img class="developments__img" src="img/developments-three.jpg"></div>
+                <div class="developments__wrap">
+                  <div class="developments__block-text">
+                    <h3 class="developments__caption">Автомобиль с тест-драйва в максимальной комплектации по выгодной цене</h3>
+                  </div>
+                  <div class="developments__wrap-btn"><a class="block-btn block-btn--white" href="#">
+                      <div class="block-btn__line block-btn__line--top"></div>
+                      <div class="block-btn__line block-btn__line--right"></div>
+                      <div class="block-btn__line block-btn__line--bottom"></div>
+                      <div class="block-btn__line block-btn__line--left"></div>
+                      <button class="block-btn__btn">Подробнее</button></a></div>
+                </div>
+              </div><a class="developments__block" href="#">
+                <div class="developments__wrap-img"><img class="developments__img" src="img/developments-four.jpg"></div>
+                <div class="developments__wrap">
+                  <div class="developments__block-text">
+                    <h3 class="developments__caption">Беспрецедентное кредитное предложение от AUDI</h3>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="connect" style="background-image: url(img/connect-bg2.jpg)">
+        <div class="container">
+          <div class="connect__container">
+            <div class="connect__block">
+              <div class="row-title">
+                <h2 class="title title--white">Подпишитесь на спецпредложения и будьте в курсе всех акций</h2>
+              </div><a class="block-btn block-btn--white" href="#">
+                <div class="block-btn__line block-btn__line--top"></div>
+                <div class="block-btn__line block-btn__line--right"></div>
+                <div class="block-btn__line block-btn__line--bottom"></div>
+                <div class="block-btn__line block-btn__line--left"></div>
+                <button class="block-btn__btn">Подписаться</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="page-footer">
+        <div class="container">
+          <div class="page-footer__wrapper">
+            <div class="page-footer__block">
+              <div class="page-footer__wrap"><a class="page-footer__link-caption" href="#">
+                  <h4 class="page-footer__caption">Дилерские центры</h4></a></div>
+              <div class="page-footer__wrap"><a class="page-footer__link-caption" href="#">
+                  <h4 class="page-footer__caption">О компании</h4></a>
+                <ul class="page-footer__list">
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">История компании</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Наши награды</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Наши мероприятия</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Статьи</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Вакансии</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Реквизиты компании</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__wrap"><a class="page-footer__link-caption" href="#">
+                  <h4 class="page-footer__caption">Мобильное приложение</h4></a></div>
+              <div class="page-footer__wrap"><a class="page-footer__link-caption" href="#">
+                  <h4 class="page-footer__caption">Корпоративным клиентам</h4></a></div>
+            </div>
+            <div class="page-footer__block">
+              <div class="page-footer__wrap"><a class="page-footer__link-caption" href="#">
+                  <h4 class="page-footer__caption">Купить авто</h4></a>
+                <ul class="page-footer__list">
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Новые автомобили</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Авто с пробегом</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__wrap"><a class="page-footer__link-caption" href="#">
+                  <h4 class="page-footer__caption">Продать авто</h4></a></div>
+              <div class="page-footer__wrap"><a class="page-footer__link-caption" href="#">
+                  <h4 class="page-footer__caption">Услуги</h4></a>
+                <ul class="page-footer__list">
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Кредитование</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Страхование</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Страховой случай</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Удаленное урегулирование убытков</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Дополнительное оборудование</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Аренда недвижимости</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="page-footer__block">
+              <div class="page-footer__wrap"><a class="page-footer__link-caption" href="#">
+                  <h4 class="page-footer__caption">Сервис</h4></a>
+                <ul class="page-footer__list">
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Запись на сервис</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Гарантийное обслуживание</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Постгарантийное обслуживание</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Кузовной ремонт</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Шины и диски</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Запчасти и аксессуары</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__wrap"><a class="page-footer__link-caption" href="#">
+                  <h4 class="page-footer__caption">События</h4></a>
+                <ul class="page-footer__list">
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Акции и спецпредложения</a></li>
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Новости</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="page-footer__block">
+              <div class="page-footer__wrap"><a class="page-footer__tel" href="tel:">8-800-000-00-00</a>
+                <ul class="page-footer__list">
+                  <li class="page-footer__item">
+                    <div class="page-footer__link show_popup" rel="popup1">Заказать звонок</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="page-footer__wrap">
+                <ul class="page-footer__list">
+                  <li class="page-footer__item"><a class="page-footer__link" href="#">Политика конфиденциальности</a></li>
+                  <li class="page-footer__item"><span class="page-footer__link">© 2019. Все права защищены</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-down">
+            <div class="footer-down__wrapper">
+              <div class="footer-down__left-block">
+                <div class="social">
+                  <ul class="social__list">
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="social__svg">
+                          <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="social__svg">
+                          <use xlink:href="img/sprite.svg#instagram"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="social__svg">
+                          <use xlink:href="img/sprite.svg#vk"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-down__center-block"><a class="download" href="#">
+                  <svg class="download__svg">
+                    <use xlink:href="img/sprite.svg#app-store"></use>
+                  </svg><span class="download__text">Скачать в App Store</span></a><a class="download" href="#">
+                  <svg class="download__svg">
+                    <use xlink:href="img/sprite.svg#play-store"></use>
+                  </svg><span class="download__text">Скачать в Google Play</span></a></div>
+              <div class="footer-down__right-block"><a class="map-site" href="#">
+                  <svg class="map-site__svg">
+                    <use xlink:href="img/sprite.svg#share"></use>
+                  </svg><span class="map-site__text">Карта сайта</span></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="modal-container overlay_popup" id="popup1">
+        <div class="modal-container__container">
+          <div class="modal-container__wrapper">
+            <div class="my-modal">
+              <div class="my-modal__block">
+                <div class="my-modal__close close-popup"></div>
+                <div class="my-modal__wrapper">
+                  <h2 class="my-modal__title">Заявка на сервис</h2>
+                  <form class="my-modal__form">
+                    <label class="my-modal__wrap"><span class="my-modal__description">Марка</span>
+                      <select class="my-modal__select">
+                        <option>Mitsubishi</option>
+                        <option>Mitsubishi</option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </label>
+                    <label class="my-modal__wrap"><span class="my-modal__description">Модель</span>
+                      <select class="my-modal__select">
+                        <option>Mitsubishi</option>
+                        <option>Mitsubishi</option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </label>
+                    <label class="my-modal__wrap"><span class="my-modal__description">Дилерский центр</span>
+                      <select class="my-modal__select">
+                        <option>Mitsubishi</option>
+                        <option>Mitsubishi</option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </label>
+                    <label class="my-modal__wrap"><span class="my-modal__description">Ваше имя</span>
+                      <input class="my-modal__field" type="text">
+                    </label>
+                    <label class="my-modal__wrap"><span class="my-modal__description">Ваш телефон</span>
+                      <input class="my-modal__field" type="tel">
+                    </label>
+                    <label class="checked">
+                      <input class="checked__check" type="checkbox">
+                      <div class="checked__square"></div><span class="checked__text">Я принимаю условия <a href="#">Политики конфиденциальности</a></span>
+                    </label>
+                    <div class="block-btn block-btn--black">
+                      <div class="block-btn__line block-btn__line--top"></div>
+                      <div class="block-btn__line block-btn__line--right"></div>
+                      <div class="block-btn__line block-btn__line--bottom"></div>
+                      <div class="block-btn__line block-btn__line--left"></div>
+                      <button class="block-btn__btn">Отправить</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container overlay_popup" id="popup3">
+        <div class="modal-container__container">
+          <div class="modal-container__wrapper">
+            <div class="my-modal my-modal--4">
+              <div class="my-modal__block">
+                <div class="my-modal__close close-popup"></div>
+                <div class="my-modal__wrapper">
+                  <h2 class="my-modal__title">Забронировать Audi Q8 Advance 45 TDI<br> 2020</h2>
+                  <hr>
+                  <div class="online-buy">
+                    <div class="online-buy__top">
+                      <div class="online-buy__flex">
+                        <div class="online-buy__wrap-img"><img class="online-buy__img" src="img/gen220wb_367506777.png">
+                          <h4 class="online-buy__title">Volkswagen Polo Respect 721&nbsp;000&nbsp;₽</h4>
+                        </div>
+                        <div class="online-buy__wrap-img"><img class="online-buy__img" src="img/gen220wb_3675067772.png"><span class="online-buy__caption">VIN номер</span><span class="online-buy__number-model">XFP9VW-165-WERT</span></div>
+                      </div>
+                      <ul class="online-buy__list">
+                        <li class="online-buy__item">5 ступеней</li>
+                        <li class="online-buy__item">МКПП-5, 5 ступеней</li>
+                        <li class="online-buy__item">Передний привод</li>
+                        <li class="online-buy__item">Бензин</li>
+                        <li class="online-buy__item">1,6 л</li>
+                        <li class="online-buy__item">110 л.с.</li>
+                      </ul>
+                    </div>
+                    <div class="accordion-modal">
+                      <div class="accordion-modal__row">
+                        <h3 class="accordion-modal__title">Описание</h3>
+                        <div class="accordion-modal__click"></div>
+                      </div>
+                      <div class="accordion-modal__content">
+                        <div class="accordion-modal__info">
+                          <div class="accordion-modal__wrap">
+                            <ul class="accordion-modal__list">
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">Марка</span><span class="accordion-modal__text">BMW</span></li>
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">Модель</span><span class="accordion-modal__text">X6</span></li>
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">Поколение</span><span class="accordion-modal__text">II (F16)</span></li>
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">Модификация</span><span class="accordion-modal__text">30d 3.0d AT (249 л.с.) 4WD</span></li>
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">Год</span><span class="accordion-modal__text">2015</span></li>
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">Пробег</span><span class="accordion-modal__text">27814 км</span></li>
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">Тип кузова</span><span class="accordion-modal__text">Внедорожник</span></li>
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">Цвет</span><span class="accordion-modal__text">Черный металлик</span></li>
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">Тип двигателя</span><span class="accordion-modal__text">Дизель</span></li>
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">Объем двигателя</span><span class="accordion-modal__text">2 993 см3</span></li>
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">КПП</span><span class="accordion-modal__text">Автомат</span></li>
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">Руль</span><span class="accordion-modal__text">Левый</span></li>
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">Привод</span><span class="accordion-modal__text">Полный привод</span></li>
+                              <li class="accordion-modal__item"><span class="accordion-modal__gray">Мощность двигателя</span><span class="accordion-modal__text">249 л.с.</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="centers-modal"><img class="centers-modal__logo" src="img/centers-img.png">
+                      <h3 class="centers-modal__title">Дилерский центр Audi Центр<br> Алтуфьево</h3>
+                      <div class="centers-modal__wrapper">
+                        <div class="centers-modal__wrap">
+                          <svg class="centers-modal__tel-icon">
+                            <use xlink:href="img/sprite.svg#tell"></use>
+                          </svg><a class="centers-modal__tel" href="tel:88007771747">8-800-777-17-47</a><a class="centers-row__link" href="#">
+                            <div class="centers-row__arrow">
+                              <svg class="centers-row__svg">
+                                <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                              </svg>
+                            </div><span class="centers-row__link-text">Обратный звонок</span></a>
+                        </div>
+                        <div class="centers-modal__wrap">
+                          <svg class="centers-modal__icon">
+                            <use xlink:href="img/sprite.svg#location"></use>
+                          </svg><span class="centers-modal__text">300012, г. Тула, ул. Рязанская, д. 7</span><span class="centers-modal__text">Ежедневно с 08:00 до 21:00 без перерыва и выходных</span><a class="centers-row__link" href="#">
+                            <div class="centers-row__arrow">
+                              <svg class="centers-row__svg">
+                                <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                              </svg>
+                            </div><span class="centers-row__link-text">Показать на карте</span></a><a class="centers-row__link" href="#">
+                            <div class="centers-row__arrow">
+                              <svg class="centers-row__svg">
+                                <use xlink:href="img/sprite.svg#sm-arrow-right"></use>
+                              </svg>
+                            </div><span class="centers-row__link-text">www.audi-tula.ru</span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-modal">
+                      <div class="accordion-modal__row">
+                        <h3 class="accordion-modal__title">Договор оферты</h3>
+                        <div class="accordion-modal__click"></div>
+                      </div>
+                      <div class="accordion-modal__content">
+                        <div class="accordion-modal__area accordion-modal__area--scroll">
+                          <p>Излучение сжимает атом одинаково по всем направлениям. Еще в ранних работах Л.Д.Ландау показано, что сверхпроводник испускает межядерный лазер. Если для простоты пренебречь потерями на теплопроводность, то видно, что вселенная бифокально трансформирует торсионный лазер. Плазменное образование масштабирует короткоживущий вихрь.</p>
+                          <p>Излучение неустойчиво нейтрализует магнит в полном соответствии с законом сохранения энергии. Гамма-квант мономолекулярно тормозит взрыв без обмена зарядами или спинами. Экситон тормозит внутримолекулярный фронт.</p>
+                          <p>Мишень инструментально обнаружима. При погружении в жидкий кислород туманность сжимает внутримолекулярный кристалл только в отсутствие тепло- и массообмена с окружающей средой. Самосогласованная модель предсказывает, что при определенных условиях плазменное образование бифокально тормозит торсионный лазер. Тело изотермично масштабирует векторный объект. Квантовое состояние непрерывно.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-price-block">
+                      <div class="modal-price-block__wrapper">
+                        <div class="modal-price-block__wrap"><span class="modal-price-block__old-price">от 1 199 000 руб.</span><span class="modal-price-block__price">2 450 000 руб.</span><span class="modal-price-block__nds">НДС 18 680 руб.</span></div>
+                        <div class="modal-price-block__wrap">
+                          <div class="sentence-row"><img class="sentence-row__icon" src="img/percent-icon.svg"><span class="sentence-row__text">выгода <b>300 000 руб.</b></span></div>
+                        </div>
+                      </div>
+                      <div class="pay-block pay-block--no-bg"><span class="pay-block__text">Принимаем к оплате карты</span>
+                        <div class="pay-block__wrapper">
+                          <div class="pay-block__wrap"><img src="img/sim.svg" alt=""></div>
+                          <div class="pay-block__wrap"><img src="img/visa.svg" alt=""></div>
+                          <div class="pay-block__wrap"><img src="img/mastercard.svg" alt=""></div>
+                          <div class="pay-block__wrap"><img src="img/jcb.svg" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <form class="modal-form-auto">
+                      <div class="modal-form-auto__row">
+                        <label class="checked">
+                          <input class="checked__check" type="checkbox">
+                          <div class="checked__square"></div><span class="checked__text">Предоплата</span>
+                        </label>
+                        <label class="checked">
+                          <input class="checked__check" type="checkbox">
+                          <div class="checked__square"></div><span class="checked__text">Полная оплата</span>
+                        </label>
+                      </div>
+                      <div class="modal-form-auto__wrapper">
+                        <label class="my-modal__wrap"><span class="my-modal__description">Сумма предоплаты</span>
+                          <input class="my-modal__field" type="text">
+                        </label>
+                        <label class="my-modal__wrap"><span class="my-modal__description">Срок резерва</span>
+                          <input class="my-modal__field" type="text">
+                        </label>
+                      </div>
+                      <hr><span class="modal-form-auto__caption">Личные данные</span>
+                      <div class="modal-form-auto__wrapper">
+                        <label class="my-modal__wrap"><span class="my-modal__description">Ваше имя</span>
+                          <input class="my-modal__field" type="text">
+                        </label>
+                        <label class="my-modal__wrap"><span class="my-modal__description">Ваш телефон</span>
+                          <input class="my-modal__field" type="tel">
+                        </label>
+                      </div>
+                      <label class="my-modal__wrap"><span class="my-modal__description">Ваш e-mail</span>
+                        <input class="my-modal__field" type="email">
+                      </label>
+                      <label class="my-modal__wrap"><span class="my-modal__description">Паспортные данные</span>
+                        <input class="my-modal__field" type="text">
+                      </label>
+                      <label class="checked">
+                        <input class="checked__check" type="checkbox">
+                        <div class="checked__square"></div><span class="checked__text">Я принимаю условия <a href="">Политики конфиденциальности</a></span>
+                      </label>
+                      <div class="blue-btn">
+                        <button class="blue-btn__btn">Купить этот авто</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/sticky-kit.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/groups.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
